@@ -13,7 +13,7 @@ De vraag: welke ondersteuning kan software geven zonder taalmodel, welke onderst
 | C | Hybride assistent: gecontroleerde hints, foutdetectie en beslisregels, met het model van B als terugval |
 | D | Dezelfde hybride route als C, met zelfgehoste open-weight modellen in plaats van betaalde modelaanroepen |
 
-Alle vier worden na het brede onderzoek volledig gespecificeerd. Voor een eerlijke vergelijking blijven de onderwijsfuncties, leerlingomgeving, vakinhoud en toetscriteria gelijk. A–D zijn voorlopig hypothesen, geen architectuurkeuze.
+De technische uitwerking van A–D staat in de [specificatie v0.1](research/TECHNISCHE-SPECIFICATIE.md). Alle varianten delen gewone lesfuncties, bevoegdheden, bronversies en dezelfde aangeboden aanvragen. A en B gebruiken dezelfde modeltaak; C onderzoekt welke extra modeltaken gewone software kan afhandelen; D onderzoekt lokale inferentie met dezelfde hybride route. Dit zijn vergelijkingshypothesen, geen architectuurkeuze. De uiteindelijke onderwijsfuncties, vakinhoud en kwaliteitscriteria blijven gelijk.
 
 ## Onderzoek: eerst breed, daarna kiezen
 
@@ -21,11 +21,11 @@ Alle vier worden na het brede onderzoek volledig gespecificeerd. Voor een eerlij
 
 We onderzoeken oorspronkelijke ontwerpgedachten, technische mechanismen, bewijs en eerdere fouten uit de repositories, oudere versies, boeken, bibliotheek en externe bronnen. Een vondst kan bij meerdere sporen horen. Zie de [onderzoeksindeling en werkwijze](research/ONDERZOEKSINDELING.md).
 
-## Eerst de functies, daarna de les
+## Eerst de techniek, daarna de les
 
 Het project onderzoekt een assistent die in bestaande digitale lessen kan worden aangesloten. De software krijgt de geldige lesversie, het leerdoel en de grenzen van de ondersteuning uit de leeromgeving. Welke beslissingen zonder model kunnen worden genomen en waar een model nodig blijft, is een onderzoeksvraag.
 
-Frans, 2 havo blijft een eerste beoogde demonstratie; rekenen in groep 7 is een tweede functioneel contrast om vakspecifieke controle te onderzoeken. De bestaande Franse casusschets is voorlopig. We schrijven nog geen volledige lesmethodes: eerst de functionele en technische vergelijking, dan een passende minimale inhoudelijke proef.
+Frans 2 havo en rekenen in groep 7 zijn eerdere kandidaten voor latere demonstraties. De bestaande casusschets blijft voorlopig. In fase 4a gebruiken we uitsluitend neutrale technische gegevens: geen vakinhoud, lespakket of tutorprompt. De inhoudelijke uitwerking volgt pas na de technische vergelijking en architectuurkeuze.
 
 Dit is onafhankelijk onderzoek, geïnspireerd op publieke onderwijsopgaven. Geen onderdeel van een bestaande Neon-methode en geen officiële samenwerking met Neon.
 
@@ -35,7 +35,8 @@ Neon meldde op 28 september 2026 ruim 1.500 aangesloten scholen met samen ongeve
 
 ## Documentatie
 
-- [Plan van aanpak v0.3](docs/PLAN.md)
+- [Plan van aanpak v0.4](docs/PLAN.md)
+- [Technische specificatie A–D v0.1](research/TECHNISCHE-SPECIFICATIE.md)
 - [Onderzoeksindeling en werkwijze](research/ONDERZOEKSINDELING.md)
 - [Bronnenregister: ronde 01](research/register/RONDE-01.md)
 - [Openbare afgeleide van het bronnenregister (29 van 87 repositories)](research/register/public-repositories.json)
@@ -51,6 +52,8 @@ Neon meldde op 28 september 2026 ruim 1.500 aangesloten scholen met samen ongeve
 
 ## Status
 
-Onderzoeksopzet v0.3: de brede verkenning is opnieuw geopend. Het volledige interne bronnenregister bevat 87 toegankelijke repositories; 29 openbaar en 58 privé. Het openbare register is alleen de afgeleide daarvan. Private bronnen, eerdere versies en de bibliotheek blijven onderdeel van het onderzoek. De eerste technische selectie blijft beschikbaar als vertrekpunt, niet als definitieve keuze. Eerst verzamelen en kritisch vergelijken, dan A–D specificeren. De definitieve architectuur, licentie-/hergebruikbesluiten en uitvoeringsproeven staan nog open. Er zijn nog geen werkende varianten, modelmetingen of leerlingresultaten in deze repository. De vakinhoud is een ontwerp dat nog door een vakdocent moet worden beoordeeld. Er zijn geen echte leerlinggegevens nodig voor de eerste benchmark.
+**27 november 2026: fase 4a gereed voor uitvoering.** De brede bronneninventarisatie (3a) en vergelijking van mechanismen (3b) zijn voor deze onderzoeksronde afgerond. De technische specificatie (3c) legt de verantwoordelijkheden, gegevenscontracten, uitvoeringsroutes, foutpaden en meting vast. Het interne onderzoeksregister blijft leidend voor de onderliggende bronnen en open vragen. De openbare index bevat de openbare afgeleide van de eerste inventarisatie (29 van 87 repositories), geen volledige actuele onderzoeksdekking.
+
+De volgende stap is één klein proefprogramma voor P01–P03: telemetrie en budget, toegangs- en versiegrenzen, routekeuze en uitvoercontrole. Gebruik neutrale gegevens, geïnjecteerde testadapters en nul echte inferentie. Er is nog geen proefcode uitgevoerd en er zijn geen modelmetingen of leerlingresultaten. De definitieve architectuur, hergebruikrechten, vakinhoud, modellen, hosting en budget voor echte inferentie blijven open.
 
 Geen aangetoonde besparing op een bestaand product. Een eigen model heeft geen externe tokenfactuur, maar wel reken-, hosting- en beheerkosten.

@@ -74,8 +74,10 @@ De brede inventarisatie eindigt niet op een willekeurig aantal bestanden. Voor d
 
 ## Status van A–D
 
-A (LLM-gestuurd), B (efficiënter LLM-gestuurd), C (hybride) en D (zelfgehoste hybride) blijven de beoogde vergelijkingshypothesen. De uitwerking is nog niet definitief. Onderzoek ook AI-first, logic-first, content-first, neuro-symbolische samenwerking, vooraf samengestelde instructies, bestaande lesfunctionaliteit zonder chatbot en andere alternatieven. Forceer geen vondst in A–D.
+De brede inventarisatie en kritische vergelijking zijn voor deze ronde afgerond. De interne bronregistratie blijft behouden, inclusief hiaten, tegenbewijs en alternatieven. Het onderzoek kan worden heropend bij materieel nieuw bewijs; er is geen volledige audit van alle repositories geclaimd.
 
-Leg na de verkenning per scenario vast: functies, menselijke en technische verantwoordelijkheden, gezaghebbende gegevens, lescontext, beslisregels, pipeline, modeltaken, uitvoeringsgrenzen, foutpaden, meetcontract, kosten en gebruik bij de gekozen schaalniveaus. A moet een eerlijke, competente referentie zijn. Een goedkoper systeem hoeft niet beter te werken. Pas na de specificatie kiezen we welke technische proeven als eerste zinvol zijn. Volledige vakinhoudelijke uitwerking volgt na de architectuurkeuze.
+A (reguliere LLM), B (geoptimaliseerde LLM met dezelfde modelrevisie), C (hybride) en D (zelfgehoste hybride zonder externe runtime-inferentie) zijn technisch uitgewerkt in de [specificatie v0.1](TECHNISCHE-SPECIFICATIE.md). De vier delen één contract en gewone softwarefuncties. Mechanismen kunnen binnen de varianten afzonderlijk worden onderzocht. De specificatie legt geen productiearchitectuur, definitief model, hostingkeuze of inhoud vast.
 
-Zie [het plan](../docs/PLAN.md), [eerste technische selectie](TECHNIEKAUDIT.md), [functionele analyse](FUNCTIONELE-EISEN.md) en [conceptproeven](../benchmarks/TECHNISCHE-PROEVEN.md). De huidige indeling is een ontwerpbesluit over het onderzoek. Zij bewijst geen werking van een tutor, leeropbrengst of kostenbesparing.
+De [minimale proeven P01–P03](../benchmarks/TECHNISCHE-PROEVEN.md) zijn gekozen voor fase 4a. Zij gebruiken abstracte fixtures en stub-adapters. Ze toetsen technische grenzen en daadwerkelijk bereikte routes, niet modelkwaliteit, vakinhoudelijke geschiktheid, leren of echte kosten. Latere inhoudelijke beoordeling, model- en hostingproeven blijven open.
+
+Zie het [plan v0.4](../docs/PLAN.md), de [eerste technische selectie](TECHNIEKAUDIT.md) en [functionele analyse](FUNCTIONELE-EISEN.md). De indeling blijft een onderzoekswerkwijze, geen voorgeschreven architectuur.

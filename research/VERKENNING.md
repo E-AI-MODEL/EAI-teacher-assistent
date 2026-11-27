@@ -1,6 +1,6 @@
 # Verdiepende verkenning — 27 november 2026
 
-> Status v0.3: Deze bevindingen blijven behouden als voorlopige bronnen. Zij begrenzen de heropende brede verkenning niet. Zie de [onderzoeksindeling](ONDERZOEKSINDELING.md).
+> Historische verkenning: deze bevindingen blijven voorlopige bronnen. De huidige technische uitwerking staat in de [specificatie v0.1](TECHNISCHE-SPECIFICATIE.md). Fase 4a toetst technische contracten; inhoudelijke uitwerking en definitieve hergebruikbesluiten blijven open.
 
 
 ## Aanleiding en afbakening
