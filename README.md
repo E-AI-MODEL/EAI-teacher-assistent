@@ -37,6 +37,8 @@ Neon meldde op 28 september 2026 ruim 1.500 aangesloten scholen met samen ongeve
 
 - [Plan van aanpak v0.3](docs/PLAN.md)
 - [Onderzoeksindeling en werkwijze](research/ONDERZOEKSINDELING.md)
+- [Bronnenregister: ronde 01](research/register/RONDE-01.md)
+- [Openbare repository-index](research/register/public-repositories.json)
 - [Verdiepend bronnenonderzoek](research/VERKENNING.md)
 - [Functionele vergelijking en ontwerpvoorwaarden](research/FUNCTIONELE-EISEN.md)
 - [Technische hergebruiksaudit](research/TECHNIEKAUDIT.md)
