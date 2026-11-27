@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "as_of": "2026-11-27",
-  "scope": "Openbare selectie. Geen volledige interne brondekking of nieuwe uitvoering.",
+  "scope": "Openbare selectie en tussenstand detailronde 09. Geen volledige interne broninhoud, integratietoets of nieuwe uitvoering.",
   "design_reference": "https://github.com/cathrynlavery/diagram-design/tree/795eec47fd376e5dda0b9e056a49520060cd2f13",
   "design_note": "Eigen HTML/SVG, ontwerpprincipes uit Diagram Design, kleuren van de bestaande projectillustratie. Geen upstream code of assets.",
   "sources": [
@@ -116,6 +116,294 @@
       "url": "https://github.com/E-AI-MODEL/EAI-teacher-assistent/blob/f19d9b8885fad221524a28dacd2a2aecae3aa056/research/TECHNIEKAUDIT.md",
       "kind": "Technische verkenning",
       "note": "Kandidaatmechanismen; geen nieuwe runtimeproef."
+    },
+    {
+      "id": "S15",
+      "title": "EAT_me · CycleManager / focused_rubric_ids",
+      "revision": "deda94ffb80c4c9b78f40afe23d2db09e65673ea",
+      "url": "https://github.com/E-AI-MODEL/EAT_me/blob/deda94ffb80c4c9b78f40afe23d2db09e65673ea/eatme/cycle.py",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, B02: Een klein relevant kader per beurt i.p.v. alle definities. Onbekende fase geeft lege set; wrap van buren ook bij loop=false. Volg echte promptconsumer."
+    },
+    {
+      "id": "S16",
+      "title": "EAT_me · EATRuntimeGatekeeper.evaluate_turn",
+      "revision": "deda94ffb80c4c9b78f40afe23d2db09e65673ea",
+      "url": "https://github.com/E-AI-MODEL/EAT_me/blob/deda94ffb80c4c9b78f40afe23d2db09e65673ea/eatme/engine.py",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, B03: Rewrite en observe apart meten; geen automatische tweede call of runtimeautoriteit afleiden."
+    },
+    {
+      "id": "S17",
+      "title": "EAT-inline · parse_references / validate_reference",
+      "revision": "0bd184f5408bddb9211b9684d7a0ada78a593b8b",
+      "url": "https://github.com/E-AI-MODEL/EAT-inline/blob/0bd184f5408bddb9211b9684d7a0ada78a593b8b/src/eat_inline.py",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, B05: Een syntactisch geldige ref kan inhoudelijk verkeerd, ingetrokken of onbekend zijn. Combineer identiteit met autorisatie, niet fuzzy-healing."
+    },
+    {
+      "id": "S18",
+      "title": "toon · assertExpectedCount / validateNoExtraTabularRows / validateNoBlankLinesInRange",
+      "revision": "7f8c2379fd4cd3399a0e41e79dcc807cdf2b8f3c",
+      "url": "https://github.com/E-AI-MODEL/toon/blob/7f8c2379fd4cd3399a0e41e79dcc807cdf2b8f3c/packages/toon/src/decode/validation.ts",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, B06: Syntaxvalidatie en roundtrip los van werkelijk tokenizerverbruik. Externe library/fork: licentie en versiecheck vóór hergebruik."
+    },
+    {
+      "id": "S19",
+      "title": "-rag-eat-starter-kit · load_corpus / HybridIndex / _minmax",
+      "revision": "1c98f0d04a179fc8df40383870c81d032385ee50",
+      "url": "https://github.com/E-AI-MODEL/-rag-eat-starter-kit/blob/1c98f0d04a179fc8df40383870c81d032385ee50/src/ragkit/retrieval.py",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, B07: Filter bronnen op toegestane groepen vóór rangschikking. Uniforme score is geen confidence. Opslagcompressie en retrievalkwaliteit zijn geen bewijs van modelkwaliteit."
+    },
+    {
+      "id": "S20",
+      "title": "-rag-eat-starter-kit · validate_boundary / compress_file / compress_tree",
+      "revision": "1c98f0d04a179fc8df40383870c81d032385ee50",
+      "url": "https://github.com/E-AI-MODEL/-rag-eat-starter-kit/blob/1c98f0d04a179fc8df40383870c81d032385ee50/src/ragkit/gzip_boundary.py",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, B08: Opslagbytes apart van tokens; compressie-/expansielimieten, checksums en exacte duplicate-identiteit testen."
+    },
+    {
+      "id": "S21",
+      "title": "eainesy · buildSymbolicPlan / validateNeuralRecheck",
+      "revision": "b1962011d2db745ce62dee332c12ec030e8e07f2",
+      "url": "https://github.com/E-AI-MODEL/eainesy/blob/b1962011d2db745ce62dee332c12ec030e8e07f2/research/nesy-cooperative/coordinator.mjs",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, B11: Kandidaat blijft unverified_model_claim; controller en transport apart toetsen. Historische P02/P03-resultaten staan in de bestaande atlas. SAT bewijst geen semantische juistheid."
+    },
+    {
+      "id": "S22",
+      "title": "eainesy · pumpQueue / startWorker / validCertificate",
+      "revision": "b1962011d2db745ce62dee332c12ec030e8e07f2",
+      "url": "https://github.com/E-AI-MODEL/eainesy/blob/b1962011d2db745ce62dee332c12ec030e8e07f2/src/lib/eainesy/z3-isolated.ts",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, B12: Per proces, geen productiecapaciteitsmeting. Timeout, kill en close onderscheiden. Solver toetst alleen formele invoer."
+    },
+    {
+      "id": "S23",
+      "title": "EAIwork- · apply / replay",
+      "revision": "69f5793f633ae6be6e22ef6c8eeeab5158fe147e",
+      "url": "https://github.com/E-AI-MODEL/EAIwork-/blob/69f5793f633ae6be6e22ef6c8eeeab5158fe147e/packages/core/src/replay.ts",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, B13: Checksum dekt alleen statusparen, niet volledige staat. Onbekende event/replayconfig en wijzigingen in dependencies toetsen."
+    },
+    {
+      "id": "S24",
+      "title": "EAIwork- · observeLocalEvidence",
+      "revision": "69f5793f633ae6be6e22ef6c8eeeab5158fe147e",
+      "url": "https://github.com/E-AI-MODEL/EAIwork-/blob/69f5793f633ae6be6e22ef6c8eeeab5158fe147e/packages/evidence/src/observe.ts",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, B14: Geen semantische juistheid of verhoging van bewijsstatus uit een exact anker. Read-only sidecar."
+    },
+    {
+      "id": "S25",
+      "title": "EAIwork- · canRead / canWrite / canRunCheck / canRunWorker / canAudit",
+      "revision": "69f5793f633ae6be6e22ef6c8eeeab5158fe147e",
+      "url": "https://github.com/E-AI-MODEL/EAIwork-/blob/69f5793f633ae6be6e22ef6c8eeeab5158fe147e/packages/server/src/authz.ts",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, B15: Volg werkelijk serverpad en egress; execute-only betekent niet automatisch geheimhouding of correcte aflevering."
+    },
+    {
+      "id": "S26",
+      "title": "shadowseed-pro · decay_traces / reactivate_by_text / expire_vector_only_open_seeds",
+      "revision": "7427181c50fabae8f9cbd112c3e549e752edf914",
+      "url": "https://github.com/E-AI-MODEL/shadowseed-pro/blob/7427181c50fabae8f9cbd112c3e549e752edf914/src/shadowseed/lifecycle.py",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, B16: Tijd en turns valideren; reactivering geeft geen nieuw bewijs of gewicht. Autoriteit bij daadwerkelijk gebruik controleren."
+    },
+    {
+      "id": "S27",
+      "title": "shadowseed-pro · RecurrenceClusterer.add / bump / _credit_observation",
+      "revision": "7427181c50fabae8f9cbd112c3e549e752edf914",
+      "url": "https://github.com/E-AI-MODEL/shadowseed-pro/blob/7427181c50fabae8f9cbd112c3e549e752edf914/src/shadowseed/recurrence_clustering.py",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, B17: Legacy zonder ref behoudt member-count. Unieke opslagrecord ≠ onafhankelijke observatie; toets clusterdrift, lege/onjuiste refs, herimport."
+    },
+    {
+      "id": "S28",
+      "title": "shadowseed-pro · recognize / parse_answer",
+      "revision": "7427181c50fabae8f9cbd112c3e549e752edf914",
+      "url": "https://github.com/E-AI-MODEL/shadowseed-pro/blob/7427181c50fabae8f9cbd112c3e549e752edf914/src/shadowseed/recurrence_recognition.py",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, B18: Slechts herkenningssignaal, geen bewijs/weight/authority. Vergelijk met eenvoudige exacte en semantische clustering; echte extra calls meetellen."
+    },
+    {
+      "id": "S29",
+      "title": "shadowseed · test_atomic_seed_passes / test_broad_seed_fails",
+      "revision": "5c0211114993a9cc47f16a669b38960598a50f27",
+      "url": "https://github.com/E-AI-MODEL/shadowseed/blob/5c0211114993a9cc47f16a669b38960598a50f27/tests/test_atomic_seed_validation.py",
+      "kind": "Testinspectie",
+      "note": "Ronde 09, B19: Aanwezige test, niet uitgevoerd. Implementatie en grensgevallen moeten nog worden gelezen; geen bewezen algemene atomiciteit."
+    },
+    {
+      "id": "S30",
+      "title": "shadowseed-agent-lab · SeedProposer / RetrieverProtocol / AgentLabHarness.run_loop",
+      "revision": "d50971ac8aed51e1f4442ff3baac9328e36ad75e",
+      "url": "https://github.com/E-AI-MODEL/shadowseed-agent-lab/blob/d50971ac8aed51e1f4442ff3baac9328e36ad75e/shadowseed_agent_lab/harness.py",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, B20: Geen autoriteit vanuit retrieval of voorstel. Bounded loop, stop/fixpoint en caller verder controleren; fake proposer geen modelkwaliteit."
+    },
+    {
+      "id": "S31",
+      "title": "shadow-seed-study · searchSeedsTool / getRunTool / recentSeedsTool",
+      "revision": "ff639cc8c079cabef06c4d8cd9bcfb90c72a3b40",
+      "url": "https://github.com/E-AI-MODEL/shadow-seed-study/blob/ff639cc8c079cabef06c4d8cd9bcfb90c72a3b40/src/lib/mcp/tools/lab.ts",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, B21: Toolaanroep of JSON-resultaat bewijst geen autorisatie of bronjuistheid; lees werkelijk scopefilter."
+    },
+    {
+      "id": "S32",
+      "title": "EAI-lab- · EventStore.append / all / for_case",
+      "revision": "7c76ed3426e1a478c726ceecc2136e96fe671c95",
+      "url": "https://github.com/E-AI-MODEL/EAI-lab-/blob/7c76ed3426e1a478c726ceecc2136e96fe671c95/src/eai_lab/event_store.py",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, B22: Proceslokaal. Fake vs real afdwingen bij producer en import; geen duurzaamheid, onafhankelijke evidence of providerusage afleiden."
+    },
+    {
+      "id": "S33",
+      "title": "Caveman-eduNL · docs/OUTPUT_CONTRACTS.md",
+      "revision": "342e88d98a35640cfb9431280dfa6e34e2a7a4a8",
+      "url": "https://github.com/E-AI-MODEL/Caveman-eduNL/blob/342e88d98a35640cfb9431280dfa6e34e2a7a4a8/docs/OUTPUT_CONTRACTS.md",
+      "kind": "Ontwerp",
+      "note": "Ronde 09, C04: Bruikbaar als ontwerpreferentie voor taakspecifieke vorm en omvang; documentatie, geen gemeten tokensparing."
+    },
+    {
+      "id": "S34",
+      "title": "door0101 · src/components/chat/AuthenticatedChatOverlay.tsx",
+      "revision": "95b57b6caf0140317d69caabc7d239edcac65904",
+      "url": "https://github.com/E-AI-MODEL/door0101/blob/95b57b6caf0140317d69caabc7d239edcac65904/src/components/chat/AuthenticatedChatOverlay.tsx",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, C08: Bruikbare scheiding tussen bekende velden en vrije tekst; serverautorisatie, concurrentie en feitelijke faseovergangen nog controleren."
+    },
+    {
+      "id": "S35",
+      "title": "eai-gamma-portal · src/lib/advice-builder.ts",
+      "revision": "444d1373f83dcd2d5ace6f0ad931c448874b7807",
+      "url": "https://github.com/E-AI-MODEL/eai-gamma-portal/blob/444d1373f83dcd2d5ace6f0ad931c448874b7807/src/lib/advice-builder.ts",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, C10: Relevante traceerbare bevindingen-naar-advies-laag. matchedNeedle is alleen tekstindicatie, niet automatisch bewijs van werking."
+    },
+    {
+      "id": "S36",
+      "title": "EAI-standard · schemas/conformance-result.schema.json",
+      "revision": "dd674400c5ce394b90a80b944f672dc90b3c912a",
+      "url": "https://github.com/E-AI-MODEL/EAI-standard/blob/dd674400c5ce394b90a80b944f672dc90b3c912a/schemas/conformance-result.schema.json",
+      "kind": "Schema-inspectie",
+      "note": "Ronde 09, C14: Essentieel onderscheid: geldige structuur en volledigheid van kennis zijn verschillende dingen. Historisch schema; niet automatisch huidige standaard of certificering."
+    },
+    {
+      "id": "S37",
+      "title": "EAIhome · src/eaihome/store.py",
+      "revision": "52356fc75097da7f6361739f29d49182cc9d0b2a",
+      "url": "https://github.com/E-AI-MODEL/EAIhome/blob/52356fc75097da7f6361739f29d49182cc9d0b2a/src/eaihome/store.py",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, D02: Bronopslag, integriteitscontrole en herbouwbare zoekindex zijn in code aangetroffen. De CLI-groepsfilter is geen echte authenticatie. Tekstmatch bewijst niet dat een claim klopt."
+    },
+    {
+      "id": "S38",
+      "title": "EAIhome · src/eaihome/search.py",
+      "revision": "52356fc75097da7f6361739f29d49182cc9d0b2a",
+      "url": "https://github.com/E-AI-MODEL/EAIhome/blob/52356fc75097da7f6361739f29d49182cc9d0b2a/src/eaihome/search.py",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, D02: Bronopslag, integriteitscontrole en herbouwbare zoekindex zijn in code aangetroffen. De CLI-groepsfilter is geen echte authenticatie. Tekstmatch bewijst niet dat een claim klopt."
+    },
+    {
+      "id": "S39",
+      "title": "Examenreglementcheck · app/parser.py",
+      "revision": "d72dc4806566b9c05f0d8f90f41b972390d5beb5",
+      "url": "https://github.com/E-AI-MODEL/Examenreglementcheck/blob/d72dc4806566b9c05f0d8f90f41b972390d5beb5/app/parser.py",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, D07: Scheiding documentidentiteit, inhoud, parseversie en bronstatus. Extractiefouten moeten bewaard blijven; hash is geen autorisatie of juridische juistheidscontrole."
+    },
+    {
+      "id": "S40",
+      "title": "gpt-oss · tests/test_responses_api.py",
+      "revision": "89fe402d10a59879781a1eb0a64affdf4c278a4d",
+      "url": "https://github.com/E-AI-MODEL/gpt-oss/blob/89fe402d10a59879781a1eb0a64affdf4c278a4d/tests/test_responses_api.py",
+      "kind": "Testinspectie",
+      "note": "Ronde 09, D10: Protocoltests met stubs los houden van echte inferentie, snelheid en modelkwaliteit. Externe codebron; tests niet uitgevoerd."
+    },
+    {
+      "id": "S41",
+      "title": "legit-eai-ai-tool · src/data/sagaPresets.ts",
+      "revision": "4d4c49a9a0f793c2ce8a17d6a273bc2c7e90413c",
+      "url": "https://github.com/E-AI-MODEL/legit-eai-ai-tool/blob/4d4c49a9a0f793c2ce8a17d6a273bc2c7e90413c/src/data/sagaPresets.ts",
+      "kind": "Data-inspectie",
+      "note": "Ronde 09, D12: Vaste taken en templates als data; geen bewezen juridische correctheid of runtime-policy in gelezen bestand."
+    },
+    {
+      "id": "S42",
+      "title": "malaga-magic-maker · supabase/functions/receipt-extract/validation.test.ts",
+      "revision": "090f799164ea79de45f60f831287d6e83b81dd03",
+      "url": "https://github.com/E-AI-MODEL/malaga-magic-maker/blob/090f799164ea79de45f60f831287d6e83b81dd03/supabase/functions/receipt-extract/validation.test.ts",
+      "kind": "Testinspectie",
+      "note": "Ronde 09, D13: Sterke concrete negatieve fixtures voor input- en privacycontract. Testcode gelezen, niet uitgevoerd; corresponderende productiehandler nog volgen."
+    },
+    {
+      "id": "S43",
+      "title": "NGBSE20.1 · src/ngbse20/runtime/orchestrator.py",
+      "revision": "d6e0d49975bac15583886de49b828324c07fe519",
+      "url": "https://github.com/E-AI-MODEL/NGBSE20.1/blob/d6e0d49975bac15583886de49b828324c07fe519/src/ngbse20/runtime/orchestrator.py",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, E02: Expliciete fases en stopcondities. Controleer de foutcontracten per fase en begrens dynamische loaders. Geen uitvoeringstest."
+    },
+    {
+      "id": "S44",
+      "title": "NGBSE20.1 · src/ngbse20/runtime/collector_manager.py",
+      "revision": "d6e0d49975bac15583886de49b828324c07fe519",
+      "url": "https://github.com/E-AI-MODEL/NGBSE20.1/blob/d6e0d49975bac15583886de49b828324c07fe519/src/ngbse20/runtime/collector_manager.py",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, E02: Expliciete fases en stopcondities. Controleer de foutcontracten per fase en begrens dynamische loaders. Geen uitvoeringstest."
+    },
+    {
+      "id": "S45",
+      "title": "open-lovable · lib/file-parser.ts",
+      "revision": "efdef874d7c24a9e48fdb0f96652021e96fd9f92",
+      "url": "https://github.com/E-AI-MODEL/open-lovable/blob/efdef874d7c24a9e48fdb0f96652021e96fd9f92/lib/file-parser.ts",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, E04: Gerichte bronselectie vanuit codestructuur in plaats van alle bestanden in prompt. Regexheuristiek, geen robuuste AST of uitvoeringstest; externe codebron."
+    },
+    {
+      "id": "S46",
+      "title": "presentatie-door010 · src/lib/mcp/tools/get-conversation-messages.ts",
+      "revision": "01b83191e95129bf7b010b728b2e240683a7ee6b",
+      "url": "https://github.com/E-AI-MODEL/presentatie-door010/blob/01b83191e95129bf7b010b728b2e240683a7ee6b/src/lib/mcp/tools/get-conversation-messages.ts",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, E06: Selectieve, gebruikersgebonden toolroute. Werkelijke RLS en intrekking apart verifiëren; geen echte gespreksrecords opgevraagd."
+    },
+    {
+      "id": "S47",
+      "title": "project-pim · src/lib/pim/modelIntegrity.ts",
+      "revision": "840ad1f70b5d86eb9058b08f8d9d649b8773f243",
+      "url": "https://github.com/E-AI-MODEL/project-pim/blob/840ad1f70b5d86eb9058b08f8d9d649b8773f243/src/lib/pim/modelIntegrity.ts",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, E07: Zeer relevant: lokale eerste hash is geen onafhankelijke verificatie; controleer feitelijk uitgaande payload en bestemming. modelVerified-default nader toetsen."
+    },
+    {
+      "id": "S48",
+      "title": "project-pim · src/lib/pim/engine/engine.ts",
+      "revision": "840ad1f70b5d86eb9058b08f8d9d649b8773f243",
+      "url": "https://github.com/E-AI-MODEL/project-pim/blob/840ad1f70b5d86eb9058b08f8d9d649b8773f243/src/lib/pim/engine/engine.ts",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, E07: Zeer relevant: lokale eerste hash is geen onafhankelijke verificatie; controleer feitelijk uitgaande payload en bestemming. modelVerified-default nader toetsen."
+    },
+    {
+      "id": "S49",
+      "title": "website · scripts/build_site.py",
+      "revision": "18140dee2ab0e74007bff3dba7218dd1e3d89401",
+      "url": "https://github.com/E-AI-MODEL/website/blob/18140dee2ab0e74007bff3dba7218dd1e3d89401/scripts/build_site.py",
+      "kind": "Code-inspectie",
+      "note": "Ronde 09, E13: Data en bouwlogica gescheiden. De actuele release, runtime en browserwerking zijn niet in deze passage gecontroleerd."
+    },
+    {
+      "id": "S50",
+      "title": "LeerlingMemo2 · test/rules/firestore-rules.spec.ts",
+      "revision": "6e8fa371812ac1b2905e6f125b0f73c4206eaff9",
+      "url": "https://github.com/eaimodel5/LeerlingMemo2/blob/6e8fa371812ac1b2905e6f125b0f73c4206eaff9/test/rules/firestore-rules.spec.ts",
+      "kind": "Testinspectie",
+      "note": "Ronde 09, F08: Gerichte test voor actuele gebruiksrechten, ook na intrekking. Testcode gelezen, niet uitgevoerd; koppeling aan actieve regels nog te controleren."
     }
   ],
   "diagrams": [
@@ -167,6 +455,13 @@
       "title": "Orchestrator: eerst een toegestane route",
       "subtitle": "C/D: beslis alleen met actuele gegevens. Onbekend is geen toestemming.",
       "description": "Hybride route: gewone functie eerst; experimentele regel MATCH naar engine, UNKNOWN alleen naar toegestane modeltaak, DENY afwijzen. Iedere af te leveren uitkomst vereist actuele rechten en revisie."
+    },
+    {
+      "id": "d08",
+      "file": "d08-detailronde.svg",
+      "title": "Vijf onderzoeksgroepen uit de detailronde",
+      "subtitle": "Concrete bronvondsten naast elkaar. Geen voorgeschreven uitvoeringsvolgorde.",
+      "description": "Vijf groepen met bronidentiteit, selectieve context, toestand, routering en controle. De broncodes verwijzen naar geïnspecteerde openbare bestanden; de vragen zijn nog niet beantwoord voor Teacher Assistant."
     }
   ],
   "blocks": [
@@ -730,6 +1025,434 @@
       ],
       "status": "projectontwerp",
       "note": ""
+    },
+    {
+      "id": "D08-BRON",
+      "diagram": "d08",
+      "label": "Bronidentiteit en opslag",
+      "source_ids": [
+        "S37",
+        "S38",
+        "S39"
+      ],
+      "status": "historische_bron",
+      "note": "Onderzoeksgroepering, geen uitvoeringsvolgorde. Records D02, D07; integratietoets open."
+    },
+    {
+      "id": "D08-CONTEXT",
+      "diagram": "d08",
+      "label": "Selectieve context",
+      "source_ids": [
+        "S15",
+        "S17",
+        "S18",
+        "S19"
+      ],
+      "status": "historische_bron",
+      "note": "Onderzoeksgroepering, geen uitvoeringsvolgorde. Records B02, B05, B06, B07; integratietoets open."
+    },
+    {
+      "id": "D08-STATE",
+      "diagram": "d08",
+      "label": "Toestand en geheugen",
+      "source_ids": [
+        "S23",
+        "S26",
+        "S27"
+      ],
+      "status": "historische_bron",
+      "note": "Onderzoeksgroepering, geen uitvoeringsvolgorde. Records B13, B16, B17; integratietoets open."
+    },
+    {
+      "id": "D08-ROUTE",
+      "diagram": "d08",
+      "label": "Routering en uitvoering",
+      "source_ids": [
+        "S21",
+        "S22",
+        "S43",
+        "S44"
+      ],
+      "status": "historische_bron",
+      "note": "Onderzoeksgroepering, geen uitvoeringsvolgorde. Records B11, B12, E02; integratietoets open."
+    },
+    {
+      "id": "D08-CHECK",
+      "diagram": "d08",
+      "label": "Controle en bevoegdheid",
+      "source_ids": [
+        "S24",
+        "S25",
+        "S32",
+        "S47",
+        "S48",
+        "S50"
+      ],
+      "status": "historische_bron",
+      "note": "Onderzoeksgroepering, geen uitvoeringsvolgorde. Records B14, B15, B22, E07, F08; integratietoets open."
     }
-  ]
+  ],
+  "detail_round": {
+    "id": "09",
+    "as_of": "2026-11-27",
+    "scope": "Openbare afgeleide van een interne bronpassage; geen private bronverwijzingen.",
+    "coverage": {
+      "repository_names": 92,
+      "empty_repositories": 5,
+      "own_project": 1,
+      "readme_only": 2,
+      "explicit_limited_depth": 15,
+      "targeted_source_passages": 86
+    },
+    "public_records": 34,
+    "public_repositories": 27,
+    "phase_4a": "NO-GO",
+    "runtime_tests_executed": false,
+    "record_file": "../../../research/register/RONDE-09.md",
+    "records": [
+      {
+        "id": "B02",
+        "title": "EAT_me",
+        "mechanism": "Cyclus over zeven velden met startkeuze, loop-flag en actieve index; focus-set omvat buurvelden via modulo.",
+        "boundary": "Een klein relevant kader per beurt i.p.v. alle definities. Onbekende fase geeft lege set; wrap van buren ook bij loop=false. Volg echte promptconsumer.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S15"
+        ]
+      },
+      {
+        "id": "B03",
+        "title": "EAT_me",
+        "mechanism": "Laadt rubrics, gebruikt GatekeeperOrchestrator, optionele rewrite_func en rapportage per runtime-mode.",
+        "boundary": "Rewrite en observe apart meten; geen automatische tweede call of runtimeautoriteit afleiden.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S16"
+        ]
+      },
+      {
+        "id": "B05",
+        "title": "EAT-inline",
+        "mechanism": "Storage-neutrale Reference-records en expliciete foutcodes voor ontbrekende marker, type, key, separator, ongeldige identifier.",
+        "boundary": "Een syntactisch geldige ref kan inhoudelijk verkeerd, ingetrokken of onbekend zijn. Combineer identiteit met autorisatie, niet fuzzy-healing.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S17"
+        ]
+      },
+      {
+        "id": "B06",
+        "title": "toon",
+        "mechanism": "Strict controleert aantallen, extra lijst-/tabelrijen en lege regels; onderscheid datarecord en key-value op delimiter/colon.",
+        "boundary": "Syntaxvalidatie en roundtrip los van werkelijk tokenizerverbruik. Externe library/fork: licentie en versiecheck vóór hergebruik.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S18"
+        ]
+      },
+      {
+        "id": "B07",
+        "title": "-rag-eat-starter-kit",
+        "mechanism": "Frontmatter, datumvalidatie, bronidentiteit en duplicate-reject voor md/md.gz; metadatafilter, BM25/cosine-merge en normalisatie. Gelijke scores krijgen uniform 1/n.",
+        "boundary": "Filter bronnen op toegestane groepen vóór rangschikking. Uniforme score is geen confidence. Opslagcompressie en retrievalkwaliteit zijn geen bewijs van modelkwaliteit.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S19"
+        ]
+      },
+      {
+        "id": "B08",
+        "title": "-rag-eat-starter-kit",
+        "mechanism": "Aparte opslaggrens; reproduceerbare gzip met filename='' en mtime=0; drempel 256 KiB.",
+        "boundary": "Opslagbytes apart van tokens; compressie-/expansielimieten, checksums en exacte duplicate-identiteit testen.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S20"
+        ]
+      },
+      {
+        "id": "B11",
+        "title": "eainesy",
+        "mechanism": "FreezeDeep van plan; observeC2 anchored/rejected claims, policy en taskcheck; alleen bij materiaal gat ticket met maxModelCalls=1 en noNewUserFacingText; ABSTAIN/KEEP_CLARIFY.",
+        "boundary": "Kandidaat blijft unverified_model_claim; controller en transport apart toetsen. Historische P02/P03-resultaten staan in de bestaande atlas. SAT bewijst geen semantische juistheid.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S21"
+        ]
+      },
+      {
+        "id": "B12",
+        "title": "eainesy",
+        "mechanism": "Vaste workerroute, max 4 workers, FIFO 8, wachttijd 2 s, workerdeadline 5 s; slot pas vrij bij close; schema certificate met sat/unsat/unknown/skipped.",
+        "boundary": "Per proces, geen productiecapaciteitsmeting. Timeout, kill en close onderscheiden. Solver toetst alleen formele invoer.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S22"
+        ]
+      },
+      {
+        "id": "B13",
+        "title": "EAIwork-",
+        "mechanism": "Eventvalidatie vóór mutatie, clone van atom; gewijzigde waarde wist evidence; deriveAll na replay, checksum van afgeleide status.",
+        "boundary": "Checksum dekt alleen statusparen, niet volledige staat. Onbekende event/replayconfig en wijzigingen in dependencies toetsen.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S23"
+        ]
+      },
+      {
+        "id": "B14",
+        "title": "EAIwork-",
+        "mechanism": "Version-pinned excerpt; ref-validatie, duplicates, exacte quote/offset; uitkomst ANCHORED_UNVERIFIED en SEMANTIC_REVIEW_REQUIRED; semanticSupport NOT_EVALUATED; authorityRaised false.",
+        "boundary": "Geen semantische juistheid of verhoging van bewijsstatus uit een exact anker. Read-only sidecar.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S24"
+        ]
+      },
+      {
+        "id": "B15",
+        "title": "EAIwork-",
+        "mechanism": "Lees-, schrijf-, check-, worker- en auditrechten afzonderlijk per scope, principalvalidatie.",
+        "boundary": "Volg werkelijk serverpad en egress; execute-only betekent niet automatisch geheimhouding of correcte aflevering.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S25"
+        ]
+      },
+      {
+        "id": "B16",
+        "title": "shadowseed-pro",
+        "mechanism": "Exponentiële traceverval, afzonderlijke dormant TTL, terminal expiry; reactivering van match naar NEW, trace begrensd.",
+        "boundary": "Tijd en turns valideren; reactivering geeft geen nieuw bewijs of gewicht. Autoriteit bij daadwerkelijk gebruik controleren.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S26"
+        ]
+      },
+      {
+        "id": "B17",
+        "title": "shadowseed-pro",
+        "mechanism": "Cosine centroidclustering met aparte occurrence credits per observation_ref; repeated ref telt niet opnieuw; auto min occurrences 2–4 afhankelijk van turns.",
+        "boundary": "Legacy zonder ref behoudt member-count. Unieke opslagrecord ≠ onafhankelijke observatie; toets clusterdrift, lege/onjuiste refs, herimport.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S27"
+        ]
+      },
+      {
+        "id": "B18",
+        "title": "shadowseed-pro",
+        "mechanism": "Eén modelvraag over terugkerend gat, parse van mapping, embedding-floor als ondergrens; failure → None.",
+        "boundary": "Slechts herkenningssignaal, geen bewijs/weight/authority. Vergelijk met eenvoudige exacte en semantische clustering; echte extra calls meetellen.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S28"
+        ]
+      },
+      {
+        "id": "B19",
+        "title": "shadowseed",
+        "mechanism": "Positief en negatief geval voor is_atomic_seed: één afgebakende kandidaat tegenover brede bundel.",
+        "boundary": "Aanwezige test, niet uitgevoerd. Implementatie en grensgevallen moeten nog worden gelezen; geen bewezen algemene atomiciteit.",
+        "kind": "Testinspectie",
+        "source_ids": [
+          "S29"
+        ]
+      },
+      {
+        "id": "B20",
+        "title": "shadowseed-agent-lab",
+        "mechanism": "Proposer en evidence lookup als gescheiden interfaces; nieuwe kandidaat zonder gewicht door Gate; gate-log; probes voor promoted IDs.",
+        "boundary": "Geen autoriteit vanuit retrieval of voorstel. Bounded loop, stop/fixpoint en caller verder controleren; fake proposer geen modelkwaliteit.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S30"
+        ]
+      },
+      {
+        "id": "B21",
+        "title": "shadow-seed-study",
+        "mechanism": "Read-side tools voor seed-, run- en statusselectie; enumstatus en beperkte records.",
+        "boundary": "Toolaanroep of JSON-resultaat bewijst geen autorisatie of bronjuistheid; lees werkelijk scopefilter.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S31"
+        ]
+      },
+      {
+        "id": "B22",
+        "title": "EAI-lab-",
+        "mechanism": "Real/simulation namespaces, shape-check, duplicate event-id reject, deepcopy bij schrijven/lezen.",
+        "boundary": "Proceslokaal. Fake vs real afdwingen bij producer en import; geen duurzaamheid, onafhankelijke evidence of providerusage afleiden.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S32"
+        ]
+      },
+      {
+        "id": "C04",
+        "title": "Caveman-eduNL",
+        "mechanism": "Afzonderlijke outputcontracten voor teach/check/scaffold, met acceptatiecriteria en behoud van betekenis.",
+        "boundary": "Bruikbaar als ontwerpreferentie voor taakspecifieke vorm en omvang; documentatie, geen gemeten tokensparing.",
+        "kind": "Ontwerp",
+        "source_ids": [
+          "S33"
+        ]
+      },
+      {
+        "id": "C08",
+        "title": "door0101",
+        "mechanism": "sectorToSchoolType, bekende slots, runPhaseDetector, sendMessageRef en sendMessage: client houdt gesprek en fasegegevens bij.",
+        "boundary": "Bruikbare scheiding tussen bekende velden en vrije tekst; serverautorisatie, concurrentie en feitelijke faseovergangen nog controleren.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S34"
+        ]
+      },
+      {
+        "id": "C10",
+        "title": "eai-gamma-portal",
+        "mechanism": "buildAdvice, groupAdvice, summarizeAdvice, toVerdict: bevindingen koppelen aan SSOT-eisen, URL/pointer en status Klopt/Mist bewijs/Onvoldoende info.",
+        "boundary": "Relevante traceerbare bevindingen-naar-advies-laag. matchedNeedle is alleen tekstindicatie, niet automatisch bewijs van werking.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S35"
+        ]
+      },
+      {
+        "id": "C14",
+        "title": "EAI-standard",
+        "mechanism": "profile CP01–CP06, standard_version, conformant/non_conformant en afzonderlijk information_state complete/contains_unknowns/incomplete, diagnostics, retained_unknowns en extensions; additionalProperties false.",
+        "boundary": "Essentieel onderscheid: geldige structuur en volledigheid van kennis zijn verschillende dingen. Historisch schema; niet automatisch huidige standaard of certificering.",
+        "kind": "Schema-inspectie",
+        "source_ids": [
+          "S36"
+        ]
+      },
+      {
+        "id": "D02",
+        "title": "EAIhome",
+        "mechanism": "add_file, object_path en verify: SHA256 over originele bytes, content-addressed opslag, aparte bronrecords met groep en revisie, tijdelijke file plus os.replace, integriteitscontrole. rebuild/chunks/search/versions: herbouwbare SQLite FTS-index, groepsfilter en samenvoeging van treffers op blob met versieherkomst.",
+        "boundary": "Bronopslag, integriteitscontrole en herbouwbare zoekindex zijn in code aangetroffen. De CLI-groepsfilter is geen echte authenticatie. Tekstmatch bewijst niet dat een claim klopt.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S37",
+          "S38"
+        ]
+      },
+      {
+        "id": "D07",
+        "title": "Examenreglementcheck",
+        "mechanism": "_sha256, expected_exam_year, _kind, parse_docx, parse_pdf met OCR-fallback en expliciete lege-tekstmelding. parse_document levert document-ID naast contenthash, parser_version, jaar/status en metadata.",
+        "boundary": "Scheiding documentidentiteit, inhoud, parseversie en bronstatus. Extractiefouten moeten bewaard blijven; hash is geen autorisatie of juridische juistheidscontrole.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S39"
+        ]
+      },
+      {
+        "id": "D10",
+        "title": "gpt-oss",
+        "mechanism": "stub_infer_next_token, test_client en test_health_check met verwachte HTTP 200.",
+        "boundary": "Protocoltests met stubs los houden van echte inferentie, snelheid en modelkwaliteit. Externe codebron; tests niet uitgevoerd.",
+        "kind": "Testinspectie",
+        "source_ids": [
+          "S40"
+        ]
+      },
+      {
+        "id": "D12",
+        "title": "legit-eai-ai-tool",
+        "mechanism": "Getypeerde LegalPreset, prompt_template en categoriegegevens.",
+        "boundary": "Vaste taken en templates als data; geen bewezen juridische correctheid of runtime-policy in gelezen bestand.",
+        "kind": "Data-inspectie",
+        "source_ids": [
+          "S41"
+        ]
+      },
+      {
+        "id": "D13",
+        "title": "malaga-magic-maker",
+        "mechanism": "Tests voor lidmaatschap, weigering gearchiveerde context, inline afbeeldingssignatuur, afwijzing remote/SVG/vals, expliciete toestemming en afwijzing ongewenste identiteit-/tripvelden.",
+        "boundary": "Sterke concrete negatieve fixtures voor input- en privacycontract. Testcode gelezen, niet uitgevoerd; corresponderende productiehandler nog volgen.",
+        "kind": "Testinspectie",
+        "source_ids": [
+          "S42"
+        ]
+      },
+      {
+        "id": "E02",
+        "title": "NGBSE20.1",
+        "mechanism": "PipelineOrchestrator: validatie vóór collectie, regels, score, prognose, seedvoorstel, blindspots en BALLM. Geblokkeerde validatie levert een trace. CollectorManager gebruikt een registry en controleert credentials en allowlist.",
+        "boundary": "Expliciete fases en stopcondities. Controleer de foutcontracten per fase en begrens dynamische loaders. Geen uitvoeringstest.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S43",
+          "S44"
+        ]
+      },
+      {
+        "id": "E04",
+        "title": "open-lovable",
+        "mechanism": "parseJavaScriptFile, extractImports, extractExports, extractComponentInfo, determineFileType en buildComponentTree.",
+        "boundary": "Gerichte bronselectie vanuit codestructuur in plaats van alle bestanden in prompt. Regexheuristiek, geen robuuste AST of uitvoeringstest; externe codebron.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S45"
+        ]
+      },
+      {
+        "id": "E06",
+        "title": "presentatie-door010",
+        "mechanism": "supabaseForUser; toolcontract met UUID conversation_id en maximum 200 berichten; eerst gesprekcontrole, vervolgens rol/content/created_at lezen.",
+        "boundary": "Selectieve, gebruikersgebonden toolroute. Werkelijke RLS en intrekking apart verifiëren; geen echte gespreksrecords opgevraagd.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S46"
+        ]
+      },
+      {
+        "id": "E07",
+        "title": "project-pim",
+        "mechanism": "hasStaticProductionHash, verifyLocalPin, sha256Hex: productiehash versus lokale pin/placeholder. evaluate, requestAction, computePayloadType: effectieve draft, beleidscontrole en guard vóór actie.",
+        "boundary": "Zeer relevant: lokale eerste hash is geen onafhankelijke verificatie; controleer feitelijk uitgaande payload en bestemming. modelVerified-default nader toetsen.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S47",
+          "S48"
+        ]
+      },
+      {
+        "id": "E13",
+        "title": "website",
+        "mechanism": "load_workforms, load_didactic_models en validate_public_workform_language: statische sitebuild vanuit JSON.",
+        "boundary": "Data en bouwlogica gescheiden. De actuele release, runtime en browserwerking zijn niet in deze passage gecontroleerd.",
+        "kind": "Code-inspectie",
+        "source_ids": [
+          "S49"
+        ]
+      },
+      {
+        "id": "F03",
+        "title": "wihtml",
+        "mechanism": "Ontwerpscheiding tussen bewerkbare inhoud, herbruikbare speler en standaarden los van hosting.",
+        "boundary": "Interesse: data als uitvoerbaar lesartefact. Documentatie is geen live bewijs; spelerbron nog verdiepen.",
+        "kind": "Ontwerp",
+        "source_ids": [
+          "S01"
+        ]
+      },
+      {
+        "id": "F08",
+        "title": "eaimodel5/LeerlingMemo2",
+        "mechanism": "Negatieve autorisatietests: onbekende gebruiker geweigerd, geen rolverhoging/impersonatie of schrijven andere sessie; na code-intrekking ook bestaande sessie geen toegang.",
+        "boundary": "Gerichte test voor actuele gebruiksrechten, ook na intrekking. Testcode gelezen, niet uitgevoerd; koppeling aan actieve regels nog te controleren.",
+        "kind": "Testinspectie",
+        "source_ids": [
+          "S50"
+        ]
+      }
+    ]
+  }
 }

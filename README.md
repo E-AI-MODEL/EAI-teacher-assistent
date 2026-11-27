@@ -17,11 +17,13 @@ De technische uitwerking van A–D staat in de [specificatie v0.1](research/TECH
 
 ## Visuele onderzoeksatlas
 
-[Open de onderzoeksatlas](docs/illustraties/atlas/README.md) met zeven diagrammen: eerdere bronvondsten, ontwerpgeschiedenis, veertien mechanismen, de vergelijking A–D, geplande verificatie, historische proefresultaten en de hybride routering.
+[Open de onderzoeksatlas](docs/illustraties/atlas/README.md) met acht diagrammen: eerdere bronvondsten, ontwerpgeschiedenis, veertien mechanismen, de vergelijking A–D, geplande verificatie, historische proefresultaten, de hybride routering en vijf onderzoeksgroepen uit de detailronde.
 
 ![Vier vergelijkingsroutes binnen hetzelfde technische contract](docs/illustraties/atlas/d04-varianten-abcd.svg)
 
 De atlas bevat uitsluitend openbare bronnen en ontwerpafspraken. Bron-ID's en bewijsstatus staan in een afzonderlijk register. Ook beschikbaar als [zelfstandig HTML-bestand](docs/illustraties/atlas/index.html).
+
+[Tussenstand ronde 09](research/register/RONDE-09.md): De eerste gerichte passage omvat 92 bekende repositorynamen: 86 met een bronpassage (waaronder twee snapshots met alleen een README), vijf opnieuw leeg bevonden en één eigen onderzoeksproject. Vijftien namen hebben een expliciet beperkte bron- of verdiepingsstatus. Ook bij de overige bronnen zijn integratie en uitvoering niet volledig getoetst. Dit zijn geen 92 onafhankelijke projecten. Deze openbare update bevat 34 onderzoeksrecords uit 27 openbare repositories.
 
 ## Onderzoek: eerst breed, daarna kiezen
 
@@ -60,7 +62,7 @@ Neon meldde op 28 september 2026 ruim 1.500 aangesloten scholen met samen ongeve
 
 ## Status
 
-**27 november 2026: fase 3b en 3c gericht heropend. NO-GO voor fase 4a.** De brede inventarisatie en technische specificatie blijven bewaard. De openbare atlas toont een beperkte selectie; de vergelijking van eerder onderzochte mechanismen, alternatieven en tegenbewijs moet verder worden uitgewerkt. De openbare index bevat de openbare afgeleide van de eerste inventarisatie (29 van 87 repositories), geen volledige actuele onderzoeksdekking.
+**27 november 2026: fase 3b en 3c gericht heropend. NO-GO voor fase 4a.** De brede inventarisatie en technische specificatie blijven bewaard. De openbare atlas toont een beperkte selectie; de vergelijking van eerder onderzochte mechanismen, alternatieven en tegenbewijs moet verder worden uitgewerkt. De eerste gerichte bronpassage is vastgelegd in ronde 09. De openbare selectie vervangt de interne detailinventarisatie niet. Verdere bron- en integratietoetsen blijven nodig.
 
 De volgende stap is herbeoordeling van de technische mechanismen en mogelijke combinaties, zonder deze vooraf aan A–D toe te wijzen. Daarna volgt een herzien besluit over A–D en P01–P03. De technische specificatie v0.1 en proefgevallen blijven voorstellen. Geen proefcode uitgevoerd, geen modelmetingen of leerlingresultaten. De definitieve architectuur, hergebruikrechten, vakinhoud, modellen, hosting en budget voor echte inferentie blijven open.
 

@@ -11,7 +11,18 @@
       "reported_size": 189,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/-rag-eat-starter-kit",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "B07",
+        "B08"
+      ],
+      "round_09_inspected_revisions": [
+        "1c98f0d04a179fc8df40383870c81d032385ee50"
+      ]
     },
     {
       "repo": "E-AI-MODEL/Caveman-eduNL",
@@ -19,7 +30,17 @@
       "reported_size": 66,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/Caveman-eduNL",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Ontwerp"
+      ],
+      "round_09_records": [
+        "C04"
+      ],
+      "round_09_inspected_revisions": [
+        "342e88d98a35640cfb9431280dfa6e34e2a7a4a8"
+      ]
     },
     {
       "repo": "E-AI-MODEL/door0101",
@@ -27,7 +48,17 @@
       "reported_size": 1872,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/door0101",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "C08"
+      ],
+      "round_09_inspected_revisions": [
+        "95b57b6caf0140317d69caabc7d239edcac65904"
+      ]
     },
     {
       "repo": "E-AI-MODEL/eai-gamma-portal",
@@ -36,7 +67,17 @@
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/eai-gamma-portal",
       "round_01_coverage": "selected_source_read",
-      "inspected_commit": "444d1373f83dcd2d5ace6f0ad931c448874b7807"
+      "inspected_commit": "444d1373f83dcd2d5ace6f0ad931c448874b7807",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "C10"
+      ],
+      "round_09_inspected_revisions": [
+        "444d1373f83dcd2d5ace6f0ad931c448874b7807"
+      ]
     },
     {
       "repo": "E-AI-MODEL/EAI-lab-",
@@ -44,7 +85,17 @@
       "reported_size": 420,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/EAI-lab-",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "B22"
+      ],
+      "round_09_inspected_revisions": [
+        "7c76ed3426e1a478c726ceecc2136e96fe671c95"
+      ]
     },
     {
       "repo": "E-AI-MODEL/EAI-standard",
@@ -52,7 +103,17 @@
       "reported_size": 1216,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/EAI-standard",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Schema-inspectie"
+      ],
+      "round_09_records": [
+        "C14"
+      ],
+      "round_09_inspected_revisions": [
+        "dd674400c5ce394b90a80b944f672dc90b3c912a"
+      ]
     },
     {
       "repo": "E-AI-MODEL/EAI-teacher-assistent",
@@ -68,7 +129,17 @@
       "reported_size": 255,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/EAIhome",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "D02"
+      ],
+      "round_09_inspected_revisions": [
+        "52356fc75097da7f6361739f29d49182cc9d0b2a"
+      ]
     },
     {
       "repo": "E-AI-MODEL/eainesy",
@@ -76,7 +147,18 @@
       "reported_size": 1266,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/eainesy",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "B11",
+        "B12"
+      ],
+      "round_09_inspected_revisions": [
+        "b1962011d2db745ce62dee332c12ec030e8e07f2"
+      ]
     },
     {
       "repo": "E-AI-MODEL/EAIwork-",
@@ -84,7 +166,19 @@
       "reported_size": 1472,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/EAIwork-",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "B13",
+        "B14",
+        "B15"
+      ],
+      "round_09_inspected_revisions": [
+        "69f5793f633ae6be6e22ef6c8eeeab5158fe147e"
+      ]
     },
     {
       "repo": "E-AI-MODEL/EAT_me",
@@ -92,7 +186,18 @@
       "reported_size": 83,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/EAT_me",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "B02",
+        "B03"
+      ],
+      "round_09_inspected_revisions": [
+        "deda94ffb80c4c9b78f40afe23d2db09e65673ea"
+      ]
     },
     {
       "repo": "E-AI-MODEL/EAT-inline",
@@ -101,7 +206,17 @@
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/EAT-inline",
       "round_01_coverage": "selected_source_read",
-      "inspected_commit": "0bd184f5408bddb9211b9684d7a0ada78a593b8b"
+      "inspected_commit": "0bd184f5408bddb9211b9684d7a0ada78a593b8b",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "B05"
+      ],
+      "round_09_inspected_revisions": [
+        "0bd184f5408bddb9211b9684d7a0ada78a593b8b"
+      ]
     },
     {
       "repo": "E-AI-MODEL/Examenreglementcheck",
@@ -110,7 +225,17 @@
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/Examenreglementcheck",
       "round_01_coverage": "selected_source_read",
-      "inspected_commit": "d72dc4806566b9c05f0d8f90f41b972390d5beb5"
+      "inspected_commit": "d72dc4806566b9c05f0d8f90f41b972390d5beb5",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "D07"
+      ],
+      "round_09_inspected_revisions": [
+        "d72dc4806566b9c05f0d8f90f41b972390d5beb5"
+      ]
     },
     {
       "repo": "E-AI-MODEL/gpt-oss",
@@ -118,7 +243,17 @@
       "reported_size": 10639,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/gpt-oss",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Testinspectie"
+      ],
+      "round_09_records": [
+        "D10"
+      ],
+      "round_09_inspected_revisions": [
+        "89fe402d10a59879781a1eb0a64affdf4c278a4d"
+      ]
     },
     {
       "repo": "E-AI-MODEL/legit-eai-ai-tool",
@@ -126,7 +261,17 @@
       "reported_size": 524,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/legit-eai-ai-tool",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Data-inspectie"
+      ],
+      "round_09_records": [
+        "D12"
+      ],
+      "round_09_inspected_revisions": [
+        "4d4c49a9a0f793c2ce8a17d6a273bc2c7e90413c"
+      ]
     },
     {
       "repo": "E-AI-MODEL/malaga-magic-maker",
@@ -134,7 +279,17 @@
       "reported_size": 24951,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/malaga-magic-maker",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Testinspectie"
+      ],
+      "round_09_records": [
+        "D13"
+      ],
+      "round_09_inspected_revisions": [
+        "090f799164ea79de45f60f831287d6e83b81dd03"
+      ]
     },
     {
       "repo": "E-AI-MODEL/NGBSE20.1",
@@ -142,7 +297,17 @@
       "reported_size": 626,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/NGBSE20.1",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "E02"
+      ],
+      "round_09_inspected_revisions": [
+        "d6e0d49975bac15583886de49b828324c07fe519"
+      ]
     },
     {
       "repo": "E-AI-MODEL/open-lovable",
@@ -150,7 +315,17 @@
       "reported_size": 251,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/open-lovable",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "E04"
+      ],
+      "round_09_inspected_revisions": [
+        "efdef874d7c24a9e48fdb0f96652021e96fd9f92"
+      ]
     },
     {
       "repo": "E-AI-MODEL/presentatie-door010",
@@ -158,7 +333,17 @@
       "reported_size": 1675,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/presentatie-door010",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "E06"
+      ],
+      "round_09_inspected_revisions": [
+        "01b83191e95129bf7b010b728b2e240683a7ee6b"
+      ]
     },
     {
       "repo": "E-AI-MODEL/project-pim",
@@ -166,7 +351,17 @@
       "reported_size": 2113,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/project-pim",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "E07"
+      ],
+      "round_09_inspected_revisions": [
+        "840ad1f70b5d86eb9058b08f8d9d649b8773f243"
+      ]
     },
     {
       "repo": "E-AI-MODEL/shadow-seed-study",
@@ -175,7 +370,17 @@
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/shadow-seed-study",
       "round_01_coverage": "selected_source_read",
-      "inspected_commit": "ff639cc8c079cabef06c4d8cd9bcfb90c72a3b40"
+      "inspected_commit": "ff639cc8c079cabef06c4d8cd9bcfb90c72a3b40",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "B21"
+      ],
+      "round_09_inspected_revisions": [
+        "ff639cc8c079cabef06c4d8cd9bcfb90c72a3b40"
+      ]
     },
     {
       "repo": "E-AI-MODEL/shadowseed",
@@ -183,7 +388,17 @@
       "reported_size": 3176,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/shadowseed",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Testinspectie"
+      ],
+      "round_09_records": [
+        "B19"
+      ],
+      "round_09_inspected_revisions": [
+        "5c0211114993a9cc47f16a669b38960598a50f27"
+      ]
     },
     {
       "repo": "E-AI-MODEL/shadowseed-agent-lab",
@@ -192,7 +407,17 @@
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/shadowseed-agent-lab",
       "round_01_coverage": "selected_source_read",
-      "inspected_commit": "d50971ac8aed51e1f4442ff3baac9328e36ad75e"
+      "inspected_commit": "d50971ac8aed51e1f4442ff3baac9328e36ad75e",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "B20"
+      ],
+      "round_09_inspected_revisions": [
+        "d50971ac8aed51e1f4442ff3baac9328e36ad75e"
+      ]
     },
     {
       "repo": "E-AI-MODEL/shadowseed-pro",
@@ -200,7 +425,19 @@
       "reported_size": 40978,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/shadowseed-pro",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "B16",
+        "B17",
+        "B18"
+      ],
+      "round_09_inspected_revisions": [
+        "7427181c50fabae8f9cbd112c3e549e752edf914"
+      ]
     },
     {
       "repo": "E-AI-MODEL/SSOT_17",
@@ -216,7 +453,17 @@
       "reported_size": 1400,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/toon",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "B06"
+      ],
+      "round_09_inspected_revisions": [
+        "7f8c2379fd4cd3399a0e41e79dcc807cdf2b8f3c"
+      ]
     },
     {
       "repo": "E-AI-MODEL/website",
@@ -224,7 +471,17 @@
       "reported_size": 52222,
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/website",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Code-inspectie"
+      ],
+      "round_09_records": [
+        "E13"
+      ],
+      "round_09_inspected_revisions": [
+        "18140dee2ab0e74007bff3dba7218dd1e3d89401"
+      ]
     },
     {
       "repo": "E-AI-MODEL/wihtml",
@@ -233,7 +490,17 @@
       "archived": false,
       "source_url": "https://github.com/E-AI-MODEL/wihtml",
       "round_01_coverage": "selected_source_read",
-      "inspected_commit": "449d9d9ec3d0f883bd190fc5287eaccfe1d87854"
+      "inspected_commit": "449d9d9ec3d0f883bd190fc5287eaccfe1d87854",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Ontwerp"
+      ],
+      "round_09_records": [
+        "F03"
+      ],
+      "round_09_inspected_revisions": [
+        "449d9d9ec3d0f883bd190fc5287eaccfe1d87854"
+      ]
     },
     {
       "repo": "eaimodel5/LeerlingMemo2",
@@ -241,7 +508,17 @@
       "reported_size": 821,
       "archived": false,
       "source_url": "https://github.com/eaimodel5/LeerlingMemo2",
-      "round_01_coverage": "metadata_only"
+      "round_01_coverage": "metadata_only",
+      "round_09_coverage": "selected_source_read",
+      "round_09_evidence_kinds": [
+        "Testinspectie"
+      ],
+      "round_09_records": [
+        "F08"
+      ],
+      "round_09_inspected_revisions": [
+        "6e8fa371812ac1b2905e6f125b0f73c4206eaff9"
+      ]
     }
   ],
   "internal_coverage": {
@@ -250,5 +527,20 @@
     "private_repositories": 58,
     "historical_scan_matched": 82,
     "not_in_historical_scan": 5
+  },
+  "round_09": {
+    "as_of": "2026-11-27",
+    "scope": "Openbare selectie; gerichte bronpassage, geen volledige audit of uitvoeringstest.",
+    "coverage": {
+      "repository_names": 92,
+      "empty_repositories": 5,
+      "own_project": 1,
+      "readme_only": 2,
+      "explicit_limited_depth": 15,
+      "targeted_source_passages": 86
+    },
+    "public_records": 34,
+    "public_repositories": 27,
+    "register": "RONDE-09.md"
   }
 }
