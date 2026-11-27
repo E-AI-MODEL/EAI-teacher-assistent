@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "as_of": "2026-11-27",
-  "scope": "Public repositories visible in the two queried accounts; not an exhaustive archive.",
+  "scope": "Openbare afgeleide van het afzonderlijk bewaarde interne bronnenregister; openbare zichtbaarheid is geen onderzoeksselectiecriterium.",
   "size_note": "Reported repository size from GitHub metadata. May include historical files, dependencies and duplicates; not unique research volume.",
   "coverage_note": "round_01_coverage refers to this round only; prior inspections remain in the existing research files. No tests rerun.",
   "repositories": [
@@ -243,5 +243,12 @@
       "source_url": "https://github.com/eaimodel5/LeerlingMemo2",
       "round_01_coverage": "metadata_only"
     }
-  ]
+  ],
+  "internal_coverage": {
+    "total_repositories": 87,
+    "public_repositories": 29,
+    "private_repositories": 58,
+    "historical_scan_matched": 82,
+    "not_in_historical_scan": 5
+  }
 }

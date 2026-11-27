@@ -4,7 +4,9 @@
 
 ## Dekking
 
-De [openbare repository-index](public-repositories.json) bevat 29 openbare repositories uit de twee bevraagde accounts. Van zes daarvan is in deze ronde een boomstructuur en zijn geselecteerde bestanden gelezen, met bronversie hieronder. De andere records hebben in deze ronde alleen metadata; eerdere broninspecties zijn niet daarmee ongedaan gemaakt. Dit is geen volledige inventaris van de archieven, branches, histories, onderzoeksdata of boeken. Niet-openbare bronverwijzingen en interne bevindingen blijven buiten dit openbare register. Historische inventarisaties bevatten ook bronnen die nu niet in de beschikbare lijst staan. Niet teruggevonden is geen bewijs van verwijdering of vervanging.
+De volledige huidige onderzoekspopulatie omvat 87 toegankelijke repositories: 83 onder E-AI-MODEL en vier onder eaimodel5. Daarvan zijn 29 openbaar en 58 privé. Het interne register met alle 87 records, vindplaatsen en dekkingsstatus is afzonderlijk opgeslagen in een private werkruimtepagina. In de technische scan van 2 november komen 82 van de 87 huidige repositories voor; vijf staan niet in die scan. De historische dekking is behouden en telt niet als nieuwe broninspectie.
+
+De [openbare repository-index](public-repositories.json) is gecontroleerd tegen de openbare records van het interne register. Hij bevat uitsluitend de 29 openbare repositories. Van zes daarvan is in ronde 01 een boomstructuur en zijn geselecteerde bestanden gelezen, met bronversie hieronder. De overige records hebben in deze ronde alleen metadata; eerdere broninspecties blijven behouden. De inventaris omvat alle toegankelijke repositories ongeacht zichtbaarheid. Niet-openbare vindplaatsen en interne onderzoeksdetails worden niet gepubliceerd. Historische bronnen die niet in de huidige lijsten voorkomen en de bibliotheek vallen eveneens binnen het onderzoek; hun dekking is nog niet compleet. Niet teruggevonden is geen bewijs van verwijdering of vervanging.
 
 Grote repositorybestanden, gekopieerde SDK's, forks en herhaalde fixtures tellen niet als afzonderlijke onderzoeken. Omvang en dekking van uniek materiaal zijn nog niet vastgesteld.
 
