@@ -1,3 +1,15 @@
 # Fase 4a: neutrale contractproef
 
-Bevroren fixture en verwachtingen vóór de kandidaatcode. De input bevat uitsluitend fictieve records, geauthenticeerde testactors, expliciete gebeurtenissen en adapterstubs. Verwachtingen staan apart en gaan nooit naar de runtime. De scenario's testen proceslokale gedrag, geen echte inferentie. De eerste S-proef gebruikt een vaste lock; adaptieve entropie en echte netwerk-/modelproeven zijn niet onderdeel van dit pakket.
+De eerste uitvoerbare versie gebruikt uitsluitend Python-standaardbibliotheek. Zie [de resultaten](RESULTS.md) en [meetgegevens](evidence.json).
+
+- fixture.json, cases.jsonl en expected.jsonl: bevroren vóór de kandidaatcode; de verwachte uitkomsten gaan nooit naar de runtime.
+- runtime.py: compiler, revisie- en bevoegdheidscontrole, vaste lock, regeluitvoering en modelstubcontract.
+- run.py: proefharnas, onafhankelijke registratie van stubaanroepen, controle van bevroren bronnen en rapportage.
+- test_regressions.py: aanvullende negatieve controles na technische zelfreview.
+
+```sh
+python run.py --report result.json
+python -m unittest -v test_regressions
+```
+
+De eerste lokale uitvoering is geslaagd binnen de vastgelegde neutrale fixture. Geen werkelijke modelinferentie, betaalde CI, vakinhoud of productiearchitectuur. De adaptieve strategieproef volgt afzonderlijk. Zie [startcontract](../../benchmarks/4A-STARTCONTRACT.md).

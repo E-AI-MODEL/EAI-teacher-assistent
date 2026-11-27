@@ -1,0 +1,1835 @@
+{
+  "mode": "simulated",
+  "fixture_commit": "371e721518f17911fff2f9e73d96367535a246cf",
+  "fixture_blobs": {
+    "fixture.json": "d4993a49a6c4c66212fe58f97f34a1752ad9a8ee",
+    "cases.jsonl": "c1fa7f3688b321f63c6a02589dfbc520fbd466a9",
+    "expected.jsonl": "d5ddd199406cf3bc67c2e6e13f99bd142e5ad395"
+  },
+  "file_sha256": {
+    "fixture.json": "ba8a1bd56066f39c7553c99ab35c30c561d95b412b43146398c34ac0e8ce1212",
+    "cases.jsonl": "0a2afb3a5ce77286a4872d883ed8410a25f9826dfff925163179cdf3f2323e60",
+    "expected.jsonl": "636fbb9c1460111ffcafe3155775120c81a059207aaae9e59acbc52cfc197524",
+    "runtime.py": "db322551cd76cd547f898491eec2cf4dfe488db468704589376c57c31f973388",
+    "run.py": "49a51b1939d08a026f50e7c6fff765312ea4e4bab7afae6584bc0057f622e60c",
+    "test_regressions.py": "64c5fee1406d54b326e2a9dc4848a610f6dc679cab6956a3a25b55aa79fe1864"
+  },
+  "python": "3.13.5",
+  "started_at": "2026-11-27T23:24:56.609527+00:00",
+  "passed_cases": 60,
+  "offered_requests": 122,
+  "stub_attempts": 70,
+  "failure": null,
+  "not_run": [],
+  "factor_summary": [
+    {
+      "id": "FACTOR-0000",
+      "compiles": 5,
+      "reviews": 4,
+      "stub_attempts": 4,
+      "context_bytes": 546,
+      "rules": 0
+    },
+    {
+      "id": "FACTOR-1000",
+      "compiles": 1,
+      "reviews": 4,
+      "stub_attempts": 4,
+      "context_bytes": 546,
+      "rules": 0
+    },
+    {
+      "id": "FACTOR-0100",
+      "compiles": 5,
+      "reviews": 2,
+      "stub_attempts": 4,
+      "context_bytes": 546,
+      "rules": 0
+    },
+    {
+      "id": "FACTOR-0010",
+      "compiles": 5,
+      "reviews": 4,
+      "stub_attempts": 2,
+      "context_bytes": 272,
+      "rules": 2
+    },
+    {
+      "id": "FACTOR-0001",
+      "compiles": 5,
+      "reviews": 4,
+      "stub_attempts": 4,
+      "context_bytes": 497,
+      "rules": 0
+    },
+    {
+      "id": "FACTOR-1111",
+      "compiles": 1,
+      "reviews": 2,
+      "stub_attempts": 2,
+      "context_bytes": 248,
+      "rules": 2
+    },
+    {
+      "id": "FACTOR-0011",
+      "compiles": 5,
+      "reviews": 4,
+      "stub_attempts": 2,
+      "context_bytes": 248,
+      "rules": 2
+    },
+    {
+      "id": "FACTOR-0011-D",
+      "compiles": 5,
+      "reviews": 4,
+      "stub_attempts": 2,
+      "context_bytes": 248,
+      "rules": 2
+    }
+  ],
+  "raw_report_sha256": "4fa6715a99abd071b901818f43069aa138689889f37e33836c5a3b91af52a1f2",
+  "regression_results": [
+    {
+      "test": "test_compilation_is_canonical",
+      "result": "pass"
+    },
+    {
+      "test": "test_compiler_rejects_unknown_operation_and_reference",
+      "result": "pass"
+    },
+    {
+      "test": "test_frozen_inputs",
+      "result": "pass"
+    },
+    {
+      "test": "test_retry_after_revocation_is_not_dispatched",
+      "result": "pass"
+    },
+    {
+      "test": "test_stale_request_never_reaches_adapter",
+      "result": "pass"
+    }
+  ],
+  "columns": [
+    "status",
+    "route",
+    "attempts",
+    "compiles",
+    "reviews",
+    "external_calls",
+    "local_calls",
+    "context_bytes"
+  ],
+  "cases": [
+    {
+      "id": "P01-A-success",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P01-A-missing",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P01-A-partial",
+      "rows": [
+        [
+          "MODEL_ERROR",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P01-B-rejected",
+      "rows": [
+        [
+          "MODEL_ERROR",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P01-B-retry",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          2,
+          1,
+          1,
+          2,
+          0,
+          272
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P01-B-uncertain",
+      "rows": [
+        [
+          "MODEL_ERROR",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P01-B-budget-zero",
+      "rows": [
+        [
+          "BUDGET",
+          "MODEL",
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P01-B-budget-one",
+      "rows": [
+        [
+          "BUDGET",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P01-C-local",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          0,
+          1,
+          124
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P01-C-unavailable",
+      "rows": [
+        [
+          "UNAVAILABLE",
+          null,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P01-C-forbidden-external",
+      "rows": [
+        [
+          "DENY",
+          null,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P02-A-authorized",
+      "rows": [
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P02-A-forged-scope",
+      "rows": [
+        [
+          "DENY",
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P02-A-invalid-ref",
+      "rows": [
+        [
+          "DENY",
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P02-A-overlay",
+      "rows": [
+        [
+          "INVALID",
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P02-B-stale-policy",
+      "rows": [
+        [
+          "STALE",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P02-B-ABA",
+      "rows": [
+        [
+          "STALE",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P02-B-source",
+      "rows": [
+        [
+          "STALE",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P02-C-repeat",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "MODEL",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "CONFLICT",
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 3
+    },
+    {
+      "id": "P02-C-inflight",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ]
+      ],
+      "traces": 2
+    },
+    {
+      "id": "P02-C-revoke-replay",
+      "rows": [
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "DENY",
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 2
+    },
+    {
+      "id": "P02-C-new-revision",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "CONFLICT",
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 2
+    },
+    {
+      "id": "P03-A-lookup-A",
+      "rows": [
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P03-B-match-A",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          137
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P03-A-lookup-B",
+      "rows": [
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P03-B-match-B",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          125
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P03-A-lookup-C",
+      "rows": [
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P03-B-match-C",
+      "rows": [
+        [
+          "OK",
+          "RULE",
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P03-A-lookup-D",
+      "rows": [
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P03-B-match-D",
+      "rows": [
+        [
+          "OK",
+          "RULE",
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P03-C-unknown",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          124
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "DENY",
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 3
+    },
+    {
+      "id": "P03-C-engine-error",
+      "rows": [
+        [
+          "ENGINE_ERROR",
+          "RULE",
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P03-D-select",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          124
+        ],
+        [
+          "INVALID_PROPOSAL",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          124
+        ],
+        [
+          "INVALID_PROPOSAL",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          124
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          124
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          124
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          124
+        ]
+      ],
+      "traces": 6
+    },
+    {
+      "id": "P02-D1-compile-0",
+      "rows": [
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 4
+    },
+    {
+      "id": "P02-D1-compile-1",
+      "rows": [
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 4
+    },
+    {
+      "id": "P02-D2-invalid",
+      "rows": [
+        [
+          "INVALID_ARTIFACT",
+          null,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P02-E1-lock-0",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ]
+      ],
+      "traces": 4
+    },
+    {
+      "id": "P02-E1-lock-1",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          0,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          0,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ]
+      ],
+      "traces": 4
+    },
+    {
+      "id": "P02-E2-p3",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ]
+      ],
+      "traces": 2
+    },
+    {
+      "id": "P02-E2-source",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          137
+        ]
+      ],
+      "traces": 2
+    },
+    {
+      "id": "P02-E2-critical",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ]
+      ],
+      "traces": 2
+    },
+    {
+      "id": "P02-E2-unknown",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "CLARIFY",
+          null,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 2
+    },
+    {
+      "id": "P05-A1-full",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P05-A1-bounded",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          124
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P05-A2-missing",
+      "rows": [
+        [
+          "CLARIFY",
+          null,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P02-A-unknown-operation",
+      "rows": [
+        [
+          "DENY",
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P02-D2-bad-ref",
+      "rows": [
+        [
+          "INVALID_ARTIFACT",
+          null,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P02-E2-revoke",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          124
+        ]
+      ],
+      "traces": 2
+    },
+    {
+      "id": "P05-A2-revoked-ref",
+      "rows": [
+        [
+          "DENY",
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P05-A2-revised-during",
+      "rows": [
+        [
+          "STALE",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          124
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P03-D-bad-schema",
+      "rows": [
+        [
+          "INVALID_PROPOSAL",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          124
+        ]
+      ],
+      "traces": 1
+    },
+    {
+      "id": "P02-C-cross-scope",
+      "rows": [
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 2
+    },
+    {
+      "id": "FACTOR-0000",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          137
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          137
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 5
+    },
+    {
+      "id": "FACTOR-1000",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          137
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          0,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          0,
+          1,
+          1,
+          0,
+          137
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          0,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 5
+    },
+    {
+      "id": "FACTOR-0100",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          137
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          0,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          0,
+          1,
+          0,
+          137
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 5
+    },
+    {
+      "id": "FACTOR-0010",
+      "rows": [
+        [
+          "OK",
+          "RULE",
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "RULE",
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          136
+        ],
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 5
+    },
+    {
+      "id": "FACTOR-0001",
+      "rows": [
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          125
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          124
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          124
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          124
+        ],
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 5
+    },
+    {
+      "id": "FACTOR-1111",
+      "rows": [
+        [
+          "OK",
+          "RULE",
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          0,
+          0,
+          1,
+          0,
+          124
+        ],
+        [
+          "OK",
+          "RULE",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          0,
+          1,
+          1,
+          0,
+          124
+        ],
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 5
+    },
+    {
+      "id": "FACTOR-0011",
+      "rows": [
+        [
+          "OK",
+          "RULE",
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          124
+        ],
+        [
+          "OK",
+          "RULE",
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          1,
+          0,
+          124
+        ],
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 5
+    },
+    {
+      "id": "FACTOR-0011-D",
+      "rows": [
+        [
+          "OK",
+          "RULE",
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          0,
+          1,
+          124
+        ],
+        [
+          "OK",
+          "RULE",
+          0,
+          1,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          "OK",
+          "MODEL",
+          1,
+          1,
+          1,
+          0,
+          1,
+          124
+        ],
+        [
+          "OK",
+          "LOOKUP",
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "traces": 5
+    }
+  ],
+  "transport_examples": [
+    {
+      "id": "P01-A-success",
+      "attempts": [
+        {
+          "transport": "accepted",
+          "dispatched": true,
+          "accepted": true,
+          "billing": null,
+          "usage": {
+            "input_total": 12,
+            "input_cache_read": 3,
+            "input_cache_write": 0,
+            "output_total": 4,
+            "reasoning_reported": 2
+          },
+          "unknown_usage": {},
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "P01-A-missing",
+      "attempts": [
+        {
+          "transport": "accepted",
+          "dispatched": true,
+          "accepted": true,
+          "billing": null,
+          "usage": {
+            "input_total": null,
+            "input_cache_read": null,
+            "input_cache_write": null,
+            "output_total": null,
+            "reasoning_reported": null
+          },
+          "unknown_usage": {
+            "input_total": "not_reported_by_stub",
+            "input_cache_read": "not_reported_by_stub",
+            "input_cache_write": "not_reported_by_stub",
+            "output_total": "not_reported_by_stub",
+            "reasoning_reported": "not_reported_by_stub"
+          },
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "P01-A-partial",
+      "attempts": [
+        {
+          "transport": "accepted",
+          "dispatched": true,
+          "accepted": true,
+          "billing": null,
+          "usage": {
+            "input_total": 12,
+            "input_cache_read": null,
+            "input_cache_write": null,
+            "output_total": null,
+            "reasoning_reported": null
+          },
+          "unknown_usage": {
+            "input_cache_read": "not_reported_by_stub",
+            "input_cache_write": "not_reported_by_stub",
+            "output_total": "not_reported_by_stub",
+            "reasoning_reported": "not_reported_by_stub"
+          },
+          "error": "transport_or_response_error"
+        }
+      ]
+    },
+    {
+      "id": "P01-B-retry",
+      "attempts": [
+        {
+          "transport": "rejected",
+          "dispatched": false,
+          "accepted": false,
+          "billing": false,
+          "usage": {
+            "input_total": null,
+            "input_cache_read": null,
+            "input_cache_write": null,
+            "output_total": null,
+            "reasoning_reported": null
+          },
+          "unknown_usage": {
+            "input_total": "not_reported_by_stub",
+            "input_cache_read": "not_reported_by_stub",
+            "input_cache_write": "not_reported_by_stub",
+            "output_total": "not_reported_by_stub",
+            "reasoning_reported": "not_reported_by_stub"
+          },
+          "error": "transport_or_response_error"
+        },
+        {
+          "transport": "accepted",
+          "dispatched": true,
+          "accepted": true,
+          "billing": null,
+          "usage": {
+            "input_total": 12,
+            "input_cache_read": 3,
+            "input_cache_write": 0,
+            "output_total": 4,
+            "reasoning_reported": 2
+          },
+          "unknown_usage": {},
+          "error": null
+        }
+      ]
+    },
+    {
+      "id": "P01-B-uncertain",
+      "attempts": [
+        {
+          "transport": "uncertain",
+          "dispatched": null,
+          "accepted": null,
+          "billing": null,
+          "usage": {
+            "input_total": null,
+            "input_cache_read": null,
+            "input_cache_write": null,
+            "output_total": null,
+            "reasoning_reported": null
+          },
+          "unknown_usage": {
+            "input_total": "not_reported_by_stub",
+            "input_cache_read": "not_reported_by_stub",
+            "input_cache_write": "not_reported_by_stub",
+            "output_total": "not_reported_by_stub",
+            "reasoning_reported": "not_reported_by_stub"
+          },
+          "error": "transport_or_response_error"
+        }
+      ]
+    }
+  ]
+}
