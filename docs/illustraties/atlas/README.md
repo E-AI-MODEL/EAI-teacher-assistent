@@ -1,6 +1,6 @@
 # EAI Teacher Assistant | Onderzoeksatlas
 
-27 november 2026. Negen diagrammen tonen een beperkte openbare selectie van eerdere bronvondsten en voorgestelde technische vergelijking. Ze vervangen het interne register niet. De selectie is onvoldoende als basis voor het afsluiten van 3b/3c; deze fasen zijn gericht heropend. Fase 4a staat stil tot herbeoordeling. Historische proeven zijn niet opnieuw uitgevoerd.
+27 november 2026. Elf diagrammen tonen een beperkte openbare selectie van eerdere bronvondsten en voorgestelde technische vergelijking. Ze vervangen het interne register niet. De selectie is onvoldoende als basis voor het afsluiten van 3b/3c; deze fasen zijn gericht heropend. Fase 4a staat stil tot herbeoordeling. Historische proeven zijn niet opnieuw uitgevoerd.
 
 [Zelfstandige HTML-atlas](index.html) (download en open lokaal) · [Machineleesbaar bronnen- en blokregister](atlas-registry.json) · [Technische specificatie](../../../research/TECHNISCHE-SPECIFICATIE.md) · [P01–P03](../../../benchmarks/TECHNISCHE-PROEVEN.md)
 
@@ -92,6 +92,24 @@ Vijf onderzoeksgroepen, 38 records. Vergelijk mechanismen vóór een architectuu
 
 [SVG openen](d09-besloten-mechanismen.svg) · [38 technische afgeleiden](../../../research/register/RONDE-09-AFGELEID.md)
 
+## 10. Historische mechanismen en tegenproeven
+
+De vijftien eerder beperkt onderzochte repositorynamen zijn gericht herlezen. De oorspronkelijke compilerbestanden zijn niet teruggevonden. Deze 26 records verdiepen ontwerpcontracten, uitvoerpaden, isolatie en historische meetresultaten.
+
+![Vier groepen mechanismen en tegenproeven uit ronde 10. Geen nieuwe uitvoeringstest.](d10-historische-verdieping.svg)
+
+[SVG openen](d10-historische-verdieping.svg) · [26 verdiepingsrecords](../../../research/register/RONDE-10-VERDIEPING.md)
+
+## 11. Van bronvondst naar toetsbare techniek
+
+Vier Exa-zoekrichtingen met twintig gevraagde resultaatplaatsen, vijf openbare repositories op vaste commits en drie historische eigen projecten gericht herlezen. Veertien verdiepingsrecords; geen veertien nieuwe onafhankelijke algoritmen.
+
+![Vier groepen mechanismen en tegenproeven uit ronde 11. Geen nieuwe uitvoeringstest.](d11-mechanismen-vergelijking.svg)
+
+[SVG openen](d11-mechanismen-vergelijking.svg) · [14 verdiepingsrecords](../../../research/register/RONDE-11-VERGELIJKING.md)
+
+Fase 3b en 3c zijn heropend. Fase 4a blijft NO-GO. Geen nieuwe runtime- of modeltests, echte inferentie, vakinhoud, architectuurkeuze of bewezen kostenbesparing. De volledige bronkoppeling blijft intern; een afgeleide is geen extra onafhankelijke bron.
+
 ## Bronregister
 
 Broncodes verwijzen naar openbare, versiegebonden bronnen. Hetzelfde register is machineleesbaar. Elk benoemd blok heeft een vaste `data-block-id`, broncodes en een bewijsstatus in SVG en JSON. Een geplande proef is geen verificatieresultaat. Lijnen tonen de beschreven relatie, niet automatisch afstamming, causaliteit of softwareafhankelijkheid.
@@ -151,6 +169,9 @@ Broncodes verwijzen naar openbare, versiegebonden bronnen. Hetzelfde register is
 | S50 | [LeerlingMemo2 · test/rules/firestore-rules.spec.ts](https://github.com/eaimodel5/LeerlingMemo2/blob/6e8fa371812ac1b2905e6f125b0f73c4206eaff9/test/rules/firestore-rules.spec.ts) | Testinspectie | Ronde 09, F08: Gerichte test voor actuele gebruiksrechten, ook na intrekking. Testcode gelezen, niet uitgevoerd; koppeling aan actieve regels nog te controleren. |
 
 | S51 | [Ronde 09 · openbare technische afgeleiden](../../../research/register/RONDE-09-AFGELEID.md) | Afgeleide onderzoekssynthese | Besloten herkomst alleen intern verifieerbaar. Geen afzonderlijke openbare broninspectie of nieuw testbewijs. |
+
+| S52 | [Ronde 10 · Historische mechanismen en tegenproeven](../../../research/register/RONDE-10-VERDIEPING.md) | Onderzoekssynthese | 26 records; openbare bronnen waar geverifieerd, overige koppelingen intern. |
+| S53 | [Ronde 11 · Van bronvondst naar toetsbare techniek](../../../research/register/RONDE-11-VERGELIJKING.md) | Onderzoekssynthese | 14 records; openbare bronnen waar geverifieerd, overige koppelingen intern. |
 
 ## Vormgeving en onderhoud
 

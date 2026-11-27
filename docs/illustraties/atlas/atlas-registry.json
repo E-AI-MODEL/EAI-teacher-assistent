@@ -412,6 +412,22 @@
       "revision": null,
       "kind": "Afgeleide onderzoekssynthese",
       "note": "Besloten herkomst alleen intern verifieerbaar. Geen afzonderlijke openbare broninspectie of nieuw testbewijs."
+    },
+    {
+      "id": "S52",
+      "title": "Ronde 10 · Historische mechanismen en tegenproeven",
+      "url": "../../../research/register/RONDE-10-VERDIEPING.md",
+      "revision": null,
+      "kind": "Onderzoekssynthese",
+      "note": "26 records; openbare bronnen waar geverifieerd, overige koppelingen intern."
+    },
+    {
+      "id": "S53",
+      "title": "Ronde 11 · Van bronvondst naar toetsbare techniek",
+      "url": "../../../research/register/RONDE-11-VERGELIJKING.md",
+      "revision": null,
+      "kind": "Onderzoekssynthese",
+      "note": "14 records; openbare bronnen waar geverifieerd, overige koppelingen intern."
     }
   ],
   "diagrams": [
@@ -477,6 +493,20 @@
       "title": "Technische afgeleiden uit besloten bronnen",
       "subtitle": "Vijf onderzoeksgroepen, 38 records. Vergelijk mechanismen vóór een architectuurkeuze.",
       "description": "Vijf groepen technische mechanismen uit besloten onderzoek: strategie, compiler, representatie, uitvoering en aflevergrenzen. De DPR-codes verwijzen naar publieke afgeleiden. Oorspronkelijke bronkoppelingen zijn alleen intern beschikbaar."
+    },
+    {
+      "id": "d10",
+      "file": "d10-historische-verdieping.svg",
+      "title": "Historische mechanismen en tegenproeven",
+      "subtitle": "26 verdiepingsrecords; geen gekozen architectuur.",
+      "description": "Vier groepen mechanismen en tegenproeven uit ronde 10. Geen nieuwe uitvoeringstest."
+    },
+    {
+      "id": "d11",
+      "file": "d11-mechanismen-vergelijking.svg",
+      "title": "Van bronvondst naar toetsbare techniek",
+      "subtitle": "14 verdiepingsrecords; geen gekozen architectuur.",
+      "description": "Vier groepen mechanismen en tegenproeven uit ronde 11. Geen nieuwe uitvoeringstest."
     }
   ],
   "blocks": [
@@ -1203,6 +1233,142 @@
       ],
       "status": "afgeleid_onderzoek",
       "note": "Publieke afgeleide; originele bronkoppeling alleen intern. Geen nieuwe uitvoeringstest."
+    },
+    {
+      "id": "D10-CONTRACT",
+      "diagram": "d10",
+      "label": "Contract",
+      "source_ids": [
+        "S52"
+      ],
+      "record_ids": [
+        "R10-01",
+        "R10-02",
+        "R10-03",
+        "R10-04",
+        "R10-17",
+        "R10-18",
+        "R10-24"
+      ],
+      "status": "afgeleid_onderzoek",
+      "note": "Onderzoeksgroepering, geen vastgestelde architectuur."
+    },
+    {
+      "id": "D10-RUNTIME",
+      "diagram": "d10",
+      "label": "Runtime",
+      "source_ids": [
+        "S52"
+      ],
+      "record_ids": [
+        "R10-05",
+        "R10-06",
+        "R10-07",
+        "R10-08",
+        "R10-16",
+        "R10-23"
+      ],
+      "status": "afgeleid_onderzoek",
+      "note": "Onderzoeksgroepering, geen vastgestelde architectuur."
+    },
+    {
+      "id": "D10-ISOLATIE",
+      "diagram": "d10",
+      "label": "Isolatie",
+      "source_ids": [
+        "S52"
+      ],
+      "record_ids": [
+        "R10-09",
+        "R10-10",
+        "R10-11",
+        "R10-12",
+        "R10-21",
+        "R10-26"
+      ],
+      "status": "afgeleid_onderzoek",
+      "note": "Onderzoeksgroepering, geen vastgestelde architectuur."
+    },
+    {
+      "id": "D10-METING",
+      "diagram": "d10",
+      "label": "Meting",
+      "source_ids": [
+        "S52"
+      ],
+      "record_ids": [
+        "R10-13",
+        "R10-14",
+        "R10-15",
+        "R10-19",
+        "R10-20",
+        "R10-22",
+        "R10-25"
+      ],
+      "status": "afgeleid_onderzoek",
+      "note": "Onderzoeksgroepering, geen vastgestelde architectuur."
+    },
+    {
+      "id": "D11-COMPILER",
+      "diagram": "d11",
+      "label": "Compiler",
+      "source_ids": [
+        "S53"
+      ],
+      "record_ids": [
+        "R11-01",
+        "R11-02",
+        "R11-09",
+        "R11-10"
+      ],
+      "status": "afgeleid_onderzoek",
+      "note": "Onderzoeksgroepering, geen vastgestelde architectuur."
+    },
+    {
+      "id": "D11-ROUTERING",
+      "diagram": "d11",
+      "label": "Routering",
+      "source_ids": [
+        "S53"
+      ],
+      "record_ids": [
+        "R11-03",
+        "R11-04",
+        "R11-11",
+        "R11-12",
+        "R11-13"
+      ],
+      "status": "afgeleid_onderzoek",
+      "note": "Onderzoeksgroepering, geen vastgestelde architectuur."
+    },
+    {
+      "id": "D11-CACHE",
+      "diagram": "d11",
+      "label": "Cache",
+      "source_ids": [
+        "S53"
+      ],
+      "record_ids": [
+        "R11-05",
+        "R11-06"
+      ],
+      "status": "afgeleid_onderzoek",
+      "note": "Onderzoeksgroepering, geen vastgestelde architectuur."
+    },
+    {
+      "id": "D11-RUNTIME",
+      "diagram": "d11",
+      "label": "Runtime",
+      "source_ids": [
+        "S53"
+      ],
+      "record_ids": [
+        "R11-07",
+        "R11-08",
+        "R11-14"
+      ],
+      "status": "afgeleid_onderzoek",
+      "note": "Onderzoeksgroepering, geen vastgestelde architectuur."
     }
   ],
   "detail_round": {
@@ -1921,5 +2087,502 @@
         "verification": "not_run"
       }
     ]
+  },
+  "deepening_round": {
+    "id": "10",
+    "record_file": "../../../research/register/RONDE-10-VERDIEPING.md",
+    "records_count": 26,
+    "phase_4a": "NO-GO",
+    "runtime_tests_executed": false,
+    "records": [
+      {
+        "id": "R10-01",
+        "title": "Manifest als uitvoerbaar contract",
+        "kind": "Ontwerp teruggevonden",
+        "mechanism": "Een vooraf samengesteld, getypeerd manifest legt identiteit, taaktype, toestandsstappen, bediening, AI-regels en versie vast. Een vaste runtime voert het manifest uit; maaklaag en templates zijn aparte onderdelen.",
+        "boundary": "De historische opzet is teruggevonden, maar niet de oorspronkelijke code of ZIP. Vergelijk een manifest met directe runtimeconfiguratie; geen runtime-codegeneratie veronderstellen.",
+        "group": "Contract",
+        "public_sources": [],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-02",
+        "title": "Files-only oplevering",
+        "kind": "Ontwerp teruggevonden",
+        "mechanism": "Scheid bronpakket, manifest/schema, instructies, gegenereerd artifact en tests. Bewaar een bronindex en lever een herhaalbaar pakket zonder automatisch publiceren of deployen.",
+        "boundary": "Oorspronkelijke pakketinhoud en schema niet heropend. Een bestandsnaam in een oud gesprek is geen beschikbaar artifact.",
+        "group": "Contract",
+        "public_sources": [],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-03",
+        "title": "Twee selectors voor dezelfde sessie",
+        "kind": "Historische code",
+        "mechanism": "De actuele selector parseert achtereenvolgens runtime-overlay, startsnapshot en legacydata. De historische selector leest alleen startsnapshot en legacydata. Ongeldige JSON valt terug zonder exception.",
+        "boundary": "Parseerbaarheid is geen schemavalidatie of toestemming. Geldige maar onjuiste JSON kan winnen; fallback naar een ingetrokken versie moet worden verhinderd.",
+        "group": "Contract",
+        "public_sources": [],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-04",
+        "title": "Vaste start, veranderlijke uitvoering",
+        "kind": "Historische code en callers",
+        "mechanism": "Bij start worden legacyveld en snapshot geschreven, latere edits gaan naar een apart runtimeveld. De historische pagina en actions lezen de actieve voorbereiding via dezelfde selector.",
+        "boundary": "Commentaar noemt de startsnapshot onveranderlijk; opslagregels en alle consumers moeten dat afdwingen. Geen runtime- of migratietest uitgevoerd.",
+        "group": "Contract",
+        "public_sources": [],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-05",
+        "title": "Hardware, laadstatus en inferentie apart",
+        "kind": "Code-inspectie",
+        "mechanism": "Een browserengine controleert een echte WebGPU-adapter, accepteert een model uit de catalogus, downloadt/laden op aanvraag, hergebruikt een warm model en geeft het oude model bij wisselen vrij. Hardwareadvies en modelcatalogus staan los van laadstatus.",
+        "boundary": "Geheugenindicatie is geen meting. GPU-adapter beschikbaar betekent niet genoeg geheugen; download en warme/koude start apart meten. Geen browserinferentie uitgevoerd.",
+        "group": "Runtime",
+        "public_sources": [
+          "https://github.com/E-AI-MODEL/website/blob/f678a07d5fbda145d26faeacfce9c5955b5bc4aa/tools/eaispeak/src/browser-llm.js",
+          "https://github.com/E-AI-MODEL/website/blob/f678a07d5fbda145d26faeacfce9c5955b5bc4aa/tools/eaispeak/src/gpu-capability.mjs",
+          "https://github.com/E-AI-MODEL/website/blob/f678a07d5fbda145d26faeacfce9c5955b5bc4aa/tools/eaispeak/src/device-profile.mjs",
+          "https://github.com/E-AI-MODEL/website/blob/f678a07d5fbda145d26faeacfce9c5955b5bc4aa/tools/eaispeak/src/free-talk.js"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-06",
+        "title": "Readiness gebonden aan gekozen route",
+        "kind": "Code en aanwezige tests",
+        "mechanism": "Een sleutel over de volledige gekozen configuratie bindt de readiness-markering aan engine, model, endpoint en relevante opties. Voorbereiden voert per gekozen route een proef uit; wijziging maakt oude verificatie ongeldig. Een gekozen lokale route valt niet stilzwijgend terug in dit pad.",
+        "boundary": "De proef kan een modelaanroep zijn. Een readiness-markering is geen blijvend bewijs; hercheck versie, tijd en modelbeschikbaarheid. Lokale inferentie sluit andere netwerkfuncties niet automatisch uit.",
+        "group": "Runtime",
+        "public_sources": [
+          "https://github.com/E-AI-MODEL/website/blob/f678a07d5fbda145d26faeacfce9c5955b5bc4aa/tools/eaispeak/src/activation.mjs",
+          "https://github.com/E-AI-MODEL/website/blob/f678a07d5fbda145d26faeacfce9c5955b5bc4aa/tools/eaispeak/tests/activation.test.mjs",
+          "https://github.com/E-AI-MODEL/website/blob/f678a07d5fbda145d26faeacfce9c5955b5bc4aa/tools/eaispeak/src/free-talk.js"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-07",
+        "title": "Modelwissel en interrupt",
+        "kind": "Code-inspectie",
+        "mechanism": "Een model-load wordt begrensd door een in-flight vlag; unload wordt bij wisselen afgewacht. Generatie gebruikt een eigen interruptfunctie en een zichtbare generatievlag.",
+        "boundary": "In de adapter zelf staat geen harde single-generation mutex, unload/interrupt zijn optionele providerfuncties en niet bij alle fouten bewezen vrijgave. Test overlappende starts, stop tijdens load en resourceverlies.",
+        "group": "Runtime",
+        "public_sources": [
+          "https://github.com/E-AI-MODEL/website/blob/f678a07d5fbda145d26faeacfce9c5955b5bc4aa/tools/eaispeak/src/browser-llm.js",
+          "https://github.com/E-AI-MODEL/website/blob/f678a07d5fbda145d26faeacfce9c5955b5bc4aa/tools/eaispeak/src/gpu-capability.mjs",
+          "https://github.com/E-AI-MODEL/website/blob/f678a07d5fbda145d26faeacfce9c5955b5bc4aa/tools/eaispeak/src/device-profile.mjs",
+          "https://github.com/E-AI-MODEL/website/blob/f678a07d5fbda145d26faeacfce9c5955b5bc4aa/tools/eaispeak/src/free-talk.js"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-08",
+        "title": "Epoch-gebaseerde stopgrens",
+        "kind": "Code-inspectie",
+        "mechanism": "Een begrensde queue geeft elk item de actuele epoch mee. Stop verhoogt de epoch, leegt de wachtrij en verhindert dat verouderde resultaten of fouten terugkomen in een nieuwe sessie.",
+        "boundary": "Een lopende async vertaling wordt door epochcontrole niet noodzakelijk afgebroken. Meet lopende resources en afgeleverde resultaten afzonderlijk.",
+        "group": "Runtime",
+        "public_sources": [
+          "https://github.com/E-AI-MODEL/website/blob/f678a07d5fbda145d26faeacfce9c5955b5bc4aa/tools/eaispeak/src/live-session.mjs",
+          "https://github.com/E-AI-MODEL/website/blob/f678a07d5fbda145d26faeacfce9c5955b5bc4aa/tools/eaispeak/src/main.js"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-09",
+        "title": "Smalle capsule per modeltaak",
+        "kind": "Code en aanwezige tests",
+        "mechanism": "De server bouwt een capsule uit lokale vraag, vaste opties, aliassen van toegestane directe dependencies, begrensde bronfragmenten en eventueel lokaal verificatiecontract. Een nieuwe modelsessie per taak wordt na gebruik gesloten. Source broker resolveert alleen vooraf opgegeven handles.",
+        "boundary": "De bronbroker kan alsnog te brede tekst teruggeven; een adapter kan state hergebruiken. De testcode toont de bedoelde payloadgrens, niet alle providers of semantische isolatie.",
+        "group": "Isolatie",
+        "public_sources": [
+          "https://github.com/E-AI-MODEL/EAIwork-/blob/8754936ffe594766339e8f8493c963c41a0b4206/packages/gateway/src/gateway.ts",
+          "https://github.com/E-AI-MODEL/EAIwork-/blob/8754936ffe594766339e8f8493c963c41a0b4206/docs/worker-isolation.md",
+          "https://github.com/E-AI-MODEL/EAIwork-/blob/8754936ffe594766339e8f8493c963c41a0b4206/tests/gateway.test.ts"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-10",
+        "title": "Execute-only en dependency-orakel",
+        "kind": "Code en aanwezige tests",
+        "mechanism": "De workerroute accepteert alleen een lege body. Lees-, schrijf- en workerrechten zijn apart. Wie target mag lezen en uitvoeren, moet ook de ingelezen dependencies mogen lezen. Afgehandelde worker geeft een bodyloze 204, ook bij interne afwijzing.",
+        "boundary": "Dit beperkt een resultaatkanaal, geen volledige non-interference. Statusverschillen bij fouten, timing, andere auditvelden en bronbroker moeten apart worden getest.",
+        "group": "Isolatie",
+        "public_sources": [
+          "https://github.com/E-AI-MODEL/EAIwork-/blob/8754936ffe594766339e8f8493c963c41a0b4206/packages/server/src/server.ts",
+          "https://github.com/E-AI-MODEL/EAIwork-/blob/8754936ffe594766339e8f8493c963c41a0b4206/tests/server.test.ts"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-11",
+        "title": "Hercontrole na de modelcall en ABA",
+        "kind": "Code en aanwezige race-test",
+        "mechanism": "De worker onthoudt target- en dependencywaarden, vergelijkt ze na de call en weigert een veranderde basis. De test wijzigt één dependency tijdens generatie en verwacht geen commit.",
+        "boundary": "De implementatie vergelijkt waarden, geen monotone revisie. Bij A→B→A kan hetzelfde eindresultaat een tussentijdse wijziging verbergen. Controleer ook bron- en beleidsrevisie vóór commit.",
+        "group": "Isolatie",
+        "public_sources": [
+          "https://github.com/E-AI-MODEL/EAIwork-/blob/8754936ffe594766339e8f8493c963c41a0b4206/packages/server/src/server.ts",
+          "https://github.com/E-AI-MODEL/EAIwork-/blob/8754936ffe594766339e8f8493c963c41a0b4206/tests/server.test.ts"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-12",
+        "title": "Afgeleide status zonder zelfbevestiging",
+        "kind": "Code-inspectie",
+        "mechanism": "Bereken bewijsstatus opnieuw op geregistreerde bron, waarnemer, geldigheid, ondersteuning en gegronde deterministische checks. Een check die alleen dezelfde aanname herhaalt telt niet als nieuwe ondersteuning.",
+        "boundary": "Onafhankelijkheid van geregistreerde IDs/waarnemers is geen garantie dat onderliggende bronnen werkelijk onafhankelijk zijn. Geen onderwijs- of inhoudsclaim.",
+        "group": "Isolatie",
+        "public_sources": [
+          "https://github.com/E-AI-MODEL/EAIwork-/blob/8754936ffe594766339e8f8493c963c41a0b4206/packages/core/src/derive.ts"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-13",
+        "title": "Exacte permutatietoets bij kleine datasets",
+        "kind": "Historisch meetartifact",
+        "mechanism": "De twee historische 10-case proeven met 14M en 31M en 4/6 klassen gebruiken 210 labeltoewijzingen. Geen laag haalt een overtuigend signaal: laagste ruwe p respectievelijk 0,243 en 0,281. Bij NL-model 124M met 23 beoordeelde cases: laagste p 0,2056.",
+        "boundary": "De runs testen activatieverschil ten opzichte van gekozen labels en condities, niet algemene modelkennis. Geen onafhankelijke heruitvoering. Schrap geen nulresultaten.",
+        "group": "Meting",
+        "public_sources": [
+          "https://github.com/E-AI-MODEL/shadowseed-pro/blob/d9bb562f3df81d5bf1f4bc1389a8ca7e9605e6cd/benchmarks/open_review/rounds/round_027/README.md",
+          "https://github.com/E-AI-MODEL/shadowseed-pro/blob/d9bb562f3df81d5bf1f4bc1389a8ca7e9605e6cd/benchmarks/open_review/rounds/round_027/activation_probe_pythia14m_transfer_permutation.json",
+          "https://github.com/E-AI-MODEL/shadowseed-pro/blob/d9bb562f3df81d5bf1f4bc1389a8ca7e9605e6cd/benchmarks/open_review/rounds/round_027/activation_probe_pythia31m_transfer_permutation.json",
+          "https://github.com/E-AI-MODEL/shadowseed-pro/blob/d9bb562f3df81d5bf1f4bc1389a8ca7e9605e6cd/benchmarks/open_review/rounds/round_030/RESULTS.md"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-14",
+        "title": "Hoge score is geen overdraagbaar signaal",
+        "kind": "Historisch meetrapport",
+        "mechanism": "Qwen2.5-0.5B, 24 cases, sparse L1 LOOCV balanced accuracy 0,8824; ruwe p 0,018 tegenover grens 0,05/24 ≈ 0,00208. Centroïdedetector p 0,014. Nieuwe dataset van 24 cases: 0/4 vooraf vastgelegde toetsen haalt 0,0125. Op de vaste laag 5 bacc 0,5417, p 0,4232 volgens de bevestigingstabel.",
+        "boundary": "De historische rapporttekst bevat ook afwijkende prozawaarden; gebruik de vastgelegde bevestigingstabel. Geen bewijs voor stabiele codering op deze schaal. Rond 035 bevat preregistratie, geen resultaat in de gelezen snapshot.",
+        "group": "Meting",
+        "public_sources": [
+          "https://github.com/E-AI-MODEL/shadowseed-pro/blob/d9bb562f3df81d5bf1f4bc1389a8ca7e9605e6cd/benchmarks/open_review/rounds/round_032/RESULTS.md",
+          "https://github.com/E-AI-MODEL/shadowseed-pro/blob/d9bb562f3df81d5bf1f4bc1389a8ca7e9605e6cd/benchmarks/open_review/rounds/round_033/RESULTS.md",
+          "https://github.com/E-AI-MODEL/shadowseed-pro/blob/d9bb562f3df81d5bf1f4bc1389a8ca7e9605e6cd/benchmarks/open_review/rounds/round_035/README.md"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-15",
+        "title": "Reproduceerbaarheid los van transfer",
+        "kind": "Historisch meetrapport",
+        "mechanism": "Na pinnen van numerieke dependencies en gebruik van dezelfde opgeslagen labels rapporteren twee bevestigingsruns dezelfde cijfers. Ongepinde herhaling verschoof de sterkste laag. Een nieuwe dataset is een afzonderlijke replicatie.",
+        "boundary": "Gelijke cijfers op dezelfde dataset zijn geen generalisatie. Het rapport vermeldt dat de immutable modelsnapshot nog een ontbrekende pin was; precisie, preprocessing, code en modelrevision vastleggen.",
+        "group": "Meting",
+        "public_sources": [
+          "https://github.com/E-AI-MODEL/shadowseed-pro/blob/d9bb562f3df81d5bf1f4bc1389a8ca7e9605e6cd/benchmarks/open_review/rounds/round_032/RESULTS.md",
+          "https://github.com/E-AI-MODEL/shadowseed-pro/blob/d9bb562f3df81d5bf1f4bc1389a8ca7e9605e6cd/benchmarks/open_review/rounds/round_033/RESULTS.md",
+          "https://github.com/E-AI-MODEL/shadowseed-pro/blob/d9bb562f3df81d5bf1f4bc1389a8ca7e9605e6cd/benchmarks/open_review/rounds/round_035/README.md"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-16",
+        "title": "Lokale streamadapter met onveilige gedeelde staat",
+        "kind": "Code-inspectie",
+        "mechanism": "Een ontwikkeladapter heeft moduleglobale tokenbuffer, streamthread en vorige request-context. De LCP-cachelogica is uitgecommentarieerd; bij korte leegloop retourneert de adapter token 0. De caller voegt ontvangen tokens rechtstreeks toe en stuurt ze naar de parser.",
+        "boundary": "Dit is een concreet tegenvoorbeeld voor sessie-isolatie en een nul-token als wachtsignaal. Geen daadwerkelijke lekkage of beschadigd antwoord gereproduceerd; test twee gelijktijdige sessies, interrupt en vertraagde stream. Geen cachingvoordeel claimen.",
+        "group": "Runtime",
+        "public_sources": [
+          "https://github.com/E-AI-MODEL/gpt-oss/blob/89fe402d10a59879781a1eb0a64affdf4c278a4d/gpt_oss/responses_api/inference/ollama.py",
+          "https://github.com/E-AI-MODEL/gpt-oss/blob/89fe402d10a59879781a1eb0a64affdf4c278a4d/gpt_oss/responses_api/api_server.py"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-17",
+        "title": "Scheiding tussen lookup en genereren",
+        "kind": "Code-inspectie",
+        "mechanism": "Drie getypeerde toestandwaarden worden een vaste stringkey voor een vooraf geschreven scenariobeschrijving. Een aparte actie maakt een adviesprompt. De twee historische callers hebben dezelfde blob, terwijl de beschrijvingsdata verschillen.",
+        "boundary": "Directe lookup telt als gedeelde gewone softwarefunctie, geen besparing van hybride route. Beschrijvingen en oorspronkelijke normatieve claims niet overnemen. Geen twee onafhankelijke bevestigingen.",
+        "group": "Contract",
+        "public_sources": [],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-18",
+        "title": "Lokale preview en export",
+        "kind": "Code-inspectie",
+        "mechanism": "Een getypeerde kaart scheidt woorden en blokken, maakt een korte preview en een uitgebreide Markdown-export. Een verwante templatebouwer gebruikt placeholders en expliciete invulteksten. Samenstellen en exporteren vergt in deze functies geen modelaanroep.",
+        "boundary": "Een provider-deeplink draagt prompttekst over aan een andere dienst; apart egressbesluit. Ontbrekende invoer moet als ontbrekend zichtbaar blijven. Geen kwaliteitseffect gemeten.",
+        "group": "Contract",
+        "public_sources": [],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-19",
+        "title": "Outputcontract-test is geen gedragstest",
+        "kind": "Aanwezige tests",
+        "mechanism": "Een test leest skilltekst en controleert letterlijk of verplichte regels en termen aanwezig zijn. Dit beschermt een instructiecontract tegen onbedoelde verwijdering.",
+        "boundary": "Geen bewijs dat een model regels volgt of tokens bespaart. Voeg later echte betekenisbehoud- en uitvoertests toe.",
+        "group": "Meting",
+        "public_sources": [],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-20",
+        "title": "Mock, placeholder en vaste cijfers",
+        "kind": "Code-inspectie",
+        "mechanism": "Een mock-analyse geeft labels op basis van één woord; een checklist telt vooraf ingevulde statussen; een interactieve matrix vult ontbrekende strategieën met placeholders.",
+        "boundary": "Bewaar als demonstratie en negatieve referentie, niet als beoordelingsengine of werkelijke audit. Geen nieuwe inhoudelijke regels overnemen.",
+        "group": "Meting",
+        "public_sources": [],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-21",
+        "title": "JSON-parsing is geen inhoudscontract",
+        "kind": "Code-inspectie",
+        "mechanism": "Twee afzonderlijke modelroutes voor verbeteren of genereren gebruiken JSON-instructie en parse/foutafhandeling. Prompt en notities vormen een voorstel.",
+        "boundary": "Een geldige JSON-vorm garandeert niet alle verplichte velden, bronsteun of toestemming. Geen productieprovider aangeroepen.",
+        "group": "Isolatie",
+        "public_sources": [],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-22",
+        "title": "Buildresultaat versus live werking",
+        "kind": "Code-inspectie",
+        "mechanism": "Een script laat typecheck, build en artifactaanwezigheid opvolgen. De lokale preview-oproep gebruikt een timeout en negeert de exitstatus.",
+        "boundary": "Goed onderscheid tussen typecheck en artifact; previewcommando met genegeerde fout toont geen werkende server. Controleer werkelijke handeling later.",
+        "group": "Meting",
+        "public_sources": [],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-23",
+        "title": "Lokale matching en afzonderlijke echte endpoint-route",
+        "kind": "Code-inspectie",
+        "mechanism": "Een lokale matcher telt titel-trefwoorden. De optionele AI-matcher retourneert alleen het lokale resultaat; een aparte serverroute bevat een echte modelaanroep. Discovery is in deze versie mock.",
+        "boundary": "Een label een optionele AI-route bewijst geen inferentie en een model-endpoint bewijst niet dat de gebruiker het bereikt. Trace de caller; trefwoordscore is geen semantische juistheid.",
+        "group": "Runtime",
+        "public_sources": [],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-24",
+        "title": "Test het geëxporteerde artifact",
+        "kind": "Aanwezige browsertest",
+        "mechanism": "De test importeert JSON, controleert IDs en velden bij roundtrip, verandert data in de editor, downloadt HTML, opent het afzonderlijk en blokkeert HTTP(S)-requests vóór het testen van gedrag.",
+        "boundary": "Sterk acceptatiepatroon voor modelvrije artifact-runtime. Testbestand gelezen; test niet in deze ronde gedraaid. Geen nieuwe lesinhoud opgenomen.",
+        "group": "Contract",
+        "public_sources": [
+          "https://github.com/E-AI-MODEL/wihtml/blob/449d9d9ec3d0f883bd190fc5287eaccfe1d87854/tests/check_site.py",
+          "https://github.com/E-AI-MODEL/wihtml/blob/449d9d9ec3d0f883bd190fc5287eaccfe1d87854/tests/journey.mjs",
+          "https://github.com/E-AI-MODEL/wihtml/blob/449d9d9ec3d0f883bd190fc5287eaccfe1d87854/docs/v9-export-herstel.md"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-25",
+        "title": "Historische SSOT-controles als gegevensregister",
+        "kind": "Historische rapportage",
+        "mechanism": "Het oudere CSV-export bevat 1.661 controlerijen met passed=True, waaronder referenties, beschermd semantisch veld, versie/tracecontract en runtime read-only. De bijbehorende documentatie beschrijft de validator.",
+        "boundary": "De onderzochte Git-tree bevat exports en documentatie maar niet het validatorscript of de volledige JSON-bundel. Het CSV is een opgeslagen resultaat, geen opnieuw gecontroleerde uitvoering.",
+        "group": "Meting",
+        "public_sources": [],
+        "verification": "not_run"
+      },
+      {
+        "id": "R10-26",
+        "title": "Identiteit en lokale staatupdates",
+        "kind": "Code-inspectie",
+        "mechanism": "Een lokale state-service zoekt bestaande records op een combinatie van identificerende velden en gebruikt gegenereerde IDs bij nieuwe records.",
+        "boundary": "Niet als transactionele upsert, globale uniekheid of duurzame opslag kwalificeren. Geen echte persoonsgegevens of records gelezen; alleen de technische bronfunctie.",
+        "group": "Isolatie",
+        "public_sources": [],
+        "verification": "not_run"
+      }
+    ],
+    "revisited_limited_repository_names": 15
+  },
+  "comparison_round": {
+    "id": "11",
+    "record_file": "../../../research/register/RONDE-11-VERGELIJKING.md",
+    "records_count": 14,
+    "phase_4a": "NO-GO",
+    "runtime_tests_executed": false,
+    "records": [
+      {
+        "id": "R11-01",
+        "title": "Getypeerd plan uit bestaande bouwstenen",
+        "kind": "Code en aanwezige tests",
+        "mechanism": "Een planner selecteert nodes uit een register; de validator controleert toegestane nodes, verbindingen, typen, parameters, ariteit en cycli. De compiler sorteert topologisch en assembleert templates.",
+        "boundary": "Bewaar een modelvrij manifest als alternatief voor gegenereerde code. Vergelijk identieke fixtures, inclusief ongeldige of ontbrekende parameters. Geen veiligheidsgarantie door typecontrole alleen.",
+        "group": "Compiler",
+        "public_sources": [
+          "https://github.com/prnvh/plancompiler/blob/002b9d32014302c48cc58aa9e110b3394ed2e003/core/compiler.py",
+          "https://github.com/prnvh/plancompiler/blob/002b9d32014302c48cc58aa9e110b3394ed2e003/core/validator.py",
+          "https://github.com/prnvh/plancompiler/blob/002b9d32014302c48cc58aa9e110b3394ed2e003/tests/test_validator_contracts.py"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R11-02",
+        "title": "Vrije verbindingscode omzeilt de bedoeling van het manifest",
+        "kind": "Code-inspectie",
+        "mechanism": "De compiler neemt niet-lege glue_code rechtstreeks op in het uitvoerbare artifact; anders genereert hij bindings vanuit het plan. Een getypeerde DAG alleen beperkt die vrije code niet.",
+        "boundary": "Voor onze manifestvariant moet vrije code buiten de toegestane uitvoer liggen. Tegenproef: onbekende node, verboden parameter en vrije uitvoeropdracht. Geen extern script uitgevoerd.",
+        "group": "Compiler",
+        "public_sources": [
+          "https://github.com/prnvh/plancompiler/blob/002b9d32014302c48cc58aa9e110b3394ed2e003/core/compiler.py",
+          "https://github.com/prnvh/plancompiler/blob/002b9d32014302c48cc58aa9e110b3394ed2e003/core/validator.py"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R11-03",
+        "title": "Gekalibreerde modelkeuze",
+        "kind": "Code-inspectie",
+        "mechanism": "Controller routeert tussen een sterk en zwak model met een expliciete drempel. De laatste berichtinhoud voedt de router. Kalibratie gebruikt een quantiel van een eerder datasetbestand om een gewenste sterke-model-fractie te benaderen.",
+        "boundary": "Een drempel voor het gewenste aandeel is geen kwaliteitsgrens; toets op nieuwe representatieve input, contextafhankelijkheid en onthouding bij onzekerheid. Houd modelpaar gelijk waar mogelijk.",
+        "group": "Routering",
+        "public_sources": [
+          "https://github.com/lm-sys/RouteLLM/blob/0b64fdafe049e596a3f5657c219329f24af24198/routellm/controller.py",
+          "https://github.com/lm-sys/RouteLLM/blob/0b64fdafe049e596a3f5657c219329f24af24198/routellm/calibrate_threshold.py",
+          "https://github.com/lm-sys/RouteLLM/blob/0b64fdafe049e596a3f5657c219329f24af24198/routellm/routers/routers.py"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R11-04",
+        "title": "Routerkosten tellen mee",
+        "kind": "Code-inspectie",
+        "mechanism": "De similarity-weighted router vraagt een externe embedding op vóór de generatie. Andere routers gebruiken classificatiemodellen. Het ene zichtbare antwoord kan dus voorafgaande inferentie bevatten.",
+        "boundary": "Neem embedding, classificatie, routinglatentie en modeloproep apart op in de trace. Voor lokaal-only gebruik geen externe embedding toestaan. Vergelijk met modelvrije regels en een gewone baseline.",
+        "group": "Routering",
+        "public_sources": [
+          "https://github.com/lm-sys/RouteLLM/blob/0b64fdafe049e596a3f5657c219329f24af24198/routellm/routers/routers.py"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R11-05",
+        "title": "Cache-identiteit en toegangsgrens",
+        "kind": "Code en ontwerpdocumentatie",
+        "mechanism": "Een prefixcache hergebruikt volledige KV-blokken via een hash van voorgeschiedenis, huidige tokens en extra gegevens, waaronder adapters, multimodale hashes en optionele salt. De salt wordt in het eerste blok verwerkt.",
+        "boundary": "Bind de salt server-side aan de toegestane scope; optionele clientinvoer is geen autorisatie. Cache-hit is minder prefillwerk, niet automatisch minder gefactureerde tokens. Meet warm/koud, gelijk/ander recht en bronrevisie.",
+        "group": "Cache",
+        "public_sources": [
+          "https://github.com/vllm-project/vllm/blob/2696e76225ebb264dbb284571cacd8c081d7ddf4/docs/design/prefix_caching.md",
+          "https://github.com/vllm-project/vllm/blob/2696e76225ebb264dbb284571cacd8c081d7ddf4/vllm/v1/core/kv_cache_utils.py"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R11-06",
+        "title": "Warmup mag de meting niet vervalsen",
+        "kind": "Aanwezige tests",
+        "mechanism": "De benchmarktest verwacht dat readiness- en warmuprequests een eigen cache_salt dragen. Bij specifieke serverafwijzing kan de benchmark zonder salt terugvallen.",
+        "boundary": "Voor onze proef expliciete cold/warm condities en geen stille downgrade van isolatie. Testcases met afwijzing, transient fout en hergebruik. Geen gemeten prestatieverschil in deze ronde.",
+        "group": "Cache",
+        "public_sources": [
+          "https://github.com/vllm-project/vllm/blob/2696e76225ebb264dbb284571cacd8c081d7ddf4/tests/benchmarks/test_serve_cache_salt.py",
+          "https://github.com/vllm-project/vllm/blob/2696e76225ebb264dbb284571cacd8c081d7ddf4/benchmarks/benchmark_prefix_caching.py"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R11-07",
+        "title": "Model-lock, onderbreking en nieuwe sessie",
+        "kind": "Code en aanwezige tests",
+        "mechanism": "De browserengine heeft een lock per geladen model, abortcontroller voor reload en interruptsignaal. Integratietests met mockpipeline controleren reset van interrupt, rebuild van gesprek, usage en vrijgave bij afgebroken streams.",
+        "boundary": "Mockpipeline bewijst geen werkelijke GPU-vrijgave. Meet in-flight werk na stop, stop tijdens load, parallelle sessies en resourcehergebruik.",
+        "group": "Runtime",
+        "public_sources": [
+          "https://github.com/mlc-ai/web-llm/blob/df83db6cb05bd78daf0cb1afd8c5da550c4a7c6e/src/engine.ts",
+          "https://github.com/mlc-ai/web-llm/blob/df83db6cb05bd78daf0cb1afd8c5da550c4a7c6e/tests/engine_integration.test.ts"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R11-08",
+        "title": "Afzonderlijke meting van prefill, decode en numerieke overeenstemming",
+        "kind": "Code-inspectie",
+        "mechanism": "Een benchmarkworker gebruikt dezelfde referentietokens voor een forced-decode controle tegen een CPU-baseline. Bij te weinig vergeleken tokens markeert hij de score als onvoldoende; een gefaalde consistentiefase kan nog een afzonderlijke performancemeting opleveren.",
+        "boundary": "Geen overeenkomst van vrije tekst verwarren met numerieke overeenkomst. Test op identieke modelrevision, quantisatie en context; rapporteer OOM, eerste laadkosten, temperatuur/throttling en mislukte checks. Geen live benchmark uitgevoerd.",
+        "group": "Runtime",
+        "public_sources": [
+          "https://github.com/abhijitramesh/webgpu-bench/blob/c5c7d19cf69587aa679e6c31aeca08b94ad5a7d3/site/js/run/bench-worker.js",
+          "https://github.com/abhijitramesh/webgpu-bench/blob/c5c7d19cf69587aa679e6c31aeca08b94ad5a7d3/runner.js"
+        ],
+        "verification": "not_run"
+      },
+      {
+        "id": "R11-09",
+        "title": "Toestandsovergangen met guards",
+        "kind": "Code-inspectie",
+        "mechanism": "Een frontendmodule definieert toegestane toestandsovergangen en per overgang expliciete voorwaarden; automatische overgang kiest de eerste toegestane kandidaat. De historische edgefunctie bevat daarnaast eigen faseberekening.",
+        "boundary": "Niet bewezen dat de frontend-FSM de werkelijke runtime aanstuurt. Vergelijk echte backendbeslissing met contract; expliciete fout bij onbekende guard, conflict tussen toegestane routes en verouderde staat.",
+        "group": "Compiler",
+        "public_sources": [],
+        "verification": "not_run"
+      },
+      {
+        "id": "R11-10",
+        "title": "Drift tussen client, SSOT en uitvoerende functie",
+        "kind": "Code en aanwezige tests",
+        "mechanism": "Een versiegebonden 32-bit inhoudshash en tests vergelijken brondata met in de test overgeschreven edge-constanten.",
+        "boundary": "Een 32-bit hash is geen cryptografische authenticatie; een test die gekopieerde constanten vergelijkt ziet niet noodzakelijk actuele edgecode. Genereer beide uit dezelfde bron of test het echte runtimeartifact.",
+        "group": "Compiler",
+        "public_sources": [],
+        "verification": "not_run"
+      },
+      {
+        "id": "R11-11",
+        "title": "Volg alle aanroeppaden",
+        "kind": "Code-inspectie met callers en endpoints",
+        "mechanism": "Een normaal tekstpad kan vooraf classificeren, een antwoord genereren, achteraf classificeren en conditioneel herschrijven; ieder afbeeldingslabel kan een aparte beeldoproep doen. De streamingroute wijkt af. De drie edgefuncties bevatten echte provider-gateway fetches.",
+        "boundary": "Dit zijn statische routes, geen geobserveerde oproepfrequentie of factuur. Tel per aangeboden verzoek iedere dispatch, ook bij fouten. Meet ook het deel dat door lokale beslisregels kan worden vervangen zonder taakverlies.",
+        "group": "Routering",
+        "public_sources": [],
+        "verification": "not_run"
+      },
+      {
+        "id": "R11-12",
+        "title": "Tokenmeting en schijnzekerheid",
+        "kind": "Code-inspectie",
+        "mechanism": "Een historische fallback rekent inputtokens uit als tweemaal het aantal invoertekens en outputtokens als tekenlengte; die telling sluit ook de extra modelroutes niet in. De reliability-pipeline mapt onbekende labels en gebruikt vaste confidence-waarden.",
+        "boundary": "Geen tokenfactuur, echte onzekerheid of modelkwaliteit afleiden uit zulke heuristieken. Splits schatting, werkelijke providerusage en onbekende velden; behandel onbekende referenties niet als geldige match door fuzzy repair.",
+        "group": "Routering",
+        "public_sources": [],
+        "verification": "not_run"
+      },
+      {
+        "id": "R11-13",
+        "title": "Adaptief lockvenster als afzonderlijke hypothese",
+        "kind": "Code-inspectie",
+        "mechanism": "Een deterministische kernel kiest de duur van een lock vanuit een updatewindow en dominant snel/middel/langzaam gewicht; houdt de strategie vast tot een herzieningstrigger of ontbrekende context. Een verwante edgekernel gebruikt meerdere entropiesporen.",
+        "boundary": "Het bestaan van een toestandregel bewijst geen besparing of kwaliteit. Vergelijk vaste lock, adaptieve lock en geen lock met gelijk invoerverloop; gebruik aparte intrekkingsregels. Bestaande afgeleiden aanvullen, niet als onafhankelijk mechanisme dubbel tellen.",
+        "group": "Routering",
+        "public_sources": [],
+        "verification": "not_run"
+      },
+      {
+        "id": "R11-14",
+        "title": "Regex-outputcontrole is begrensd",
+        "kind": "Code-inspectie",
+        "mechanism": "Een guard kiest afhankelijk van fase een lijst regex-signalen voor ongewenste antwoordpatronen. Een signaal leidt tot een detectiebit.",
+        "boundary": "Een regex die geen match vindt bewijst geen naleving. Test parafrases, ontkenningen en variatie; gebruik detectie als signaal, niet als universele inhoudsgarantie.",
+        "group": "Runtime",
+        "public_sources": [],
+        "verification": "not_run"
+      }
+    ],
+    "exa_searches": 4,
+    "requested_result_slots": 20,
+    "external_repositories": 5,
+    "own_projects_revisited": 3
   }
 }
