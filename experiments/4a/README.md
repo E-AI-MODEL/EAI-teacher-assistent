@@ -12,7 +12,7 @@ python run.py --report result.json
 python -m unittest -v test_regressions
 ```
 
-De eerste lokale uitvoering is geslaagd binnen de vastgelegde neutrale fixture. Geen werkelijke modelinferentie, betaalde CI, vakinhoud of productiearchitectuur. De adaptieve strategieproef volgt afzonderlijk. Zie [startcontract](../../benchmarks/4A-STARTCONTRACT.md).
+De eerste lokale uitvoering is geslaagd binnen de vastgelegde neutrale fixture. Geen werkelijke modelinferentie, betaalde CI, vakinhoud of productiearchitectuur. De afzonderlijke strategieproef is uitgevoerd; zie hieronder. Zie [startcontract](../../benchmarks/4A-STARTCONTRACT.md).
 
 ## Afzonderlijke strategieproef 4a.3
 
