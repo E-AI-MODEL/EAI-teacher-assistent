@@ -1,0 +1,36 @@
+# Fase 4a | Startcontract voor één technische proef
+
+Status: gereed voor de afgebakende proef na merge van [het onderzoeksbesluit](../research/FASE-3B-3C-BESLUIT.md). Nog niet uitgevoerd. Geen echte model-API, modeldownload, persoonsgegevens, vakinhoud, productie-UI of betaalde CI.
+
+## Bevroren neutrale gegevens
+
+Gebruik exact dezelfde fixture voor iedere arm. Scheid de aangeboden invoer, de responses van de geïnjecteerde stub en de verwachte resultaten. De runner mag de verwachtingen niet aan de modeladapter of compiler meegeven. De proef bevat twee scopes: SA mag onder beleid P1 de records R1 en R2 gebruiken, SB alleen R3. De waarden zijn ALPHA, BETA en GAMMA. P2 trekt R1 voor SA in; P3 herstelt de inhoud van P1 maar heeft een nieuw monotone revisienummer. R1 verandert ook in een aparte bronversie. De gedeelde handeling LOOKUP(ref) vraagt geen modeltaak. De experimentele handeling RESOLVE(signal) gebruikt geregistreerde regels: EXACT1 → R1, EXACT2 → R2, AMBIG → twee kandidaten, OTHER → geen kandidaat. Voor SA is R3 nooit beschikbaar; onbekende bewerking en een niet-toegestane scope worden afgewezen vóór dispatch. De proef bevat geen vrije uitvoeringscode.
+
+Modelstubs maken voorstellen SELECT(ref), GENERATE(neutrale waarde), CLARIFY of HANDOFF. Een proposal is geen autorisatie. De testharnas kiest een stubbeschikbaarheid en een transportscenario los van de verwachte uitkomst. De adapter krijgt alleen het getypeerde taakcontract en de toegestane context. Bij R=uit is de experimentele handeling een gewone modelstubtaak; bij R=aan gebruikt een unieke toepasselijke regel een engine. Bij een enginefout of DENY volgt geen modelbypass. Bij UNKNOWN (ook AMBIG) alleen de geautoriseerde modelroute. Voorbeeld-stubvoorstellen zijn testinvoer, geen bewijs dat een echt model hetzelfde zou kiezen.
+
+## 4a.1: gedeelde contracten
+
+De bestaande [P01–P03](TECHNISCHE-PROEVEN.md) blijven leidend voor transport, attempts, scope, revisies, deduplicatie, routebereik en proposalcontrole. Voeg onderstaande onderscheidende controles toe aan hetzelfde programma. De exacte concrete testgevallen en verwachte uitkomsten worden als aparte fixtures in een eerste commit van de proefbranch vastgelegd, vóór de kandidaatimplementatie. Geen gold labels in modelcontext. De fixture- en configuratiedigest worden in ieder RunManifest opgenomen.
+
+| ID | Invoer / proef | Verwachting vóór uitvoering |
+| --- | --- | --- |
+| P02-D1 | Zelfde geldige bron en beleid, drie nieuwe geautoriseerde aanvragen; P=uit versus P=aan | De canonieke artifactinhoud en uitkomst zijn gelijk. De eerste arm compileert voor ieder nieuw gebruik; de tweede hergebruikt het artifact na één compilatie. Registreer echte compilatiegebeurtenissen, niet alleen een geprogrammeerd getal. |
+| P02-D2 | Nieuwe bron-/beleidsrevisie; ongeldige referentie of onbekende manifestbewerking | Hercompilatie bij wijziging; ongeldig contract faalt vóór uitvoering; geen vrij uitvoerbare modelcode. Geen oud artifact gebruiken om nieuwe bevoegdheid te omzeilen. |
+| P02-E1 | Drie geautoriseerde beurten met gelijkblijvende expliciete strategie-afhankelijkheden. S=uit versus S=aan. Vaste lock geldig op beurten 1–3. | S=uit herbeoordeelt iedere beurt; S=aan beoordeelt beurt 1 en hergebruikt bij 2/3. Autorisatie en huidige revisiecontrole gebeuren in beide armen bij iedere aanvraag. |
+| P02-E2 | Beurt 4 na verloop; aparte sequenties met intrekking, bronwijziging, kritiek signaal en onbekende vereiste waarneming binnen het venster | Lock verloopt of vervalt vóór routekeuze. Onbekende invoer telt niet als bevestiging. Geen eerdere strategie gebruiken als bevoegdheid. Nieuwe aanvraag kan een andere geldige route hebben; registreer de werkelijke herbeoordeling en route. |
+| P05-A1 | RESOLVE(OTHER) met getypeerde taak die R1 en een expliciet contextveld vereist; R2 is toegestaan en relevant als optionele achtergrond; R3 is verboden. M=uit versus M=aan | Beide payloads bevatten R1 en het vereiste veld met actuele herkomst; gerichte projectie laat alleen de optionele achtergrond weg. R3 verschijnt in geen van beide payloads. Vergelijk werkelijk geserialiseerde bytes, velddekking en voorsteltype; geen semantische conclusie uit dezelfde stubresponse. |
+| P05-A2 | Vereist veld ontbreekt, referentie gewijzigd of context niet meer toegestaan | Niet stilzwijgend doorgaan met een te klein of verouderd pakket; zichtbare CLARIFY/HANDOFF of afwijzing volgens de vooraf bevroren taakvoorwaarden. Geen onzichtbare extra call. |
+
+De P01-transportgevallen en P02-autoriteitsgevallen moeten blijven slagen voor alle relevante armen. Deduplicatie is process-local; herauthenticatie vóór replay. Maak onderscheid tussen een geldig runtime-resultaat, een afwijzing, een niet-bereikte route, onzekere dispatch en onbekende facturering. Bewaar alle trace- en attempt-records, ook bij een fout.
+
+## 4a.2: factoren afzonderlijk vergelijken
+
+Start na geslaagde 4a.1. Gebruik één runner met baseline 0000, P 1000, S 0100, R 0010, M 0001 en PSRM 1111 (volgorde P/S/R/M). A = 0000, B = 0001, C = 0011 en D = 0011 met lokale stub. De vier hoofdvarianten worden op dezelfde abstracte taken aangeboden. Voor de factorvergelijking blijven adapter, stubs, taakcontract, autorisatie en aangeboden invoer gelijk; de extra lokale arm test uitsluitend de dispatchgrens. K0/LOOKUP is gedeeld en telt niet als hybride besparing. Test waar nodig de combinatie zonder één factor, maar voeg geen dure verplichte classifier of tweede modeltaak toe.
+
+Na een werkende vaste S-lock: vergelijk herbeoordeling per beurt, vaste lock, hysteresis zonder entropie en pas daarna adaptief venster. Gebruik dezelfde gespecificeerde gebeurtenisreeksen: stabiel, incidentele afwijking, herhaald conflict, ontbrekende waarde, kritieke interrupt en terugkeer van een oude bronwaarde. Leg de precieze gewichten en grenswaarden vooraf vast in de testfixture; geen empirische afstelling op dezelfde bevestigingsreeks. Tel behoud, wissels, onterechte lock, herbeoordelingen en extra observatiewerk. Entropie is een maat voor variatie, geen bewijs van juistheid.
+
+## Acceptatie en stop
+
+Alle vooraf opgegeven technische routes moeten aantoonbaar bereikt zijn. Iedere aangeboden aanvraag heeft precies één trace; iedere werkelijk gestarte poging heeft precies één attempt-record. Controleer werkelijke gekozen uitvoerders, actuele rechten/revisies, voorstelcontract en terminale status. Stop bij één onbevoegde of verouderde aflevering, onverwachte externe dispatch, dubbel side-effect, ontbrekend attempt-record of niet-bereikte verplichte route. Een geweigerde of onbekende poging telt niet als geslaagde aflevering. Schrijf het proefrapport met de echte uitkomsten, inclusief ontbrekende en mislukte resultaten. Behoud oorspronkelijke testgevallen en verwacht gedrag; wijzigingen aan de meetopzet worden als nieuwe versie met motivatie vastgelegd.
+
+De vergelijkingsresultaten van 4a zijn aantallen modelstubtaken, echte engine- en compilatiegebeurtenissen, strategieherbeoordelingen, contextbytes, fouten en technische invariantcontroles. Stubusage en timing zijn alleen simulatie of lokale proefmetingen, geen echte providerkosten of modelkwaliteit. Maak geen euro-, schaal- of leerclaim. Een nieuw besluit is vereist voor echte inferentie, vakinhoud en architectuurkeuze.

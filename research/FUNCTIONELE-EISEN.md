@@ -1,6 +1,6 @@
 # Functionele vergelijking vóór de inhoudelijke use case
 
-> Status v0.3: Deze bevindingen blijven behouden als voorlopige bronnen. Zij begrenzen de heropende brede verkenning niet. Zie de [onderzoeksindeling](ONDERZOEKSINDELING.md).
+> Historische verkenning: deze bevindingen blijven voorlopige bronnen. De huidige technische uitwerking staat in de [specificatie v0.1](TECHNISCHE-SPECIFICATIE.md). Fase 4a toetst technische contracten; inhoudelijke uitwerking en definitieve hergebruikbesluiten blijven open.
 
 
 Ontwerp v0.2, 27 november 2026. Dit beschrijft voorgestelde functies en onderzoeksvragen, geen vastgestelde productfuncties van Neon. De aanleiding staat in [VERKENNING.md](VERKENNING.md) en [de Neon-bronnen](neon/BRONNEN.md).

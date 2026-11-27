@@ -1,6 +1,6 @@
 # Fase 4 — minimale vergelijkingsproeven
 
-> Status v0.3: Dit blijft een concept voor een latere fase. Geen proeven uitvoeren voordat de brede verkenning en specificatie van A–D (fase 3a–3c) zijn afgerond. Zie de [onderzoeksindeling](../research/ONDERZOEKSINDELING.md).
+> Status v0.5 (27 november 2026): **technisch gereed voor afgebakende fase 4a na merge.** Zie [herbeoordelingsbesluit](../research/FASE-3B-3C-BESLUIT.md) en [startcontract P/S/R/M](4A-STARTCONTRACT.md). De oorspronkelijke P01–P03-gevallen blijven behouden; de minimale compilatie-, strategie- en contextproeven zijn aanvullend. Nog geen uitgevoerde runtime- of modeltests.
 
 
 Ontwerp, 27 november 2026. Nog niet uitgevoerd. Eerst technieken toetsen op kleine fictieve gegevens; geen volledige les, geen echte leerlinggegevens. A–D blijven de uiteindelijke vier uitvoeringen. Deze proeven onderzoeken afzonderlijke mechanismen, geen extra chatbots.
@@ -22,9 +22,24 @@ Ontwerp, 27 november 2026. Nog niet uitgevoerd. Eerst technieken toetsen op klei
 
 ## Proefopbouw
 
-Na fase 3c: herbeoordeel de kandidaatproeven P01–P03 en begin daarmee wanneer zij de gekozen hypotheses daadwerkelijk onderscheiden. Gebruik één gedeelde set minimale contractfixtures: expliciete context, een toegewezen versie, één gecontroleerde respons, een bekende invoer die gewone logica kan verwerken en een onbekende invoer. Neem twee taaktypen op met uitsluitend de kleinste noodzakelijke fictieve inhoud (taal en rekenen). Verwachte uitkomsten staan buiten de modelcontext. Nog geen keuze van framework, provider of model.
+Gebruik één gedeelde abstracte fixture: twee fictieve scopes, een bundel met bijvoorbeeld records R1/R2, revisies V1/V2, neutrale stringwaarden, toegestane en verboden bewerkingen en vaste stubvoorstellen. Geen taal- of rekenopgave, vakinhoud, leerlinggegevens, lespakket of tutorprompt. Bevries fixture, verwachtingen en configuratie vóór uitvoering. Verwachte uitkomsten staan in testasserties, niet als verborgen labels in modelcontext. De proefrunner legt de variant vast. Gebruik een geïnjecteerde adapter zonder API-key, modeldownload of echte inferentie.
 
-P04–P07 gebruiken dezelfde contextidentiteit en het meetcontract uit P01. P09 begint in dezelfde stubproeven. P08 en P10 vergen echte modellen; start lokaal indien beschikbaar, pas betaalde calls toe na afzonderlijk budgetbesluit. Een mocktest meet geen werkelijke modelkwaliteit of capaciteit. Gebruik voor echte servingproeven een bestaande benchmarkclient (zie technische audit).
+### Afgebakende proeven in 4a
+
+| Proef | Gevallen | Vereiste uitkomst |
+| --- | --- | --- |
+| P01-A Telemetrie | Succes, ontbrekende usage, gedeeltelijke usage bij fout | Eén record per poging; unknown blijft unknown; geen dubbeltelling |
+| P01-B Transport en budget | Definitief geweigerde dispatch, expliciet toegestane tweede poging, onzekere dispatch, budget op | Lokale poging, dispatch en facturering apart; geen verborgen retries |
+| P01-C D-grens | Lokale stub beschikbaar/onbeschikbaar; verzoek tot externe adapter | Geen externe dispatch in D; onbeschikbaarheid zichtbaar |
+| P02-A Autoriteit | Geldige context, vervalste scope, ongeldige referentie en overlay | Alleen geautoriseerde gegevens, geen onbevoegde contextmutatie |
+| P02-B Versie | R1 geldig in V1, ingetrokken in V2; oude waarde terug met nieuwe revisie | Stale uitkomst niet afleveren, ook niet na terugkeer van de waarde |
+| P02-C Dubbele aanvraag | Zelfde aanvraag; afwijkende invoer met hetzelfde ID; gewijzigde rechten | Eén uitvoering in de enkelprocesproef; conflict of afwijzing waar nodig |
+| P03-A Gedeelde functie | Expliciete gewone lookup | A–D dezelfde uitkomst zonder modeltaak; geen kunstmatige winst voor C |
+| P03-B Routebereik | Experimentele aanvraag met aantoonbare MATCH | A/B modelstub, C/D gewone uitvoerder; trace toont werkelijk gebruikte route |
+| P03-C Onbekend of verboden | UNKNOWN, meerdere matches, DENY | Onzekere toegestane gevallen bereiken modelstub; DENY wordt niet omzeild |
+| P03-D Voorstelcontrole | Geldige SELECT, ongeldige referentie, GENERATE, CLARIFY en HANDOFF | Type, toegangsgrens en route kloppen; geen verplichte tweede call |
+
+P04–P07 volgen waar de eerste proef hun contract nodig maakt. P09 begint in observatiemodus en onderscheidt voorspelde van uitgevoerde routes. P08/P10 wachten op een gemotiveerde modelkeuze, beschikbare infrastructuur en een afzonderlijk budgetbesluit. Geen echte modelrun in 4a. Gebruik voor latere servingproeven een bestaande benchmarkclient (zie technische audit).
 
 ## Minimaal meetcontract (ontwerp)
 
@@ -38,4 +53,4 @@ Synthetische records, echte providerrecords en geaggregeerde kosten hebben gesch
 
 Per proef: vaste bronversie, inputfixture, verwachte eigenschappen, werkelijk antwoord, gemeten waarden en afwijkingen. Test expliciet de negatieve gevallen. Leg vóór de definitieve kwaliteits- en kostenvergelijking de acceptatiegrenzen vast. Een veiligheids-/toegangslek of gebruik van onjuiste bronversie blokkeert die route; een niet-bereikte experimentele route levert geen oordeel op over haar kwaliteit. Maak onderscheid tussen niet gemeten, mislukt, afgewezen en succesvol.
 
-Geen nieuwe betaalde CI, geen productieomgeving, geen omvangrijk lespakket. De eerste technische oplevering is een kleine uitvoerbare proef met herhaalbare meetgegevens. Pas na die proef besluiten we welke technologieën de gedeelde architectuur dragen.
+De eerste proef slaagt uitsluitend wanneer alle gespecificeerde technische invarianten in de bevroren fixture slagen. Lek, stale output, ontbrekend attempt-record, onverwachte dispatch of niet-bereikte verplichte route blokkeren het betreffende resultaat. Rapporteer ontbrekende resultaten apart. Stub-usage, kunstmatige timing en routebereik bewijzen geen providerkosten, modelkwaliteit, echte netwerkisolatie of productiecapaciteit. Geen extrapolatie naar leerlingen of schaal. Geen betaalde CI, productieomgeving, UI of vakinhoud. Na 4a bepalen we welke aanvullende proeven nodig zijn vóór een architectuurbesluit.

@@ -1,6 +1,6 @@
 # Vergelijkingsprotocol (ontwerp v0.2)
 
-> Status v0.3: Dit blijft een concept voor een latere fase. Geen proeven uitvoeren voordat de brede verkenning en specificatie van A–D (fase 3a–3c) zijn afgerond. Zie de [onderzoeksindeling](../research/ONDERZOEKSINDELING.md).
+> Status v0.5: dit protocol beschrijft de latere vergelijking van volledige gesprekken. De [afgebakende stubproef](4A-STARTCONTRACT.md) is technisch gereed voor start na merge van [het herbeoordelingsbesluit](../research/FASE-3B-3C-BESLUIT.md). Geen vakinhoud, echte inferentie of definitieve modelkeuze.
 
 
 ## Onderzoekseenheid
@@ -16,9 +16,9 @@ Een volledig leerlinggesprek rond een opdracht; daarnaast rapportage per aanroep
 
 ## Eerst mechanismen onderzoeken
 
-Het uitvoeringsvoorstel voor fase 4 staat in [TECHNISCHE-PROEVEN.md](TECHNISCHE-PROEVEN.md). De eerste kandidaatproeven betreffen een per-poging meetcontract, versiegebonden context en routing vóór generatie; de keuze wordt na fase 3c bevestigd of herzien. Gebruik dezelfde contractfixtures voor alle technieken. De eindvergelijking blijft A–D.
+Het voorgestelde eerste pakket voor fase 4a staat in [TECHNISCHE-PROEVEN.md](TECHNISCHE-PROEVEN.md): P01 (meting en budget), P02 (autoriteit en revisies) en P03 (route en uitvoergrenzen). Het startcontract voegt een minimale compilatie-, strategie- en contextvergelijking toe vóór de factorproef. Behoud dezelfde abstracte fixtures en gewone gedeelde softwarefuncties voor alle varianten; die functies tellen niet als besparing van C. De stubproeven zouden technische invarianten toetsen; werkelijke modelkwaliteit en kosten komen later.
 
-Voor het bouwen van uitgebreide use cases: kleine vergelijkende proeven uit de [functiematrix](../research/FUNCTIONELE-EISEN.md) met dezelfde context en hulpgrens, bekende én onbekende foutgevallen, geldige alternatieve antwoorden en gewijzigde lesversies. Meet de nauwkeurigheid van routekeuze, dekking van veilige niet-LLM-routes, foutieve automatische antwoorden en gemiste noodzaak voor modelhulp. Een gesloten antwoord dat een bestaande regel betrouwbaar kan controleren is een aparte nulmodelreferentie. Verander de vier hoofdvarianten niet.
+Na de abstracte contractproeven en vóór het bouwen van uitgebreide use cases: kleine vergelijkende proeven uit de [functiematrix](../research/FUNCTIONELE-EISEN.md) met dezelfde context en hulpgrens, bekende én onbekende foutgevallen, geldige alternatieve antwoorden en gewijzigde lesversies. Meet de nauwkeurigheid van routekeuze, dekking van veilige niet-LLM-routes, foutieve automatische antwoorden en gemiste noodzaak voor modelhulp. Een gesloten antwoord dat een bestaande regel betrouwbaar kan controleren is een aparte nulmodelreferentie. Verander de vier hoofdvarianten niet.
 
 Binnen B vergelijk dezelfde input met en zonder contextselectie, minified JSON versus compact formaat waar passend, passende antwoordbudgetten en warme/koude prefixcache. Binnen C vergelijk gecontroleerde hints, vakspecifieke controles en eventueel modelroutering afzonderlijk. Binnen D vergelijk hosting en modelversie los waar mogelijk. Leg route-mix en hulpbeleid vast. Stop bij herhaalde niet-bereikte experimentele routes, technische uitval of bereikt kostenplafond; rapporteer niet-beoordeelde gevallen apart. Geen automatische herhalingen van dure runs.
 

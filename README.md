@@ -13,7 +13,15 @@ De vraag: welke ondersteuning kan software geven zonder taalmodel, welke onderst
 | C | Hybride assistent: gecontroleerde hints, foutdetectie en beslisregels, met het model van B als terugval |
 | D | Dezelfde hybride route als C, met zelfgehoste open-weight modellen in plaats van betaalde modelaanroepen |
 
-Alle vier worden na het brede onderzoek volledig gespecificeerd. Voor een eerlijke vergelijking blijven de onderwijsfuncties, leerlingomgeving, vakinhoud en toetscriteria gelijk. A–D zijn voorlopig hypothesen, geen architectuurkeuze.
+De technische uitwerking van A–D staat in de [specificatie v0.1](research/TECHNISCHE-SPECIFICATIE.md). Alle varianten delen gewone lesfuncties, bevoegdheden, bronversies en dezelfde aangeboden aanvragen. A en B gebruiken dezelfde modeltaak; C onderzoekt welke extra modeltaken gewone software kan afhandelen; D onderzoekt lokale inferentie met dezelfde hybride route. Dit zijn vergelijkingshypothesen, geen architectuurkeuze. De uiteindelijke onderwijsfuncties, vakinhoud en kwaliteitscriteria blijven gelijk.
+
+## Visuele onderzoeksatlas
+
+[Open de nieuwe onderzoeksatlas](docs/illustraties/atlas/README.md) of de [zelfstandige HTML-versie](docs/illustraties/atlas/index.html). Zeven verklarende diagrammen tonen de combinatiehypothese, versiegebonden context, strategiebehoud, de modelaanroeppaden, vergelijking A–D, historische proeven en de voorgestelde ablatiematrix.
+
+![Onderzoekshypothese: vooraf samenstellen en alleen inferentie waar nodig](docs/illustraties/atlas/d12-combinatie.svg)
+
+Het [onderzoek naar de combinatie](research/COMBINATIE-HYPOTHESE.md) maakt vier mechanismen afzonderlijk toetsbaar: vooraf compileren, strategiebehoud, experimentele regels en begrensde modeltaken. De combinatie is geen gekozen architectuur. De eerdere elf diagrammen en de volledige bronregisters blijven in het [historisch archief](docs/illustraties/atlas/ARCHIEF-V1.md). De openbare atlas bevat toegestane afgeleiden uit besloten onderzoek zonder oorspronkelijke private bronlinks.
 
 ## Onderzoek: eerst breed, daarna kiezen
 
@@ -21,11 +29,11 @@ Alle vier worden na het brede onderzoek volledig gespecificeerd. Voor een eerlij
 
 We onderzoeken oorspronkelijke ontwerpgedachten, technische mechanismen, bewijs en eerdere fouten uit de repositories, oudere versies, boeken, bibliotheek en externe bronnen. Een vondst kan bij meerdere sporen horen. Zie de [onderzoeksindeling en werkwijze](research/ONDERZOEKSINDELING.md).
 
-## Eerst de functies, daarna de les
+## Eerst de techniek, daarna de les
 
 Het project onderzoekt een assistent die in bestaande digitale lessen kan worden aangesloten. De software krijgt de geldige lesversie, het leerdoel en de grenzen van de ondersteuning uit de leeromgeving. Welke beslissingen zonder model kunnen worden genomen en waar een model nodig blijft, is een onderzoeksvraag.
 
-Frans, 2 havo blijft een eerste beoogde demonstratie; rekenen in groep 7 is een tweede functioneel contrast om vakspecifieke controle te onderzoeken. De bestaande Franse casusschets is voorlopig. We schrijven nog geen volledige lesmethodes: eerst de functionele en technische vergelijking, dan een passende minimale inhoudelijke proef.
+Frans 2 havo en rekenen in groep 7 zijn eerdere kandidaten voor latere demonstraties. De bestaande casusschets blijft voorlopig. In fase 4a gebruiken we uitsluitend neutrale technische gegevens: geen vakinhoud, lespakket of tutorprompt. De inhoudelijke uitwerking volgt pas na de technische vergelijking en architectuurkeuze.
 
 Dit is onafhankelijk onderzoek, geïnspireerd op publieke onderwijsopgaven. Geen onderdeel van een bestaande Neon-methode en geen officiële samenwerking met Neon.
 
@@ -35,7 +43,8 @@ Neon meldde op 28 september 2026 ruim 1.500 aangesloten scholen met samen ongeve
 
 ## Documentatie
 
-- [Plan van aanpak v0.3](docs/PLAN.md)
+- [Plan van aanpak v0.5](docs/PLAN.md)
+- [Technische specificatie A–D v0.1](research/TECHNISCHE-SPECIFICATIE.md)
 - [Onderzoeksindeling en werkwijze](research/ONDERZOEKSINDELING.md)
 - [Bronnenregister: ronde 01](research/register/RONDE-01.md)
 - [Openbare afgeleide van het bronnenregister (29 van 87 repositories)](research/register/public-repositories.json)
@@ -51,6 +60,8 @@ Neon meldde op 28 september 2026 ruim 1.500 aangesloten scholen met samen ongeve
 
 ## Status
 
-Onderzoeksopzet v0.3: de brede verkenning is opnieuw geopend. Het volledige interne bronnenregister bevat 87 toegankelijke repositories; 29 openbaar en 58 privé. Het openbare register is alleen de afgeleide daarvan. Private bronnen, eerdere versies en de bibliotheek blijven onderdeel van het onderzoek. De eerste technische selectie blijft beschikbaar als vertrekpunt, niet als definitieve keuze. Eerst verzamelen en kritisch vergelijken, dan A–D specificeren. De definitieve architectuur, licentie-/hergebruikbesluiten en uitvoeringsproeven staan nog open. Er zijn nog geen werkende varianten, modelmetingen of leerlingresultaten in deze repository. De vakinhoud is een ontwerp dat nog door een vakdocent moet worden beoordeeld. Er zijn geen echte leerlinggegevens nodig voor de eerste benchmark.
+**27 november 2026: technisch GO voor afgebakende fase 4a na merge.** Het [herbeoordelingsbesluit 3b/3c](research/FASE-3B-3C-BESLUIT.md) houdt de alternatieven, tegenbewijs en open bronvragen vast. Geen architectuurkeuze of uitgevoerde modelproef.
+
+De volgende stap is het [4a-startcontract](benchmarks/4A-STARTCONTRACT.md): één neutrale stubproef met P01–P03, de minimale compiler-, strategie- en contextcontroles en daarna P/S/R/M. De proefcode is nog niet gestart. Geen modelmetingen of leerlingresultaten. De definitieve architectuur, hergebruikrechten, vakinhoud, modellen, hosting en budget voor echte inferentie blijven open.
 
 Geen aangetoonde besparing op een bestaand product. Een eigen model heeft geen externe tokenfactuur, maar wel reken-, hosting- en beheerkosten.
