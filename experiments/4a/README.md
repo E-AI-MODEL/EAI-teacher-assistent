@@ -17,3 +17,7 @@ De eerste lokale uitvoering is geslaagd binnen de vastgelegde neutrale fixture. 
 ## Afzonderlijke strategieproef 4a.3
 
 [Resultaten en tegenbewijs](strategy/RESULTS.md). Vier varianten, 12 bevroren reeksen per variant, 48 harde scenario's en zeven regressietests geslaagd. Zachte strategieafwijkingen worden apart gerapporteerd. Niet geïntegreerd in runtime.py; geen variantkeuze.
+
+## Vervolgproef strategie 4a.4
+
+[Resultaten relevante wijzigingscontrole](strategy/followup/RESULTS.md). Zeven armen op vijftien vooraf bevroren reeksen. 105/105 harde scenario's en 6/6 unittest-tests lokaal geslaagd. De eenvoudige wijzigingscontrole is de eerste integratiekandidaat, geen definitieve architectuurkeuze. De eerdere runtime en 4a.3 blijven ongewijzigd.
