@@ -1,0 +1,735 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-27",
+  "scope": "Openbare selectie. Geen volledige interne brondekking of nieuwe uitvoering.",
+  "design_reference": "https://github.com/cathrynlavery/diagram-design/tree/795eec47fd376e5dda0b9e056a49520060cd2f13",
+  "design_note": "Eigen HTML/SVG, ontwerpprincipes uit Diagram Design, kleuren van de bestaande projectillustratie. Geen upstream code of assets.",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "WiHTML · ontwerpafspraken",
+      "revision": "449d9d9ec3d0f883bd190fc5287eaccfe1d87854",
+      "url": "https://github.com/E-AI-MODEL/wihtml/blob/449d9d9ec3d0f883bd190fc5287eaccfe1d87854/docs/ontwerpafspraken.md",
+      "kind": "Ontwerp",
+      "note": "Inhoud, lesvolgorde en uitvoering gescheiden; geen bewezen tutor."
+    },
+    {
+      "id": "S02",
+      "title": "EAT Inline · bronselectieproef",
+      "revision": "0bd184f5408bddb9211b9684d7a0ada78a593b8b",
+      "url": "https://github.com/E-AI-MODEL/EAT-inline/blob/0bd184f5408bddb9211b9684d7a0ada78a593b8b/benchmark/results/wiki-fair-v2-one-tag-rag/one-tag-rag-summary.md",
+      "kind": "Historische meting",
+      "note": "434 exacte registervragen; 100.000 gegenereerde documenten uit 669 fragmenten van 40 pagina's. Geen LLM."
+    },
+    {
+      "id": "S03",
+      "title": "Examenreglementcheck · bronbeleid",
+      "revision": "d72dc4806566b9c05f0d8f90f41b972390d5beb5",
+      "url": "https://github.com/E-AI-MODEL/Examenreglementcheck/blob/d72dc4806566b9c05f0d8f90f41b972390d5beb5/docs/SOURCE-POLICY.md",
+      "kind": "Beleidsontwerp",
+      "note": "Identiteit, geldigheid en bevoegdheid onderscheiden; geen juridische regels overgenomen."
+    },
+    {
+      "id": "S04",
+      "title": "Gamma Portal · SSOT-selectors",
+      "revision": "444d1373f83dcd2d5ace6f0ad931c448874b7807",
+      "url": "https://github.com/E-AI-MODEL/eai-gamma-portal/blob/444d1373f83dcd2d5ace6f0ad931c448874b7807/src/lib/ssot-selectors.ts",
+      "kind": "Code-inspectie",
+      "note": "Selecties met bronverwijzingen; geen bewezen tutorwerking."
+    },
+    {
+      "id": "S05",
+      "title": "Shadowseed Agent Lab · evidence en invloed",
+      "revision": "d50971ac8aed51e1f4442ff3baac9328e36ad75e",
+      "url": "https://github.com/E-AI-MODEL/shadowseed-agent-lab/blob/d50971ac8aed51e1f4442ff3baac9328e36ad75e/docs/architecture-decisions/0002-rag-as-evidence-not-influence.md",
+      "kind": "Ontwerpbesluit",
+      "note": "Gevonden informatie krijgt niet automatisch invloed; uitvoering niet opnieuw geverifieerd."
+    },
+    {
+      "id": "S06",
+      "title": "Shadow Seed Study · reproductienotitie",
+      "revision": "ff639cc8c079cabef06c4d8cd9bcfb90c72a3b40",
+      "url": "https://github.com/E-AI-MODEL/shadow-seed-study/blob/ff639cc8c079cabef06c4d8cd9bcfb90c72a3b40/docs/ssl/notitie_reproductie.md",
+      "kind": "Methode",
+      "note": "29 april 2026: beslissingen, versies, ruwe resultaten en mislukte runs bewaren."
+    },
+    {
+      "id": "S07",
+      "title": "SSOT 17 · migratiekaart",
+      "revision": "66a48584ed5818790828c1a0fdc41b9a1880df43",
+      "url": "https://github.com/E-AI-MODEL/SSOT_17/blob/66a48584ed5818790828c1a0fdc41b9a1880df43/docs/11_MIGRATION_MAP.md",
+      "kind": "Versiemapping",
+      "note": "Snapshot 25 juni 2026: 10 rubrics, 15 Gamma-parameters, 18 operationele rubrics; verschillende eenheden. Geen effectmeting of hergebruikrecht."
+    },
+    {
+      "id": "S08",
+      "title": "NeSy P02 · postmortem",
+      "revision": "e8ce553a3c1c16d072078a62c426ce038cc455d3",
+      "url": "https://github.com/E-AI-MODEL/eainesy/blob/e8ce553a3c1c16d072078a62c426ce038cc455d3/docs/NeSy-P02-run-failure-root-cause-2026-10-23.md",
+      "kind": "Mislukte historische proef",
+      "note": "23 oktober 2026: 0/10 P0-beurten bereikte de onderzochte S1/S2-route; 20 echte modelrequests. Geen vergelijking van S1/S2."
+    },
+    {
+      "id": "S09",
+      "title": "NeSy P03 · resultaat",
+      "revision": "e8ce553a3c1c16d072078a62c426ce038cc455d3",
+      "url": "https://github.com/E-AI-MODEL/eainesy/blob/e8ce553a3c1c16d072078a62c426ce038cc455d3/docs/NeSy-P03-result-2026-10-23.md",
+      "kind": "Historische sandboxmeting",
+      "note": "14 fictieve gevallen; 8/8 S2-herbeoordelingen; 6 controles zonder extra call; 16 modelrequests; 0 onafhankelijke menselijke beoordelingen. Controllerstatus gesimuleerd."
+    },
+    {
+      "id": "S10",
+      "title": "EAIwork · model-capability neutral",
+      "revision": "8754936ffe594766339e8f8493c963c41a0b4206",
+      "url": "https://github.com/E-AI-MODEL/EAIwork-/blob/8754936ffe594766339e8f8493c963c41a0b4206/docs/model-capability-neutral.md",
+      "kind": "Implementatiebeschrijving",
+      "note": "Optionele voorstelcontrole; gewone directe modelroute behouden. Exact citaat bewijst geen semantische steun."
+    },
+    {
+      "id": "S11",
+      "title": "Technische specificatie v0.1",
+      "revision": "f19d9b8885fad221524a28dacd2a2aecae3aa056",
+      "url": "https://github.com/E-AI-MODEL/EAI-teacher-assistent/blob/f19d9b8885fad221524a28dacd2a2aecae3aa056/research/TECHNISCHE-SPECIFICATIE.md",
+      "kind": "Projectontwerp",
+      "note": "Gedeeld contract A–D; geen werkende architectuur."
+    },
+    {
+      "id": "S12",
+      "title": "Technische proeven P01–P03",
+      "revision": "f19d9b8885fad221524a28dacd2a2aecae3aa056",
+      "url": "https://github.com/E-AI-MODEL/EAI-teacher-assistent/blob/f19d9b8885fad221524a28dacd2a2aecae3aa056/benchmarks/TECHNISCHE-PROEVEN.md",
+      "kind": "Geplande verificatie",
+      "note": "Nog niet uitgevoerde modelvrije contractproeven."
+    },
+    {
+      "id": "S13",
+      "title": "Openbare bronronde 01",
+      "revision": "f19d9b8885fad221524a28dacd2a2aecae3aa056",
+      "url": "https://github.com/E-AI-MODEL/EAI-teacher-assistent/blob/f19d9b8885fad221524a28dacd2a2aecae3aa056/research/register/RONDE-01.md",
+      "kind": "Openbaar bronnenregister",
+      "note": "Zes bronvondsten met beperkingen."
+    },
+    {
+      "id": "S14",
+      "title": "Technische audit",
+      "revision": "f19d9b8885fad221524a28dacd2a2aecae3aa056",
+      "url": "https://github.com/E-AI-MODEL/EAI-teacher-assistent/blob/f19d9b8885fad221524a28dacd2a2aecae3aa056/research/TECHNIEKAUDIT.md",
+      "kind": "Technische verkenning",
+      "note": "Kandidaatmechanismen; geen nieuwe runtimeproef."
+    }
+  ],
+  "diagrams": [
+    {
+      "id": "d01",
+      "file": "d01-kenniskaart.svg",
+      "title": "Zes vondsten, drie ontwerpvragen",
+      "subtitle": "Openbare bronronde 01: groepering op overeenkomstige onderzoeksvraag.",
+      "description": "Zes openbare bronnen in drie paren, gekoppeld aan drie ontwerpvragen. Geen bewezen softwareafhankelijkheden."
+    },
+    {
+      "id": "d02",
+      "file": "d02-ontwerpgeschiedenis.svg",
+      "title": "Ontwerpgeschiedenis in vijf momenten",
+      "subtitle": "Kalenderdagen bepalen de afstand. Bronnen zijn niet automatisch elkaars opvolgers.",
+      "description": "Vijf gedateerde momenten in 2026; de SSOT-migratiekaart beschrijft een versieontwikkeling. De andere gebeurtenissen zijn afzonderlijke bronnen."
+    },
+    {
+      "id": "d03",
+      "file": "d03-mechanismen.svg",
+      "title": "Veertien mechanismen, vier onderzoeksgroepen",
+      "subtitle": "Wat houden we gelijk? Wat veranderen we afzonderlijk in de vergelijking?",
+      "description": "Veertien mechanismen: gedeelde functies, optimalisatie in B, extra hybride routes in C/D, inferentieplaats in D. Groepering is geen afhankelijkheidsgrafiek."
+    },
+    {
+      "id": "d04",
+      "file": "d04-varianten-abcd.svg",
+      "title": "Wat verandert er tussen A, B, C en D?",
+      "subtitle": "Eén gedeeld contract. Alleen benoemde verschillen veranderen per route.",
+      "description": "A/B gebruiken dezelfde modeltaak; C/D kunnen een experimentele aanvraag zonder model uitvoeren; D gebruikt alleen lokale inferentie. Gewone functies zijn gedeeld."
+    },
+    {
+      "id": "d05",
+      "file": "d05-bewijsroute.svg",
+      "title": "Van bronbevinding naar proef",
+      "subtitle": "Vijf traceerbare koppelingen. De verificaties staan nog open in dit project.",
+      "description": "Vijf rijen verbinden historische openbare bronnen aan technische eisen, ontwerpcontracten en geplande proeven. Geen uitgevoerde verificaties in dit project."
+    },
+    {
+      "id": "d06",
+      "file": "d06-eerdere-proeven.svg",
+      "title": "Wat eerdere proeven werkelijk aantonen",
+      "subtitle": "Twee experimentfamilies. De cijfers zijn niet onderling vergelijkbaar.",
+      "description": "EAT Inline: 77,42% naamzoeken versus 98,85% EAT na unieke naamkoppeling; 100% is een controle met correct ID uit testantwoorden. NeSy P02: nul van tien doelroutes; P03: acht van acht herbeoordelingen en nul onafhankelijke menselijke beoordelingen."
+    },
+    {
+      "id": "d07",
+      "file": "d07-orchestrator.svg",
+      "title": "Orchestrator: eerst een toegestane route",
+      "subtitle": "C/D: beslis alleen met actuele gegevens. Onbekend is geen toestemming.",
+      "description": "Hybride route: gewone functie eerst; experimentele regel MATCH naar engine, UNKNOWN alleen naar toegestane modeltaak, DENY afwijzen. Iedere af te leveren uitkomst vereist actuele rechten en revisie."
+    }
+  ],
+  "blocks": [
+    {
+      "id": "D01-S01",
+      "diagram": "d01",
+      "label": "WiHTML",
+      "source_ids": [
+        "S01"
+      ],
+      "status": "historische_bron",
+      "note": ""
+    },
+    {
+      "id": "D01-S04",
+      "diagram": "d01",
+      "label": "Gamma Portal",
+      "source_ids": [
+        "S04"
+      ],
+      "status": "historische_bron",
+      "note": ""
+    },
+    {
+      "id": "D01-Q1",
+      "diagram": "d01",
+      "label": "Vooraf samenstellen",
+      "source_ids": [
+        "S01",
+        "S04"
+      ],
+      "status": "ontwerpvraag",
+      "note": ""
+    },
+    {
+      "id": "D01-S02",
+      "diagram": "d01",
+      "label": "EAT Inline",
+      "source_ids": [
+        "S02"
+      ],
+      "status": "historische_bron",
+      "note": ""
+    },
+    {
+      "id": "D01-S03",
+      "diagram": "d01",
+      "label": "Bronbeleid",
+      "source_ids": [
+        "S03"
+      ],
+      "status": "historische_bron",
+      "note": ""
+    },
+    {
+      "id": "D01-Q2",
+      "diagram": "d01",
+      "label": "Geldige bron kiezen",
+      "source_ids": [
+        "S02",
+        "S03"
+      ],
+      "status": "ontwerpvraag",
+      "note": ""
+    },
+    {
+      "id": "D01-S05",
+      "diagram": "d01",
+      "label": "Shadowseed",
+      "source_ids": [
+        "S05"
+      ],
+      "status": "historische_bron",
+      "note": ""
+    },
+    {
+      "id": "D01-S06",
+      "diagram": "d01",
+      "label": "SSL Study",
+      "source_ids": [
+        "S06"
+      ],
+      "status": "historische_bron",
+      "note": ""
+    },
+    {
+      "id": "D01-Q3",
+      "diagram": "d01",
+      "label": "Beslissen en meten",
+      "source_ids": [
+        "S05",
+        "S06"
+      ],
+      "status": "ontwerpvraag",
+      "note": ""
+    },
+    {
+      "id": "D02-1",
+      "diagram": "d02",
+      "label": "Reproductie",
+      "source_ids": [
+        "S06"
+      ],
+      "status": "historische_bron",
+      "note": ""
+    },
+    {
+      "id": "D02-2",
+      "diagram": "d02",
+      "label": "SSOT 17",
+      "source_ids": [
+        "S07"
+      ],
+      "status": "historische_bron",
+      "note": ""
+    },
+    {
+      "id": "D02-3",
+      "diagram": "d02",
+      "label": "EAT Inline",
+      "source_ids": [
+        "S02"
+      ],
+      "status": "historische_bron",
+      "note": ""
+    },
+    {
+      "id": "D02-4",
+      "diagram": "d02",
+      "label": "NeSy P02 / P03",
+      "source_ids": [
+        "S08",
+        "S09"
+      ],
+      "status": "historische_bron",
+      "note": ""
+    },
+    {
+      "id": "D02-5",
+      "diagram": "d02",
+      "label": "Teacher Assistant",
+      "source_ids": [
+        "S11",
+        "S12"
+      ],
+      "status": "projectontwerp",
+      "note": ""
+    },
+    {
+      "id": "M01",
+      "diagram": "d03",
+      "label": "Identiteit",
+      "source_ids": [
+        "S11",
+        "S14"
+      ],
+      "status": "onderzoekskandidaat",
+      "note": "Gezaghebbende ID's"
+    },
+    {
+      "id": "M02",
+      "diagram": "d03",
+      "label": "Voorbereiding",
+      "source_ids": [
+        "S11",
+        "S14"
+      ],
+      "status": "onderzoekskandidaat",
+      "note": "Gedeelde bronbundel"
+    },
+    {
+      "id": "M03",
+      "diagram": "d03",
+      "label": "Hulp-eenheden",
+      "source_ids": [
+        "S11",
+        "S14"
+      ],
+      "status": "onderzoekskandidaat",
+      "note": "Zelfde beschikbare bron"
+    },
+    {
+      "id": "M09",
+      "diagram": "d03",
+      "label": "Modeltaak",
+      "source_ids": [
+        "S11",
+        "S14"
+      ],
+      "status": "onderzoekskandidaat",
+      "note": "Geen verplichte dubbele call"
+    },
+    {
+      "id": "M11",
+      "diagram": "d03",
+      "label": "Sessiestaat",
+      "source_ids": [
+        "S11",
+        "S14"
+      ],
+      "status": "onderzoekskandidaat",
+      "note": "Zelfde actueel minimum"
+    },
+    {
+      "id": "M13",
+      "diagram": "d03",
+      "label": "Rapportage",
+      "source_ids": [
+        "S11",
+        "S14"
+      ],
+      "status": "onderzoekskandidaat",
+      "note": "Apart gebruikspad"
+    },
+    {
+      "id": "M04",
+      "diagram": "d03",
+      "label": "Retrieval",
+      "source_ids": [
+        "S11",
+        "S14"
+      ],
+      "status": "onderzoekskandidaat",
+      "note": "Selectie; basis gedeeld"
+    },
+    {
+      "id": "M05",
+      "diagram": "d03",
+      "label": "Representatie",
+      "source_ids": [
+        "S11",
+        "S14"
+      ],
+      "status": "onderzoekskandidaat",
+      "note": "Velden en compacte vorm"
+    },
+    {
+      "id": "M06",
+      "diagram": "d03",
+      "label": "Cache",
+      "source_ids": [
+        "S11",
+        "S14"
+      ],
+      "status": "onderzoekskandidaat",
+      "note": "Gedeeld; prefix testen"
+    },
+    {
+      "id": "M12",
+      "diagram": "d03",
+      "label": "Outputcontract",
+      "source_ids": [
+        "S11",
+        "S14"
+      ],
+      "status": "onderzoekskandidaat",
+      "note": "Lengte; grenzen gedeeld"
+    },
+    {
+      "id": "M07",
+      "diagram": "d03",
+      "label": "Engine",
+      "source_ids": [
+        "S11",
+        "S14"
+      ],
+      "status": "onderzoekskandidaat",
+      "note": "Toetsbare bewerking"
+    },
+    {
+      "id": "M08",
+      "diagram": "d03",
+      "label": "Semantische selectie",
+      "source_ids": [
+        "S11",
+        "S14"
+      ],
+      "status": "onderzoekskandidaat",
+      "note": "Referentie of generatie"
+    },
+    {
+      "id": "M10",
+      "diagram": "d03",
+      "label": "Extra controle",
+      "source_ids": [
+        "S11",
+        "S14"
+      ],
+      "status": "onderzoekskandidaat",
+      "note": "Alleen bij noodzaak"
+    },
+    {
+      "id": "M14",
+      "diagram": "d03",
+      "label": "Hosting",
+      "source_ids": [
+        "S11",
+        "S14"
+      ],
+      "status": "onderzoekskandidaat",
+      "note": "Zelfde hybride route, lokaal"
+    },
+    {
+      "id": "D04-SHARED",
+      "diagram": "d04",
+      "label": "Gedeelde ingang",
+      "source_ids": [
+        "S11"
+      ],
+      "status": "projectontwerp",
+      "note": ""
+    },
+    {
+      "id": "D04-A",
+      "diagram": "d04",
+      "label": "A Reguliere LLM",
+      "source_ids": [
+        "S11"
+      ],
+      "status": "vergelijkingshypothese",
+      "note": ""
+    },
+    {
+      "id": "D04-B",
+      "diagram": "d04",
+      "label": "B Geoptimaliseerd",
+      "source_ids": [
+        "S11"
+      ],
+      "status": "vergelijkingshypothese",
+      "note": ""
+    },
+    {
+      "id": "D04-C",
+      "diagram": "d04",
+      "label": "C Hybride",
+      "source_ids": [
+        "S11"
+      ],
+      "status": "vergelijkingshypothese",
+      "note": ""
+    },
+    {
+      "id": "D04-D",
+      "diagram": "d04",
+      "label": "D Zelfgehost",
+      "source_ids": [
+        "S11"
+      ],
+      "status": "vergelijkingshypothese",
+      "note": ""
+    },
+    {
+      "id": "D04-EXIT",
+      "diagram": "d04",
+      "label": "Gedeelde uitvoergrens",
+      "source_ids": [
+        "S11",
+        "S12"
+      ],
+      "status": "projectontwerp",
+      "note": ""
+    },
+    {
+      "id": "T01",
+      "diagram": "d05",
+      "label": "E01 · Bekende identiteit niet opnieuw raden",
+      "source_ids": [
+        "S02",
+        "S11",
+        "S12"
+      ],
+      "status": "geplande_verificatie",
+      "note": "Nog geen nieuwe verificatie uitgevoerd."
+    },
+    {
+      "id": "T02",
+      "diagram": "d05",
+      "label": "E02 · Alleen actuele toegestane gegevens",
+      "source_ids": [
+        "S03",
+        "S11",
+        "S12"
+      ],
+      "status": "geplande_verificatie",
+      "note": "Nog geen nieuwe verificatie uitgevoerd."
+    },
+    {
+      "id": "T03",
+      "diagram": "d05",
+      "label": "E03 · Modelvoorstel is geen autoriteit",
+      "source_ids": [
+        "S05",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "status": "geplande_verificatie",
+      "note": "Nog geen nieuwe verificatie uitgevoerd."
+    },
+    {
+      "id": "T04",
+      "diagram": "d05",
+      "label": "E04 · Elke poging zichtbaar; route moet bereikt zijn",
+      "source_ids": [
+        "S06",
+        "S08",
+        "S11",
+        "S12"
+      ],
+      "status": "geplande_verificatie",
+      "note": "Nog geen nieuwe verificatie uitgevoerd."
+    },
+    {
+      "id": "T05",
+      "diagram": "d05",
+      "label": "E05 · Geen verplichte tweede modelcall",
+      "source_ids": [
+        "S09",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "status": "geplande_verificatie",
+      "note": "Nog geen nieuwe verificatie uitgevoerd."
+    },
+    {
+      "id": "D06-EAT1",
+      "diagram": "d06",
+      "label": "Zoeken op naam",
+      "source_ids": [
+        "S02"
+      ],
+      "status": "historische_meting",
+      "note": "Bij ambigue naam terugval op naamzoekfunctie."
+    },
+    {
+      "id": "D06-EAT2",
+      "diagram": "d06",
+      "label": "EAT na unieke koppeling",
+      "source_ids": [
+        "S02"
+      ],
+      "status": "historische_meting",
+      "note": "Bij ambigue naam terugval op naamzoekfunctie."
+    },
+    {
+      "id": "D06-EAT3",
+      "diagram": "d06",
+      "label": "Correct ID vooraf gegeven",
+      "source_ids": [
+        "S02"
+      ],
+      "status": "oracle_controle",
+      "note": "Correct ID uit testantwoorden; geen onafhankelijke voorspelling."
+    },
+    {
+      "id": "D06-P02",
+      "diagram": "d06",
+      "label": "P0-beurten bereikten S1/S2",
+      "source_ids": [
+        "S08"
+      ],
+      "status": "mislukte_historische_proef",
+      "note": ""
+    },
+    {
+      "id": "D06-P03",
+      "diagram": "d06",
+      "label": "Geplande S2-herbeoordelingen",
+      "source_ids": [
+        "S09"
+      ],
+      "status": "historische_sandboxmeting",
+      "note": ""
+    },
+    {
+      "id": "D07-IN",
+      "diagram": "d07",
+      "label": "Autoriseer en selecteer context",
+      "source_ids": [
+        "S11",
+        "S12"
+      ],
+      "status": "projectontwerp",
+      "note": ""
+    },
+    {
+      "id": "D07-K0",
+      "diagram": "d07",
+      "label": "Gewone functie?",
+      "source_ids": [
+        "S11",
+        "S12"
+      ],
+      "status": "projectontwerp",
+      "note": ""
+    },
+    {
+      "id": "D07-LOOKUP",
+      "diagram": "d07",
+      "label": "Gemeenschappelijke lookup",
+      "source_ids": [
+        "S11",
+        "S12"
+      ],
+      "status": "projectontwerp",
+      "note": ""
+    },
+    {
+      "id": "D07-RULE",
+      "diagram": "d07",
+      "label": "Regelbesluit",
+      "source_ids": [
+        "S11",
+        "S12"
+      ],
+      "status": "projectontwerp",
+      "note": ""
+    },
+    {
+      "id": "D07-ENGINE",
+      "diagram": "d07",
+      "label": "Engine",
+      "source_ids": [
+        "S11",
+        "S12"
+      ],
+      "status": "projectontwerp",
+      "note": ""
+    },
+    {
+      "id": "D07-DENY",
+      "diagram": "d07",
+      "label": "Afwijzen",
+      "source_ids": [
+        "S11",
+        "S12"
+      ],
+      "status": "projectontwerp",
+      "note": ""
+    },
+    {
+      "id": "D07-MODEL",
+      "diagram": "d07",
+      "label": "Eén modeltaak",
+      "source_ids": [
+        "S11",
+        "S12"
+      ],
+      "status": "projectontwerp",
+      "note": ""
+    },
+    {
+      "id": "D07-CHECK",
+      "diagram": "d07",
+      "label": "Controle vóór aflevering",
+      "source_ids": [
+        "S11",
+        "S12"
+      ],
+      "status": "projectontwerp",
+      "note": ""
+    }
+  ]
+}

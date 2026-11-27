@@ -15,6 +15,14 @@ De vraag: welke ondersteuning kan software geven zonder taalmodel, welke onderst
 
 De technische uitwerking van A–D staat in de [specificatie v0.1](research/TECHNISCHE-SPECIFICATIE.md). Alle varianten delen gewone lesfuncties, bevoegdheden, bronversies en dezelfde aangeboden aanvragen. A en B gebruiken dezelfde modeltaak; C onderzoekt welke extra modeltaken gewone software kan afhandelen; D onderzoekt lokale inferentie met dezelfde hybride route. Dit zijn vergelijkingshypothesen, geen architectuurkeuze. De uiteindelijke onderwijsfuncties, vakinhoud en kwaliteitscriteria blijven gelijk.
 
+## Visuele onderzoeksatlas
+
+[Open de onderzoeksatlas](docs/illustraties/atlas/README.md) met zeven diagrammen: eerdere bronvondsten, ontwerpgeschiedenis, veertien mechanismen, de vergelijking A–D, geplande verificatie, historische proefresultaten en de hybride routering.
+
+![Vier vergelijkingsroutes binnen hetzelfde technische contract](docs/illustraties/atlas/d04-varianten-abcd.svg)
+
+De atlas bevat uitsluitend openbare bronnen en ontwerpafspraken. Bron-ID's en bewijsstatus staan in een afzonderlijk register. Ook beschikbaar als [zelfstandig HTML-bestand](docs/illustraties/atlas/index.html).
+
 ## Onderzoek: eerst breed, daarna kiezen
 
 ![Onderzoeksindeling met tien sporen en vier terugkerende onderwerpen](docs/illustraties/onderzoeksindeling.svg)

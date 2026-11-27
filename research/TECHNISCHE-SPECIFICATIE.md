@@ -2,6 +2,8 @@
 
 Versie 0.1, 27 november 2026. Afgeronde technische uitwerking voor de eerstvolgende proefronde. De brede inventarisatie en vergelijking van mechanismen zijn voor deze ronde afgerond; het interne register bewaart de bronnen, eerdere ontwerpvarianten, tegenbewijs en resterende hiaten. Dit document legt de publieke ontwerpafspraken vast, niet de private broninhoud. Het is geen productiearchitectuur, implementatie of testresultaat.
 
+Zie ook de [visuele onderzoeksatlas](../docs/illustraties/atlas/README.md) voor openbare bronbevindingen, mechanismen, vergelijking A–D en geplande verificatie.
+
 ## Vraag en afbakening
 
 Hoeveel technisch werk is nodig om dezelfde abstracte aanvraag af te handelen via A, B, C en D? Alle vier delen dezelfde geldige bron, bevoegdheden, gewone softwarefuncties en toetsbare technische voorwaarden. In fase 4a gebruiken we neutrale gegevens en stub-adapters. Geen nieuwe vakinhoud, didactische scenario's, tutorprompts, model- of hostingkeuze. De inhoudelijke kwaliteit, leeruitkomsten en werkelijke kosten worden niet met deze stubs gemeten.
