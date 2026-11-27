@@ -1,5 +1,8 @@
 # Hergebruik: eerste inventarisatie
 
+> Status v0.3: Deze bevindingen blijven behouden als voorlopige bronnen. Zij begrenzen de heropende brede verkenning niet. Zie de [onderzoeksindeling](ONDERZOEKSINDELING.md).
+
+
 Deze lijst is een technisch vertrekpunt, geen toestemming voor overname. Alleen openbare referenties zijn opgenomen. Privébroncode en niet-openbare informatie blijven buiten deze repository.
 
 | Publieke referentie | Te onderzoeken toepassing | Afbakening |

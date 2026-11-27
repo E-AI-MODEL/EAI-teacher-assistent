@@ -1,5 +1,8 @@
 # Fase 4 — minimale vergelijkingsproeven
 
+> Status v0.3: Dit blijft een concept voor een latere fase. Geen proeven uitvoeren voordat de brede verkenning en specificatie van A–D (fase 3a–3c) zijn afgerond. Zie de [onderzoeksindeling](../research/ONDERZOEKSINDELING.md).
+
+
 Ontwerp, 27 november 2026. Nog niet uitgevoerd. Eerst technieken toetsen op kleine fictieve gegevens; geen volledige les, geen echte leerlinggegevens. A–D blijven de uiteindelijke vier uitvoeringen. Deze proeven onderzoeken afzonderlijke mechanismen, geen extra chatbots.
 
 ## Eerste werkpakket: meten en begrenzen
@@ -19,7 +22,7 @@ Ontwerp, 27 november 2026. Nog niet uitgevoerd. Eerst technieken toetsen op klei
 
 ## Proefopbouw
 
-Begin met P01–P03 en één gedeelde set minimale contractfixtures: expliciete context, een toegewezen versie, één gecontroleerde respons, een bekende invoer die gewone logica kan verwerken en een onbekende invoer. Neem twee taaktypen op met uitsluitend de kleinste noodzakelijke fictieve inhoud (taal en rekenen). Verwachte uitkomsten staan buiten de modelcontext. Nog geen keuze van framework, provider of model.
+Na fase 3c: herbeoordeel de kandidaatproeven P01–P03 en begin daarmee wanneer zij de gekozen hypotheses daadwerkelijk onderscheiden. Gebruik één gedeelde set minimale contractfixtures: expliciete context, een toegewezen versie, één gecontroleerde respons, een bekende invoer die gewone logica kan verwerken en een onbekende invoer. Neem twee taaktypen op met uitsluitend de kleinste noodzakelijke fictieve inhoud (taal en rekenen). Verwachte uitkomsten staan buiten de modelcontext. Nog geen keuze van framework, provider of model.
 
 P04–P07 gebruiken dezelfde contextidentiteit en het meetcontract uit P01. P09 begint in dezelfde stubproeven. P08 en P10 vergen echte modellen; start lokaal indien beschikbaar, pas betaalde calls toe na afzonderlijk budgetbesluit. Een mocktest meet geen werkelijke modelkwaliteit of capaciteit. Gebruik voor echte servingproeven een bestaande benchmarkclient (zie technische audit).
 

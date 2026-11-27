@@ -1,6 +1,6 @@
 # Plan van aanpak — EAI Teacher Assistant
 
-Versie 0.2.1, 27 november 2026. Herzien na de verdiepende verkenning. Deze versie vervangt de oorspronkelijke volgorde waarin de vakinhoud direct na het bronnenonderzoek zou worden uitgewerkt.
+Versie 0.3, 27 november 2026. De brede verkenning is heropend na een kritische tegenlezing van het onderzoeksontwerp. De eerdere bevindingen blijven bewaard. Deze versie vervangt de volgorde waarin fase 4 direct op de eerste technische selectie zou volgen.
 
 ## Onderzoeksvraag
 
@@ -8,7 +8,7 @@ Hoe kan een methodegebonden digitale assistent een leerling passende hulp geven 
 
 De aanleiding is de publiek beschreven Digitale Assistent-Leraar van Neon. Het onderzoek is onafhankelijk. We kennen de interne software, gebruiksgegevens en modelkosten van Neon niet. Het doel is een vergelijkbare technische demonstratie en een onderbouwde kostenanalyse, geen claim over besparing op hun huidige product.
 
-## De vier uitvoeringen blijven staan
+## De vier vergelijkingshypothesen
 
 | Variant | Uitvoering |
 | --- | --- |
@@ -17,7 +17,7 @@ De aanleiding is de publiek beschreven Digitale Assistent-Leraar van Neon. Het o
 | C | Hybride assistent met gecontroleerde inhoud, vakspecifieke controles en beslisregels; hetzelfde model als B voor de resterende modeltaken |
 | D | Dezelfde hybride assistent als C; de generatieve modeltaken draaien op een zelfgehost open-weight model, zonder externe model-API |
 
-Het gemeenschappelijke contract omvat lesinhoud, docentinstellingen, interface, toegestane hulp en kwaliteitscriteria. Technieken worden waar mogelijk afzonderlijk aan- en uitgezet binnen de varianten. Een vergelijking tussen verschillende modelgewichten én hostingvormen is een gecombineerd effect; houd een vergelijking van hetzelfde model bij verschillende hostingvormen apart. Kleinere modellen, browserinferentie, distillatie en een betaalde open-weight API zijn aanvullende onderzoeksopties, geen nieuwe hoofdvarianten. Geen stille externe modelterugval bij D.
+De definities hierboven zijn voorlopig. Zij begrenzen de zoekruimte niet. Fase 3c specificeert de vier scenario's op basis van de bredere verkenning. Het gemeenschappelijke contract omvat lesinhoud, docentinstellingen, interface, toegestane hulp en kwaliteitscriteria. Technieken worden waar mogelijk afzonderlijk aan- en uitgezet binnen de varianten. Een vergelijking tussen verschillende modelgewichten én hostingvormen is een gecombineerd effect; houd een vergelijking van hetzelfde model bij verschillende hostingvormen apart. Kleinere modellen, browserinferentie, distillatie en een betaalde open-weight API zijn aanvullende onderzoeksopties, geen nieuwe hoofdvarianten. Geen stille externe modelterugval bij D.
 
 ## Werkvolgorde
 
@@ -25,8 +25,10 @@ Het gemeenschappelijke contract omvat lesinhoud, docentinstellingen, interface, 
 | --- | --- | --- |
 | 1 | Verkenning van Neon, intelligente tutorsystemen, EAI-bronnen en efficiëntie | [Bronnenonderzoek](../research/VERKENNING.md), [Neon-bronnen](../research/neon/BRONNEN.md); feiten, hypotheses en onbekenden gescheiden |
 | 2 | Functionele analyse, vóór schrijven van lesinhoud | [Functiematrix](../research/FUNCTIONELE-EISEN.md) met context, leerling/docenthandeling, mogelijke technieken, uitzonderingen, toegestane hulp, bewijs en gebruiksrechten |
-| 3 | Gerichte hergebruiksaudit en alternatiefvergelijking | [Technische audit](../research/TECHNIEKAUDIT.md): overdraagbare mechanismen, bronversies, aangetroffen tests, licentiegrens, bekende fouten en externe alternatieven. Geen oude onderwijsinhoud of volledige applicaties overnemen |
-| 4 | Kleine onderscheidende technische proeven | [Technische proeven](../benchmarks/TECHNISCHE-PROEVEN.md): fictieve minimale gevallen, geen volledige methode. Begin met P01–P03 (meting, context en route). Meet routebereik, contextgetrouwheid, cacheveiligheid, gespecialiseerde controles, klein model versus groter model en netto kosten van extra aanroepen. Geen betaalde tests zonder budgetbesluit |
+| 3a | Brede ideeën- en bronneninventarisatie | [Onderzoeksindeling](../research/ONDERZOEKSINDELING.md): tien onderzoekssporen, oorspronkelijke ontwerpgedachten, historie, code, boeken, proeven, positieve en negatieve resultaten. Ook buiten de eerste technische selectie zoeken; dekking en hiaten expliciet maken |
+| 3b | Kritische vergelijking, samenhang en nieuwe combinaties | Bestaande [technische audit](../research/TECHNIEKAUDIT.md) als eerste verzameling kandidaten; vergelijk alternatieven, bewijs en tegenbewijs, voorgangers en opvolgers. Bewaar de relatie tussen visie, inhoud, logica en uitvoering. Geen ongetoetste code of oude semantiek overnemen |
+| 3c | A–D volledig functioneel en technisch specificeren | Gedeelde functies en kwaliteitscriteria, verdeling van menselijke en systeemhandelingen, gegevens en bevoegdheden, uitvoeringsroutes, modeltaken, foutpaden, meetcontract en vergelijking van kosten. Onderbouw selectie en resterende onzekerheid vóór technische proeven |
+| 4 | Kleine onderscheidende technische proeven | [Technische proeven](../benchmarks/TECHNISCHE-PROEVEN.md): fictieve minimale gevallen, geen volledige methode. P01–P03 (meting, context en route) zijn kandidaten; kies en herzie de proeven na fase 3c. Meet routebereik, contextgetrouwheid, cacheveiligheid, gespecialiseerde controles, klein model versus groter model en netto kosten van extra aanroepen. Geen betaalde tests zonder budgetbesluit |
 | 5 | Besluit over architectuur en inhoudscontract | Gedeelde runtime, lesversies en bevoegdheden, model- en kostenadapter, foutcontract, minimale twee contrasterende taken. Vastleggen wat we hergebruiken en wat niet; model/framework/hostingkeuze onderbouwen |
 | 6 | Volledige maar afgebakende use cases en beoordelingsset | Frans 2 havo en rekenen groep 7 als beoogde contrasten; vakdocentreview, meerdere geldige oplossingsroutes, gecontroleerde hints, vrije vragen en nieuwe zelfstandige opdrachten. Eerst een kleine verticale proef, daarna voldoende inhoud voor een eerlijke benchmark |
 | 7 | Applicatie en vier varianten | Eén leerlingomgeving, één inhoudsbron, vier echt uitvoerbare routes, beveiligde modeladapters en meting; geen vier aparte codebases |
@@ -34,11 +36,15 @@ Het gemeenschappelijke contract omvat lesinhoud, docentinstellingen, interface, 
 | 9 | Belasting, schaal en totale kosten | Gelijke aangeboden belasting in A–D; 70.000 / 280.000 / 700.000 als aangenomen actieve aantallen; piek- en dalbelasting, uitval, GPU-benutting, kosten van auteurs en onderhoud, onzekerheid |
 | 10 | Demonstratie en overdracht | Werkende demonstratie, broncode, testresultaten, kostenmodel, beperkingen, integratievoorstel en benodigde informatie voor een echte Neon-proef |
 
-Fasen 1 en 2 zijn inhoudelijk gevorderd. Fase 3 heeft een eerste onderbouwde technische selectie opgeleverd, met geselecteerde bronversies, beperkingen en externe alternatieven. De definitieve hergebruikrechten, metingen en architectuurkeuze blijven open. Fase 4 is de volgende uitvoeringsstap, te beginnen met P01–P03. De fasen zijn werkpakketten, geen verplichting tot tien PR's of telkens een apart CI-traject.
+Fasen 1 en 2 zijn inhoudelijk gevorderd. Fase 3 is heropend. De eerdere technische selectie blijft een voorlopige inventarisatie. De volgende stap is 3a: breed bronnen en ideeën verzamelen, vervolgens verbanden en tegenbewijs onderzoeken (3b) en A–D specificeren (3c). Gebruik de overgangscriteria uit de [onderzoeksindeling](../research/ONDERZOEKSINDELING.md). De conceptproeven worden nog niet uitgevoerd. Definitieve hergebruikrechten, metingen en architectuurkeuze blijven open. De fasen zijn werkpakketten, geen verplichting tot aparte PR's of CI-trajecten.
 
-## Techniek en inhoud gescheiden
+## Onderzoeksindeling
 
-De bestaande EAI-projecten dienen als technische kennisbank. Onderzoek mechanismen onafhankelijk van oude rubrics, prompts, schoolgegevens en inhoudelijke taxonomie. Een oudere implementatie kan een bruikbaar technisch patroon hebben; inhoudelijke actualiteit en technische geschiktheid worden apart beoordeeld. Geen code kopiëren zonder rechtencontrole. De inhoudelijke referentie blijft versiegebonden en wordt later op actuele betekenis getoetst.
+![Onderzoeksindeling](illustraties/onderzoeksindeling.svg)
+
+De [onderzoeksindeling](../research/ONDERZOEKSINDELING.md) onderscheidt Purpose & Design, Framework & Semantics, Knowledge & Representation, Logic & Policy, Orchestration & Workflow, Context & Memory, Engines & Tools, AI & Inference, Interaction & Integration en Runtime & Infrastructure. Bewijs, ontwerpgeschiedenis, menselijke verantwoordelijkheid, kosten en kwaliteit komen in ieder spoor terug. De indeling is geen voorgeschreven architectuur en mag worden uitgebreid.
+
+De bestaande EAI-projecten zijn een onderzoeksarchief, niet alleen een technische kennisbank. Onderzoek oorspronkelijke intentie, samenhang en technische werking zonder oude rubrics, prompts, schoolgegevens of taxonomie automatisch over te nemen. Beschrijf ook wat niet werkte en waarom. De inhoudelijke referentie blijft versiegebonden. Geen code of niet-openbaar materiaal overnemen zonder rechtencontrole.
 
 ## Ontwerpvoorwaarden
 

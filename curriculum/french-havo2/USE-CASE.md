@@ -1,5 +1,8 @@
 # Use case 01 — Frans, 2 havo
 
+> Status v0.3: Deze casusschets blijft voorlopig. Geen verdere vakinhoudelijke uitwerking vóór de architectuurkeuze. Zie de [onderzoeksindeling](../../research/ONDERZOEKSINDELING.md).
+
+
 ## Opdracht en leerdoel
 
 Een leerling leert plannen voor de nabije toekomst in het Frans formuleren met een vervoegde vorm van aller plus de infinitief. De leerling schrijft vijf eigen zinnen over het weekend. De assistent begeleidt, maar schrijft de opdracht niet voor de leerling.

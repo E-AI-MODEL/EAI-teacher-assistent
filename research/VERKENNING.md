@@ -1,5 +1,8 @@
 # Verdiepende verkenning — 27 november 2026
 
+> Status v0.3: Deze bevindingen blijven behouden als voorlopige bronnen. Zij begrenzen de heropende brede verkenning niet. Zie de [onderzoeksindeling](ONDERZOEKSINDELING.md).
+
+
 ## Aanleiding en afbakening
 
 Een methodegebonden assistent ondersteunt leerlingen wanneer zij zelfstandig werken. Neon beschrijft in zijn openbare vacature en pilotberichten een onderzoek naar passende hints, wedervragen en uitleg, afgestemd op vak, niveau en leerdoel. De leraar blijft de les geven. De methodes zijn aanpasbaar; de assistent moet mogelijk ook kunnen omgaan met aangepaste inhoud, ander taalniveau en verschillende ondersteuningsafspraken. Zie [de afzonderlijke Neon-bronnen](neon/BRONNEN.md).
