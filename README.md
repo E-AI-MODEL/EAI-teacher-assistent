@@ -37,6 +37,8 @@ Neon meldde op 28 september 2026 ruim 1.500 aangesloten scholen met samen ongeve
 
 - [Plan van aanpak v0.3](docs/PLAN.md)
 - [Onderzoeksindeling en werkwijze](research/ONDERZOEKSINDELING.md)
+- [Bronnenregister: ronde 01](research/register/RONDE-01.md)
+- [Openbare afgeleide van het bronnenregister (29 van 87 repositories)](research/register/public-repositories.json)
 - [Verdiepend bronnenonderzoek](research/VERKENNING.md)
 - [Functionele vergelijking en ontwerpvoorwaarden](research/FUNCTIONELE-EISEN.md)
 - [Technische hergebruiksaudit](research/TECHNIEKAUDIT.md)
@@ -49,6 +51,6 @@ Neon meldde op 28 september 2026 ruim 1.500 aangesloten scholen met samen ongeve
 
 ## Status
 
-Onderzoeksopzet v0.3: de brede verkenning is opnieuw geopend. De eerste technische selectie blijft beschikbaar als vertrekpunt, niet als definitieve keuze. Eerst verzamelen en kritisch vergelijken, dan A–D specificeren. De definitieve architectuur, licentie-/hergebruikbesluiten en uitvoeringsproeven staan nog open. Er zijn nog geen werkende varianten, modelmetingen of leerlingresultaten in deze repository. De vakinhoud is een ontwerp dat nog door een vakdocent moet worden beoordeeld. Er zijn geen echte leerlinggegevens nodig voor de eerste benchmark.
+Onderzoeksopzet v0.3: de brede verkenning is opnieuw geopend. Het volledige interne bronnenregister bevat 87 toegankelijke repositories; 29 openbaar en 58 privé. Het openbare register is alleen de afgeleide daarvan. Private bronnen, eerdere versies en de bibliotheek blijven onderdeel van het onderzoek. De eerste technische selectie blijft beschikbaar als vertrekpunt, niet als definitieve keuze. Eerst verzamelen en kritisch vergelijken, dan A–D specificeren. De definitieve architectuur, licentie-/hergebruikbesluiten en uitvoeringsproeven staan nog open. Er zijn nog geen werkende varianten, modelmetingen of leerlingresultaten in deze repository. De vakinhoud is een ontwerp dat nog door een vakdocent moet worden beoordeeld. Er zijn geen echte leerlinggegevens nodig voor de eerste benchmark.
 
 Geen aangetoonde besparing op een bestaand product. Een eigen model heeft geen externe tokenfactuur, maar wel reken-, hosting- en beheerkosten.

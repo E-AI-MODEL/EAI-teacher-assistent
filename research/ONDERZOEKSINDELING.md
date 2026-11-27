@@ -58,7 +58,7 @@ Leg een vondst vast als één herleidbaar idee, mechanisme, ontwerpbesluit of on
 
 Gebruik geen samengestelde score. Vergelijk waar mogelijk de onderliggende waarnemingen. Bewaar verschillende versies en conflicterende resultaten. Gekopieerde bestanden, forks, herhaalde tests en samenvattingen van dezelfde bron gelden niet als onafhankelijk bewijs. Koppel ze aan hun herkomst en voorkom dubbeltelling.
 
-De openbare projectrepository bevat alleen materiaal dat openbaar mag worden gemaakt. Voor niet-openbare bronnen blijven de inhoud, de vindplaats en de details van interne bevindingen in een daarvoor toegestane omgeving. Publiceer uitsluitend toegestane algemene conclusies en openbare bronverwijzingen. Dit document maakt geen intern archief of nieuw gegevensregister aan; het legt de werkwijze voor dat register vast.
+De openbare projectrepository bevat alleen materiaal dat openbaar mag worden gemaakt. Voor niet-openbare bronnen blijven de inhoud, de vindplaats en de details van interne bevindingen in een daarvoor toegestane omgeving. Publiceer uitsluitend toegestane algemene conclusies en openbare bronverwijzingen. Het volledige interne bronnenregister wordt apart bewaard in een private werkruimtepagina. De huidige 87 toegankelijke repositories zijn daarin opgenomen, inclusief historische dekkingsstatus. De [openbare index](register/public-repositories.json) bevat uitsluitend de openbare afgeleide. Zichtbaarheid bepaalt niet of een bron wordt onderzocht. Controleer beide registers bij wijzigingen in toegang, dekking of bronversie.
 
 ## Van breed naar gericht
 

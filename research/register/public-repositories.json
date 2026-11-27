@@ -1,0 +1,254 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-27",
+  "scope": "Openbare afgeleide van het afzonderlijk bewaarde interne bronnenregister; openbare zichtbaarheid is geen onderzoeksselectiecriterium.",
+  "size_note": "Reported repository size from GitHub metadata. May include historical files, dependencies and duplicates; not unique research volume.",
+  "coverage_note": "round_01_coverage refers to this round only; prior inspections remain in the existing research files. No tests rerun.",
+  "repositories": [
+    {
+      "repo": "E-AI-MODEL/-rag-eat-starter-kit",
+      "branch": "main",
+      "reported_size": 189,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/-rag-eat-starter-kit",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/Caveman-eduNL",
+      "branch": "main",
+      "reported_size": 66,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/Caveman-eduNL",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/door0101",
+      "branch": "main",
+      "reported_size": 1872,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/door0101",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/eai-gamma-portal",
+      "branch": "main",
+      "reported_size": 416,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/eai-gamma-portal",
+      "round_01_coverage": "selected_source_read",
+      "inspected_commit": "444d1373f83dcd2d5ace6f0ad931c448874b7807"
+    },
+    {
+      "repo": "E-AI-MODEL/EAI-lab-",
+      "branch": "main",
+      "reported_size": 420,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/EAI-lab-",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/EAI-standard",
+      "branch": "main",
+      "reported_size": 1216,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/EAI-standard",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/EAI-teacher-assistent",
+      "branch": "main",
+      "reported_size": 113,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/EAI-teacher-assistent",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/EAIhome",
+      "branch": "main",
+      "reported_size": 255,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/EAIhome",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/eainesy",
+      "branch": "main",
+      "reported_size": 1266,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/eainesy",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/EAIwork-",
+      "branch": "main",
+      "reported_size": 1472,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/EAIwork-",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/EAT_me",
+      "branch": "main",
+      "reported_size": 83,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/EAT_me",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/EAT-inline",
+      "branch": "main",
+      "reported_size": 534,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/EAT-inline",
+      "round_01_coverage": "selected_source_read",
+      "inspected_commit": "0bd184f5408bddb9211b9684d7a0ada78a593b8b"
+    },
+    {
+      "repo": "E-AI-MODEL/Examenreglementcheck",
+      "branch": "main",
+      "reported_size": 3284,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/Examenreglementcheck",
+      "round_01_coverage": "selected_source_read",
+      "inspected_commit": "d72dc4806566b9c05f0d8f90f41b972390d5beb5"
+    },
+    {
+      "repo": "E-AI-MODEL/gpt-oss",
+      "branch": "main",
+      "reported_size": 10639,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/gpt-oss",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/legit-eai-ai-tool",
+      "branch": "main",
+      "reported_size": 524,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/legit-eai-ai-tool",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/malaga-magic-maker",
+      "branch": "main",
+      "reported_size": 24951,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/malaga-magic-maker",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/NGBSE20.1",
+      "branch": "main",
+      "reported_size": 626,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/NGBSE20.1",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/open-lovable",
+      "branch": "main",
+      "reported_size": 251,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/open-lovable",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/presentatie-door010",
+      "branch": "main",
+      "reported_size": 1675,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/presentatie-door010",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/project-pim",
+      "branch": "main",
+      "reported_size": 2113,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/project-pim",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/shadow-seed-study",
+      "branch": "main",
+      "reported_size": 2851,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/shadow-seed-study",
+      "round_01_coverage": "selected_source_read",
+      "inspected_commit": "ff639cc8c079cabef06c4d8cd9bcfb90c72a3b40"
+    },
+    {
+      "repo": "E-AI-MODEL/shadowseed",
+      "branch": "main",
+      "reported_size": 3176,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/shadowseed",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/shadowseed-agent-lab",
+      "branch": "main",
+      "reported_size": 94,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/shadowseed-agent-lab",
+      "round_01_coverage": "selected_source_read",
+      "inspected_commit": "d50971ac8aed51e1f4442ff3baac9328e36ad75e"
+    },
+    {
+      "repo": "E-AI-MODEL/shadowseed-pro",
+      "branch": "main",
+      "reported_size": 40978,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/shadowseed-pro",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/SSOT_17",
+      "branch": "main",
+      "reported_size": 764,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/SSOT_17",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/toon",
+      "branch": "main",
+      "reported_size": 1400,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/toon",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/website",
+      "branch": "main",
+      "reported_size": 52222,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/website",
+      "round_01_coverage": "metadata_only"
+    },
+    {
+      "repo": "E-AI-MODEL/wihtml",
+      "branch": "main",
+      "reported_size": 1928,
+      "archived": false,
+      "source_url": "https://github.com/E-AI-MODEL/wihtml",
+      "round_01_coverage": "selected_source_read",
+      "inspected_commit": "449d9d9ec3d0f883bd190fc5287eaccfe1d87854"
+    },
+    {
+      "repo": "eaimodel5/LeerlingMemo2",
+      "branch": "main",
+      "reported_size": 821,
+      "archived": false,
+      "source_url": "https://github.com/eaimodel5/LeerlingMemo2",
+      "round_01_coverage": "metadata_only"
+    }
+  ],
+  "internal_coverage": {
+    "total_repositories": 87,
+    "public_repositories": 29,
+    "private_repositories": 58,
+    "historical_scan_matched": 82,
+    "not_in_historical_scan": 5
+  }
+}
