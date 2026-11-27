@@ -28,6 +28,10 @@ Aanvullende ontwerppatronen: regels vóór modelaanroepen, didactische routering
 
 De oudere SSOT 17-repository heeft een uitdrukkelijk beperkende [licentie](https://github.com/E-AI-MODEL/SSOT_17/blob/main/LICENSE). Geen overname of redistributie van deze inhoud of implementatie in dit project zonder passende toestemming. Ook voor alle openbare bronnen geldt: openbare leesbaarheid is niet hetzelfde als hergebruikrecht. Voor mechanismen uit niet-openbare repositories is de audit intern; de openbare documentatie bevat geen private bronbestanden of interne testdata.
 
+## Technische selectie
+
+De [technische audit](TECHNIEKAUDIT.md) bevat de geselecteerde mechanismen met vastgelegde bronversies, beperkingen en externe alternatieven. De [proeven](../benchmarks/TECHNISCHE-PROEVEN.md) toetsen deze vóór de architectuurkeuze. Oude EAI-inhoud wordt niet automatisch overgenomen. Directe codeovername blijft afhankelijk van licentie, integratie en testresultaten.
+
 ## Audit voor daadwerkelijke overname
 
 Per bestand of functie: exacte commit, pad, oorspronkelijke werking, testdekking en daadwerkelijk uitgevoerde tests, licentie en auteursrecht, eventuele gegevens, beoogde wijziging en integratietest. Pas daarna overnemen. Behoud toepasselijke notices. Niet-commerciële onderdelen niet stilzwijgend gebruiken voor commerciële toepassing.

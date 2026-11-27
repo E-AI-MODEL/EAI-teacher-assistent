@@ -32,6 +32,8 @@ Neon meldde op 28 september 2026 ruim 1.500 aangesloten scholen met samen ongeve
 - [Plan van aanpak v0.2](docs/PLAN.md)
 - [Verdiepend bronnenonderzoek](research/VERKENNING.md)
 - [Functionele vergelijking en ontwerpvoorwaarden](research/FUNCTIONELE-EISEN.md)
+- [Technische hergebruiksaudit](research/TECHNIEKAUDIT.md)
+- [Minimale technische proeven](benchmarks/TECHNISCHE-PROEVEN.md)
 - [Bronnen en aansluiting bij Neon](research/neon/BRONNEN.md)
 - [Use case Frans 2 havo](curriculum/french-havo2/USE-CASE.md)
 - [Vergelijkingsprotocol](benchmarks/PROTOCOL.md)
@@ -40,6 +42,6 @@ Neon meldde op 28 september 2026 ruim 1.500 aangesloten scholen met samen ongeve
 
 ## Status
 
-Onderzoeksopzet v0.2: de verkenning is verdiept en de werkvolgorde is herzien. De definitieve keuze van de techniek en volledige hergebruiksaudit staan nog open. Er zijn nog geen werkende varianten, modelmetingen of leerlingresultaten in deze repository. De vakinhoud is een ontwerp dat nog door een vakdocent moet worden beoordeeld. Er zijn geen echte leerlinggegevens nodig voor de eerste benchmark.
+Onderzoeksopzet v0.2: de verkenning is verdiept en de werkvolgorde is herzien. De eerste technische selectie is vastgelegd. De definitieve architectuur, licentie-/hergebruikbesluiten en uitvoeringsproeven staan nog open. Er zijn nog geen werkende varianten, modelmetingen of leerlingresultaten in deze repository. De vakinhoud is een ontwerp dat nog door een vakdocent moet worden beoordeeld. Er zijn geen echte leerlinggegevens nodig voor de eerste benchmark.
 
 Geen aangetoonde besparing op een bestaand product. Een eigen model heeft geen externe tokenfactuur, maar wel reken-, hosting- en beheerkosten.

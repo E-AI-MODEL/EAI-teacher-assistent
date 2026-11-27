@@ -1,6 +1,6 @@
 # Plan van aanpak — EAI Teacher Assistant
 
-Versie 0.2, 27 november 2026. Herzien na de verdiepende verkenning. Deze versie vervangt de oorspronkelijke volgorde waarin de vakinhoud direct na het bronnenonderzoek zou worden uitgewerkt.
+Versie 0.2.1, 27 november 2026. Herzien na de verdiepende verkenning. Deze versie vervangt de oorspronkelijke volgorde waarin de vakinhoud direct na het bronnenonderzoek zou worden uitgewerkt.
 
 ## Onderzoeksvraag
 
@@ -25,8 +25,8 @@ Het gemeenschappelijke contract omvat lesinhoud, docentinstellingen, interface, 
 | --- | --- | --- |
 | 1 | Verkenning van Neon, intelligente tutorsystemen, EAI-bronnen en efficiëntie | [Bronnenonderzoek](../research/VERKENNING.md), [Neon-bronnen](../research/neon/BRONNEN.md); feiten, hypotheses en onbekenden gescheiden |
 | 2 | Functionele analyse, vóór schrijven van lesinhoud | [Functiematrix](../research/FUNCTIONELE-EISEN.md) met context, leerling/docenthandeling, mogelijke technieken, uitzonderingen, toegestane hulp, bewijs en gebruiksrechten |
-| 3 | Gerichte hergebruiksaudit en alternatiefvergelijking | Per gekozen mechanisme: exacte broncommit, implementatie en aanroepende code, negatieve tests, licentie, integratiegrens, onderhoud en ontbrekend bewijs. Vergelijk ook bestaande externe software en niets wijzigen |
-| 4 | Kleine onderscheidende technische proeven | Fictieve minimale gevallen, geen volledige methode. Meet routebereik, contextgetrouwheid, cacheveiligheid, gespecialiseerde controles, klein model versus groter model en netto kosten van extra aanroepen. Geen betaalde tests zonder budgetbesluit |
+| 3 | Gerichte hergebruiksaudit en alternatiefvergelijking | [Technische audit](../research/TECHNIEKAUDIT.md): overdraagbare mechanismen, bronversies, aangetroffen tests, licentiegrens, bekende fouten en externe alternatieven. Geen oude onderwijsinhoud of volledige applicaties overnemen |
+| 4 | Kleine onderscheidende technische proeven | [Technische proeven](../benchmarks/TECHNISCHE-PROEVEN.md): fictieve minimale gevallen, geen volledige methode. Begin met P01–P03 (meting, context en route). Meet routebereik, contextgetrouwheid, cacheveiligheid, gespecialiseerde controles, klein model versus groter model en netto kosten van extra aanroepen. Geen betaalde tests zonder budgetbesluit |
 | 5 | Besluit over architectuur en inhoudscontract | Gedeelde runtime, lesversies en bevoegdheden, model- en kostenadapter, foutcontract, minimale twee contrasterende taken. Vastleggen wat we hergebruiken en wat niet; model/framework/hostingkeuze onderbouwen |
 | 6 | Volledige maar afgebakende use cases en beoordelingsset | Frans 2 havo en rekenen groep 7 als beoogde contrasten; vakdocentreview, meerdere geldige oplossingsroutes, gecontroleerde hints, vrije vragen en nieuwe zelfstandige opdrachten. Eerst een kleine verticale proef, daarna voldoende inhoud voor een eerlijke benchmark |
 | 7 | Applicatie en vier varianten | Eén leerlingomgeving, één inhoudsbron, vier echt uitvoerbare routes, beveiligde modeladapters en meting; geen vier aparte codebases |
@@ -34,7 +34,11 @@ Het gemeenschappelijke contract omvat lesinhoud, docentinstellingen, interface, 
 | 9 | Belasting, schaal en totale kosten | Gelijke aangeboden belasting in A–D; 70.000 / 280.000 / 700.000 als aangenomen actieve aantallen; piek- en dalbelasting, uitval, GPU-benutting, kosten van auteurs en onderhoud, onzekerheid |
 | 10 | Demonstratie en overdracht | Werkende demonstratie, broncode, testresultaten, kostenmodel, beperkingen, integratievoorstel en benodigde informatie voor een echte Neon-proef |
 
-Fasen 1 en 2 zijn inhoudelijk gevorderd door deze verkenning; fase 3 is gestart met inspectie van geselecteerde mechanismen. Geen fase is een bewijs van uitgevoerde runtimeproeven. De volgende stap is de beperkte technische audit en daarna de onderscheidende proeven, niet het schrijven van een omvangrijke lessenreeks. De fasen zijn werkpakketten, geen verplichting tot tien PR's of telkens een apart CI-traject.
+Fasen 1 en 2 zijn inhoudelijk gevorderd. Fase 3 heeft een eerste onderbouwde technische selectie opgeleverd, met geselecteerde bronversies, beperkingen en externe alternatieven. De definitieve hergebruikrechten, metingen en architectuurkeuze blijven open. Fase 4 is de volgende uitvoeringsstap, te beginnen met P01–P03. De fasen zijn werkpakketten, geen verplichting tot tien PR's of telkens een apart CI-traject.
+
+## Techniek en inhoud gescheiden
+
+De bestaande EAI-projecten dienen als technische kennisbank. Onderzoek mechanismen onafhankelijk van oude rubrics, prompts, schoolgegevens en inhoudelijke taxonomie. Een oudere implementatie kan een bruikbaar technisch patroon hebben; inhoudelijke actualiteit en technische geschiktheid worden apart beoordeeld. Geen code kopiëren zonder rechtencontrole. De inhoudelijke referentie blijft versiegebonden en wordt later op actuele betekenis getoetst.
 
 ## Ontwerpvoorwaarden
 

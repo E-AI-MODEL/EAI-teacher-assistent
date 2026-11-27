@@ -13,6 +13,8 @@ Een volledig leerlinggesprek rond een opdracht; daarnaast rapportage per aanroep
 
 ## Eerst mechanismen onderzoeken
 
+Het uitvoeringsvoorstel voor fase 4 staat in [TECHNISCHE-PROEVEN.md](TECHNISCHE-PROEVEN.md). Start met een per-poging meetcontract, versiegebonden context en routing vóór generatie. Gebruik dezelfde contractfixtures voor alle technieken. De eindvergelijking blijft A–D.
+
 Voor het bouwen van uitgebreide use cases: kleine vergelijkende proeven uit de [functiematrix](../research/FUNCTIONELE-EISEN.md) met dezelfde context en hulpgrens, bekende én onbekende foutgevallen, geldige alternatieve antwoorden en gewijzigde lesversies. Meet de nauwkeurigheid van routekeuze, dekking van veilige niet-LLM-routes, foutieve automatische antwoorden en gemiste noodzaak voor modelhulp. Een gesloten antwoord dat een bestaande regel betrouwbaar kan controleren is een aparte nulmodelreferentie. Verander de vier hoofdvarianten niet.
 
 Binnen B vergelijk dezelfde input met en zonder contextselectie, minified JSON versus compact formaat waar passend, passende antwoordbudgetten en warme/koude prefixcache. Binnen C vergelijk gecontroleerde hints, vakspecifieke controles en eventueel modelroutering afzonderlijk. Binnen D vergelijk hosting en modelversie los waar mogelijk. Leg route-mix en hulpbeleid vast. Stop bij herhaalde niet-bereikte experimentele routes, technische uitval of bereikt kostenplafond; rapporteer niet-beoordeelde gevallen apart. Geen automatische herhalingen van dure runs.
