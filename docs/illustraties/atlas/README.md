@@ -1,178 +1,130 @@
-# EAI Teacher Assistant | Onderzoeksatlas
+# Een digitale assistent die niet alles opnieuw hoeft te bedenken
 
-27 november 2026. Elf diagrammen tonen een beperkte openbare selectie van eerdere bronvondsten en voorgestelde technische vergelijking. Ze vervangen het interne register niet. De selectie is onvoldoende als basis voor het afsluiten van 3b/3c; deze fasen zijn gericht heropend. Fase 4a staat stil tot herbeoordeling. Historische proeven zijn niet opnieuw uitgevoerd.
+We onderzoeken welke technische handelingen gewone software betrouwbaar kan uitvoeren, wanneer een taalmodel nog nodig is en wat dat betekent voor de kosten van hetzelfde aangeboden gesprek. Vooraf compileren, adaptief strategiebehoud, toetsbare beslislogica en selectieve inferentie vormen samen een nieuwe onderzoekshypothese. De onderdelen zijn bekend uit eerdere eigen projecten en openbare implementaties; hun combinatie is nog niet getoetst.
 
-[Zelfstandige HTML-atlas](index.html) (download en open lokaal) · [Machineleesbaar bronnen- en blokregister](atlas-registry.json) · [Technische specificatie](../../../research/TECHNISCHE-SPECIFICATIE.md) · [P01–P03](../../../benchmarks/TECHNISCHE-PROEVEN.md)
+> 27 november 2026 · Herbeoordeling fase 3b/3c. Fase 4a: NO-GO. Geen nieuwe modelproef, vakinhoud, architectuurkeuze of bewezen besparing.
 
-## Tussenstand detailronde 09
+[Zelfstandige HTML-atlas](index.html) · [Combinatiehypothese](../../../research/COMBINATIE-HYPOTHESE.md) · [Machineleesbaar register](atlas-registry.json)
 
-De eerste gerichte passage omvat 92 bekende repositorynamen: 86 met een bronpassage (waaronder twee snapshots met alleen een README), vijf opnieuw leeg bevonden en één eigen onderzoeksproject. Vijftien namen hebben een expliciet beperkte bron- of verdiepingsstatus. Ook bij de overige bronnen zijn integratie en uitvoering niet volledig getoetst. Dit zijn geen 92 onafhankelijke projecten. Deze openbare update bevat 34 onderzoeksrecords uit 27 openbare repositories.
+## 01. Kan een deel van het gesprek zonder model?
 
-Alle bronnen zijn versiegebonden. Code-inspectie, ontwerp, schema en gelezen tests zijn afzonderlijke bewijssoorten. Geen nieuwe runtime- of modeltests. Fase 3b en 3c zijn heropend; fase 4a blijft NO-GO. Geen gekozen architectuur, vakinhoud, modelkeuze of kostenclaim.
+Vooraf samenstellen, toestand bewaren en alleen inferentie inzetten waar nodig.
 
-[Alle 34 openbare onderzoeksrecords](../../../research/register/RONDE-09.md)
+Een model hoeft niet bij iedere beurt opnieuw uit te zoeken welke gegevens, regels en mogelijkheden gelden. Een compiler kan die voorbereiding eenmalig uitvoeren. Tijdens het gesprek houdt de software alleen de actuele toestand bij en kiest zij een toegestane handeling.
 
-## Aanvulling uit besloten bronnen
+![Drie voorbereidingsstappen leveren een versiegebonden kaart. Een geautoriseerde aanvraag en actuele strategietoestand leiden tot een regel, een toegestane modeltaak of een stop. Uitkomsten worden opnieuw gecontroleerd.](d12-combinatie.svg)
 
-De eerdere openbare selectie van 34 records blijft intact. De onderstaande aanvulling brengt ook de bruikbare mechanismen uit besloten projecten in beeld. Overlap tussen afgeleide records en openbare bronvondsten is mogelijk; de aantallen zijn geen aantal unieke algoritmen.
+Het interessante zit in de combinatie: de vooraf gemaakte kaart kan regels en bekende acties begrenzen; strategiebehoud kan onnodige herinterpretatie voorkomen; een regel kan een afgebakende taak zonder model uitvoeren. Een onbekende vraag bereikt alleen een model wanneer dat nodig en toegestaan is. Dit is een hypothese, geen verplichte keten of gekozen architectuur.
 
-Deze selectie bevat 38 inhoudelijke afgeleiden uit eerder onderzochte besloten bronbestanden, testbestanden en ontwerpstukken. Zij beschrijven de aangetroffen technische ideeën en noodzakelijke tegenproeven in eigen woorden. De oorspronkelijke private bestanden, namen, bronlinks, code en instellingen worden niet gepubliceerd. De afzonderlijke interne bronkoppelingen blijven bewaard in het besloten onderzoek. Publieke lezers kunnen die besloten bronclaims niet zelfstandig via deze afgeleide controleren. De afgeleide is geen extra onafhankelijke bewijsbron, geen uitvoeringsresultaat en geen toestemming voor codehergebruik.
+**Te toetsen:** Werkt de combinatie ook beter dan elk onderdeel afzonderlijk? Tel voorbereiding en herziening mee; een extra laag die geen werk wegneemt heeft geen voordeel.
 
-[De 38 technische afgeleiden](../../../research/register/RONDE-09-AFGELEID.md)
+Vindplaatsen: DPR04, DPR08–DPR11, DPR27, R10-01–R10-04, R10-09, R11-01–R11-02, R11-13. [SVG openen](d12-combinatie.svg).
 
-## 01. Zes vondsten, drie ontwerpvragen
+## 02. De startsnapshot is niet de actuele toestemming
 
-Openbare bronronde 01: groepering op overeenkomstige onderzoeksvraag.
+Houd een versiegebonden artifact apart van de veranderlijke toestand.
 
-![Zes openbare bronnen in drie paren, gekoppeld aan drie ontwerpvragen. Geen bewezen softwareafhankelijkheden.](d01-kenniskaart.svg)
+De historische selectors voor startsnapshot en actieve voorbereiding zijn bruikbaar, maar een terugval naar oude gegevens mag een ingetrokken recht niet herstellen. Identificeer het artifact met bron-, compiler- en beleidsrevisie en een inhoudsdigest. Houd de veranderlijke sessierevisie apart.
 
-[SVG openen](d01-kenniskaart.svg)
+![Bronversie, voorbereid artifact en sessietoestand hebben afzonderlijke identiteit. Een aanvraag van revisie 1 arriveert na revisie 3; ook bij dezelfde waarde moet de verouderde uitkomst worden geweigerd.](d13-versies-en-context.svg)
 
-## 02. Ontwerpgeschiedenis in vijf momenten
+De modeltaak krijgt een projectie van de toegestane gegevens: de lokale vraag, noodzakelijke referenties en het verwachte voorsteltype. Geen volledige bronbundel, onbevoegde historie of vrije code. Cache-identiteit volgt de actuele scope en versie; de cache verleent zelf geen toestemming.
 
-Kalenderdagen bepalen de afstand. Bronnen zijn niet automatisch elkaars opvolgers.
+**Te toetsen:** Kan een resultaat uit revisie 1 nog worden getoond nadat de toestand via revisie 2 naar dezelfde waarde is teruggekeerd? Het antwoord moet nee zijn.
 
-![Vijf gedateerde momenten in 2026; de SSOT-migratiekaart beschrijft een versieontwikkeling. De andere gebeurtenissen zijn afzonderlijke bronnen.](d02-ontwerpgeschiedenis.svg)
+Vindplaatsen: DPR09–DPR12, R10-03–R10-04, R10-09–R10-11, R11-05, R11-10. [SVG openen](d13-versies-en-context.svg).
 
-[SVG openen](d02-ontwerpgeschiedenis.svg)
+## 03. Strategie vasthouden zonder onzekerheid te verbergen
 
-## 03. Veertien mechanismen, vier onderzoeksgroepen
+Constellation locking, hysteresis en adaptieve vensters als afzonderlijke proef.
 
-Wat houden we gelijk? Wat veranderen we afzonderlijk in de vergelijking?
+Eerdere kernels houden een gekozen strategie tijdelijk vast. Hysteresis gebruikt verschillende voorwaarden voor vasthouden en wisselen. Een adaptief venster laat de geldigheidsduur afhangen van het waargenomen veranderingspatroon.
 
-![Veertien mechanismen: gedeelde functies, optimalisatie in B, extra hybride routes in C/D, inferentieplaats in D. Groepering is geen afhankelijkheidsgrafiek.](d03-mechanismen.svg)
+![Een toestandmachine onderscheidt waarnemen, strategie behouden en opnieuw beoordelen. Kleine afwijkingen hoeven geen wissel te veroorzaken. Kritieke wijzigingen doorbreken een lock. Een illustratief beurtverloop toont stabiele beurten, afwijking en herziening.](d14-strategie.svg)
 
-[SVG openen](d03-mechanismen.svg)
+Gewogen entropie kan variatie binnen een reeks expliciete toestandsvelden zichtbaar maken. Onderzoek per veld en over de volledige vector, met een vastgelegde normalisatie en behandeling van ontbrekende waarden. Lage entropie kan ook een stabiele fout zijn. Laat een kritieke gebeurtenis of nieuwe bron- of beleidsrevisie een lock onmiddellijk ongeldig maken. Ontbrekende signalen zijn UNKNOWN, geen bevestiging.
 
-## 04. Wat verandert er tussen A, B, C en D?
+Vergelijk minimaal elke beurt herbeoordelen, een eenvoudige vaste lock, hysteresis zonder entropie en een adaptief venster. Meet echte routewijzigingen, onterechte lock, gemiste interrupt en de kosten van het bepalen van de toestand zelf.
 
-Eén gedeeld contract. Alleen benoemde verschillen veranderen per route.
+**Te toetsen:** Een extra interpretatiecall om een lock te berekenen kan het hele voordeel tenietdoen. Een stabiele toestand is geen bewijs voor een juist antwoord.
 
-![A/B gebruiken dezelfde modeltaak; C/D kunnen een experimentele aanvraag zonder model uitvoeren; D gebruikt alleen lokale inferentie. Gewone functies zijn gedeeld.](d04-varianten-abcd.svg)
+Vindplaatsen: DPR01–DPR08, DPR37, R11-09, R11-13. [SVG openen](d14-strategie.svg).
 
-[SVG openen](d04-varianten-abcd.svg)
+## 04. Tel alle modelaanroepen, niet alleen het antwoord
 
-## 05. Van bronbevinding naar proef
+Historisch aanroeppad naast een te toetsen selectieve route.
 
-Vijf traceerbare koppelingen. De verificaties staan nog open in dit project.
+In een oudere eigen implementatie volgden op het normale tekstpad vooraf classificeren, genereren en achteraf classificeren. Beeldlabels konden extra aanvragen veroorzaken; een geconstateerde afwijking kon een herschrijfroute activeren. De streamingroute had een ander pad. De code van de betreffende endpoints bevat echte gatewayaanroepen. Dit zijn aangetroffen paden, geen gemeten frequenties of facturen.
 
-![Vijf rijen verbinden historische openbare bronnen aan technische eisen, ontwerpcontracten en geplande proeven. Geen uitgevoerde verificaties in dit project.](d05-bewijsroute.svg)
+![Een historisch normaal tekstpad heeft drie vaste gatewaypaden en conditionele beeld- en herstelpaden. De nieuwe hypothese onderzoekt nul inferentie bij een regelmatch en één afgebakende modeltaak bij een toegestane onbekende aanvraag.](d15-modelaanroepen.svg)
 
-[SVG openen](d05-bewijsroute.svg)
+Een efficiënte baseline mag zelf ook een goede directe modeltaak gebruiken. Vergelijk dus niet met een opzettelijk dure keten. Voor de nieuwe hypothese onderzoekt software een bekende bewerking zonder model en stuurt bij UNKNOWN hoogstens één afgebakende modeltaak naar de gekozen adapter. Extra classificatie, embeddings, herstel of controle zijn alleen afzonderlijke onderzoeksmogelijkheden wanneer ze aantoonbaar nodig zijn.
 
-## 06. Wat eerdere proeven werkelijk aantonen
+**Te toetsen:** Meet alle aangeboden aanvragen, daadwerkelijke dispatches en pogingen. Een geweigerde dispatch, afgebroken stream of onzekere facturering blijft apart zichtbaar.
 
-Twee experimentfamilies. De cijfers zijn niet onderling vergelijkbaar.
+Vindplaatsen: DPR27–DPR31, R10-09, R11-03–R11-04, R11-11–R11-12. [SVG openen](d15-modelaanroepen.svg).
 
-![EAT Inline: 77,42% naamzoeken versus 98,85% EAT na unieke naamkoppeling; 100% is een controle met correct ID uit testantwoorden. NeSy P02: nul van tien doelroutes; P03: acht van acht herbeoordelingen en nul onafhankelijke menselijke beoordelingen.](d06-eerdere-proeven.svg)
+## 05. Vier uitvoeringsvormen, geen vier verschillende producten
 
-[SVG openen](d06-eerdere-proeven.svg)
+A–D delen de gevraagde taak en dezelfde technische grenzen.
 
-## 07. Orchestrator: eerst een toegestane route
+A blijft een competente reguliere modelroute. B onderzoekt een betere representatie, selectieve context en caching bij dezelfde modeltaak. C onderzoekt een extra, toetsbare modelvrije assistentroute. D gebruikt dezelfde hybride beslisregels, maar voert de resterende modeltaken lokaal uit. Ook embeddings en classificatie mogen in D niet ongemerkt extern draaien.
 
-C/D: beslis alleen met actuele gegevens. Onbekend is geen toestemming.
+![Vier rijbanen vergelijken relevante standaardcontext, doelgerichte context, hybride regels en lokale inferentie. Gewone lookup en autorisatie zijn gedeeld. A, B en C gebruiken dezelfde externe modelrevisie wanneer zij een modeltaak uitvoeren.](d16-varianten.svg)
 
-![Hybride route: gewone functie eerst; experimentele regel MATCH naar engine, UNKNOWN alleen naar toegestane modeltaak, DENY afwijzen. Iedere af te leveren uitkomst vereist actuele rechten en revisie.](d07-orchestrator.svg)
+De combinatiehypothese is geen vijfde product. Onderzoek vooraf compileren, strategiebehoud, lokale logica en begrensde modeltaken eerst afzonderlijk. Houd gewone lookup, authenticatie, revisiecontrole en normale softwarefuncties gelijk. A mag niet slechter worden gemaakt om C gunstig te laten lijken.
 
-[SVG openen](d07-orchestrator.svg)
+Een vergelijking tussen verschillende modelgewichten én hostingvormen bevat twee effecten. Meet waar haalbaar dezelfde gewichten, tokenizer, template en taak op beide hostingvormen. Lokale uitvoering heeft hardware-, energie- en beheerkosten.
 
-## 08. Vijf onderzoeksgroepen uit de detailronde
+**Te toetsen:** Beantwoord eerst de technische vragen op neutrale fixtures. Echte modelkwaliteit en kosten vragen later representatieve gesprekken en vastgelegde kwaliteitscriteria.
 
-Concrete bronvondsten naast elkaar. Geen voorgeschreven uitvoeringsvolgorde.
+Vindplaatsen: S11, S12, DPR09–DPR10, DPR23, DPR26, R11-03–R11-06. [SVG openen](d16-varianten.svg).
 
-![Vijf groepen met bronidentiteit, selectieve context, toestand, routering en controle. De broncodes verwijzen naar geïnspecteerde openbare bestanden; de vragen zijn nog niet beantwoord voor Teacher Assistant.](d08-detailronde.svg)
+## 06. Bewaar ook proeven die niets bewezen
 
-[SVG openen](d08-detailronde.svg) · [Detailregister ronde 09](../../../research/register/RONDE-09.md)
+Drie verschillende onderzoeksvragen, drie afzonderlijke bewijsgrenzen.
 
-## 09. Technische afgeleiden uit besloten bronnen
+EAT Inline: 434 vragen naar exacte registernamen op 100.000 gegenereerde documenten, opgebouwd uit 669 fragmenten van 40 Wikipedia-pagina’s. Unieke naamkoppeling met EAT leverde vaker het correcte bronantwoord dan gewone naamzoekactie. De 100%-controle kreeg de antwoord-ID vooraf. Er draaide geen taalmodel.
 
-Vijf onderzoeksgroepen, 38 records. Vergelijk mechanismen vóór een architectuurkeuze.
+![Een historische EAT-bronselectieproef vergelijkt twee methoden zonder antwoord-ID en een controle met correct ID. NeSy laat zien dat een betaalde run de doelroute kan missen. Shadowseed laat zien dat een hoge score geen gerepliceerd signaal is.](d17-historisch-bewijs.svg)
 
-![Vijf groepen technische mechanismen uit besloten onderzoek: strategie, compiler, representatie, uitvoering en aflevergrenzen. De DPR-codes verwijzen naar publieke afgeleiden. Oorspronkelijke bronkoppelingen zijn alleen intern beschikbaar.](d09-besloten-mechanismen.svg)
+NeSy: in P02 bereikten nul van tien echte P0-beurten de bedoelde onderzoeksroute. In P03 werden de acht geplande herbeoordelingen wél uitgevoerd, met zes negatieve controles zonder extra call. De verwachte zetten waren door de auteurs bepaald; nul onafhankelijke menselijke beoordelingen waren afgerond. Geen bewezen kwaliteitswinst.
 
-[SVG openen](d09-besloten-mechanismen.svg) · [38 technische afgeleiden](../../../research/register/RONDE-09-AFGELEID.md)
+Shadowseed: de historische 88,24% balanced accuracy bij Qwen2.5-0.5B haalde de vooraf vastgelegde statistische grens niet. Op een nieuwe dataset voldeden nul van vier vooraf vastgelegde toetsen. Gebruik die meetmethode als inspiratie, niet de activatieprobe als routecriterium.
 
-## 10. Historische mechanismen en tegenproeven
+**Te toetsen:** Leg vóór uitvoering vast welke route bereikt moet worden, welke meting telt en wanneer een hypothese wordt verworpen. Herhaal geen betaalde proef alleen omdat de eerste geen bruikbaar resultaat gaf.
 
-De vijftien eerder beperkt onderzochte repositorynamen zijn gericht herlezen. De oorspronkelijke compilerbestanden zijn niet teruggevonden. Deze 26 records verdiepen ontwerpcontracten, uitvoerpaden, isolatie en historische meetresultaten.
+Vindplaatsen: S02, S08, S09, R10-13–R10-15. [SVG openen](d17-historisch-bewijs.svg).
 
-![Vier groepen mechanismen en tegenproeven uit ronde 10. Geen nieuwe uitvoeringstest.](d10-historische-verdieping.svg)
+## 07. Toets de combinatie zonder het antwoord vooraf te kiezen
 
-[SVG openen](d10-historische-verdieping.svg) · [26 verdiepingsrecords](../../../research/register/RONDE-10-VERDIEPING.md)
+Een voorgestelde ablatiematrix: meet één wijziging, de combinatie en daarna ontbrekende bijdragen.
 
-## 11. Van bronvondst naar toetsbare techniek
+Vier factoren maken de combinatie toetsbaar: P = vooraf compileren in plaats van hetzelfde contract per aanvraag opbouwen; S = strategie behouden met expliciete herziening in plaats van de strategie iedere beurt opnieuw bepalen; R = een aantoonbaar toepasselijke experimentele regel in plaats van de modelroute; M = een begrensde taakcontext in plaats van de volledige relevante modelcontext. In de eerste technische vergelijking blijven modelvoorstellen stubs.
 
-Vier Exa-zoekrichtingen met twintig gevraagde resultaatplaatsen, vijf openbare repositories op vaste commits en drie historische eigen projecten gericht herlezen. Veertien verdiepingsrecords; geen veertien nieuwe onafhankelijke algoritmen.
+![Een matrix met zes eerste configuraties en vier mogelijke vervolgconfiguraties. Vier factoren worden afzonderlijk aan- of uitgezet: vooraf compileren, strategiebehoud, experimentele regels en begrensde modelcontext.](d18-proefmatrix.svg)
 
-![Vier groepen mechanismen en tegenproeven uit ronde 11. Geen nieuwe uitvoeringstest.](d11-mechanismen-vergelijking.svg)
+Begin met een eerlijke baseline, vier enkelvoudige varianten en de combinatie. Onderzoek daarna zo nodig de combinatie zonder één factor. Dit is een onderzoeksontwerp, geen opdracht om tien runners te bouwen. Gebruik één uitvoerbaar contract met schakelbare factoren, dezelfde aangeboden aanvragen, vooraf vastgelegde verwachtingen en gelijke bevoegdheden. Onderzoek interacties gericht wanneer afzonderlijke effecten niet optellen.
 
-[SVG openen](d11-mechanismen-vergelijking.svg) · [14 verdiepingsrecords](../../../research/register/RONDE-11-VERGELIJKING.md)
+Vooraf samenstellen, cache vullen, toestand observeren, resolver, alle modelpogingen, lokale rekenkracht en herstel horen bij de totale kosten. Rapporteer per aangeboden aanvraag én per geldige afgeleverde uitkomst. In 4a bewijzen stubs alleen bereik, route, versie, budget en foutcontract; geen eurobesparing, semantische kwaliteit of leerresultaat.
 
-Fase 3b en 3c zijn heropend. Fase 4a blijft NO-GO. Geen nieuwe runtime- of modeltests, echte inferentie, vakinhoud, architectuurkeuze of bewezen kostenbesparing. De volledige bronkoppeling blijft intern; een afgeleide is geen extra onafhankelijke bron.
+**Te toetsen:** Verwerp een variant die goedkoper lijkt door een relevante taak niet uit te voeren, verouderde gegevens af te leveren, UNKNOWN te verbergen of kosten buiten de trace te houden.
 
-## Bronregister
+Vindplaatsen: S11, S12, DPR04, DPR08–DPR10, DPR27, R10-01, R10-09, R11-01–R11-13. [SVG openen](d18-proefmatrix.svg).
 
-Broncodes verwijzen naar openbare, versiegebonden bronnen. Hetzelfde register is machineleesbaar. Elk benoemd blok heeft een vaste `data-block-id`, broncodes en een bewijsstatus in SVG en JSON. Een geplande proef is geen verificatieresultaat. Lijnen tonen de beschreven relatie, niet automatisch afstamming, causaliteit of softwareafhankelijkheid.
+## Bronnen en geschiedenis
 
-| ID | Bron | Bewijssoort | Afbakening |
-| --- | --- | --- | --- |
-| S01 | [WiHTML · ontwerpafspraken](https://github.com/E-AI-MODEL/wihtml/blob/449d9d9ec3d0f883bd190fc5287eaccfe1d87854/docs/ontwerpafspraken.md) | Ontwerp | Inhoud, lesvolgorde en uitvoering gescheiden; geen bewezen tutor. |
-| S02 | [EAT Inline · bronselectieproef](https://github.com/E-AI-MODEL/EAT-inline/blob/0bd184f5408bddb9211b9684d7a0ada78a593b8b/benchmark/results/wiki-fair-v2-one-tag-rag/one-tag-rag-summary.md) | Historische meting | 434 exacte registervragen; 100.000 gegenereerde documenten uit 669 fragmenten van 40 pagina's. Geen LLM. |
-| S03 | [Examenreglementcheck · bronbeleid](https://github.com/E-AI-MODEL/Examenreglementcheck/blob/d72dc4806566b9c05f0d8f90f41b972390d5beb5/docs/SOURCE-POLICY.md) | Beleidsontwerp | Identiteit, geldigheid en bevoegdheid onderscheiden; geen juridische regels overgenomen. |
-| S04 | [Gamma Portal · SSOT-selectors](https://github.com/E-AI-MODEL/eai-gamma-portal/blob/444d1373f83dcd2d5ace6f0ad931c448874b7807/src/lib/ssot-selectors.ts) | Code-inspectie | Selecties met bronverwijzingen; geen bewezen tutorwerking. |
-| S05 | [Shadowseed Agent Lab · evidence en invloed](https://github.com/E-AI-MODEL/shadowseed-agent-lab/blob/d50971ac8aed51e1f4442ff3baac9328e36ad75e/docs/architecture-decisions/0002-rag-as-evidence-not-influence.md) | Ontwerpbesluit | Gevonden informatie krijgt niet automatisch invloed; uitvoering niet opnieuw geverifieerd. |
-| S06 | [Shadow Seed Study · reproductienotitie](https://github.com/E-AI-MODEL/shadow-seed-study/blob/ff639cc8c079cabef06c4d8cd9bcfb90c72a3b40/docs/ssl/notitie_reproductie.md) | Methode | 29 april 2026: beslissingen, versies, ruwe resultaten en mislukte runs bewaren. |
-| S07 | [SSOT 17 · migratiekaart](https://github.com/E-AI-MODEL/SSOT_17/blob/66a48584ed5818790828c1a0fdc41b9a1880df43/docs/11_MIGRATION_MAP.md) | Versiemapping | Snapshot 25 juni 2026: 10 rubrics, 15 Gamma-parameters, 18 operationele rubrics; verschillende eenheden. Geen effectmeting of hergebruikrecht. |
-| S08 | [NeSy P02 · postmortem](https://github.com/E-AI-MODEL/eainesy/blob/e8ce553a3c1c16d072078a62c426ce038cc455d3/docs/NeSy-P02-run-failure-root-cause-2026-10-23.md) | Mislukte historische proef | 23 oktober 2026: 0/10 P0-beurten bereikte de onderzochte S1/S2-route; 20 echte modelrequests. Geen vergelijking van S1/S2. |
-| S09 | [NeSy P03 · resultaat](https://github.com/E-AI-MODEL/eainesy/blob/e8ce553a3c1c16d072078a62c426ce038cc455d3/docs/NeSy-P03-result-2026-10-23.md) | Historische sandboxmeting | 14 fictieve gevallen; 8/8 S2-herbeoordelingen; 6 controles zonder extra call; 16 modelrequests; 0 onafhankelijke menselijke beoordelingen. Controllerstatus gesimuleerd. |
-| S10 | [EAIwork · model-capability neutral](https://github.com/E-AI-MODEL/EAIwork-/blob/8754936ffe594766339e8f8493c963c41a0b4206/docs/model-capability-neutral.md) | Implementatiebeschrijving | Optionele voorstelcontrole; gewone directe modelroute behouden. Exact citaat bewijst geen semantische steun. |
-| S11 | [Technische specificatie v0.1](https://github.com/E-AI-MODEL/EAI-teacher-assistent/blob/f19d9b8885fad221524a28dacd2a2aecae3aa056/research/TECHNISCHE-SPECIFICATIE.md) | Projectontwerp | Gedeeld contract A–D; geen werkende architectuur. |
-| S12 | [Technische proeven P01–P03](https://github.com/E-AI-MODEL/EAI-teacher-assistent/blob/f19d9b8885fad221524a28dacd2a2aecae3aa056/benchmarks/TECHNISCHE-PROEVEN.md) | Geplande verificatie | Nog niet uitgevoerde modelvrije contractproeven. |
-| S13 | [Openbare bronronde 01](https://github.com/E-AI-MODEL/EAI-teacher-assistent/blob/f19d9b8885fad221524a28dacd2a2aecae3aa056/research/register/RONDE-01.md) | Openbaar bronnenregister | Zes bronvondsten met beperkingen. |
-| S14 | [Technische audit](https://github.com/E-AI-MODEL/EAI-teacher-assistent/blob/f19d9b8885fad221524a28dacd2a2aecae3aa056/research/TECHNIEKAUDIT.md) | Technische verkenning | Kandidaatmechanismen; geen nieuwe runtimeproef. |
+De atlas is een leesroute door de onderzoeksbevindingen, geen volledige opsomming van de 112 records uit rondes 09–11. Alle oorspronkelijke registers, bronverwijzingen en elf eerdere diagrammen blijven behouden. Bron-ID’s verwijzen naar het machineleesbare register; besloten bronnen zijn alleen als toegestane afgeleide opgenomen.
 
-| S15 | [EAT_me · CycleManager / focused_rubric_ids](https://github.com/E-AI-MODEL/EAT_me/blob/deda94ffb80c4c9b78f40afe23d2db09e65673ea/eatme/cycle.py) | Code-inspectie | Ronde 09, B02: Een klein relevant kader per beurt i.p.v. alle definities. Onbekende fase geeft lege set; wrap van buren ook bij loop=false. Volg echte promptconsumer. |
-| S16 | [EAT_me · EATRuntimeGatekeeper.evaluate_turn](https://github.com/E-AI-MODEL/EAT_me/blob/deda94ffb80c4c9b78f40afe23d2db09e65673ea/eatme/engine.py) | Code-inspectie | Ronde 09, B03: Rewrite en observe apart meten; geen automatische tweede call of runtimeautoriteit afleiden. |
-| S17 | [EAT-inline · parse_references / validate_reference](https://github.com/E-AI-MODEL/EAT-inline/blob/0bd184f5408bddb9211b9684d7a0ada78a593b8b/src/eat_inline.py) | Code-inspectie | Ronde 09, B05: Een syntactisch geldige ref kan inhoudelijk verkeerd, ingetrokken of onbekend zijn. Combineer identiteit met autorisatie, niet fuzzy-healing. |
-| S18 | [toon · assertExpectedCount / validateNoExtraTabularRows / validateNoBlankLinesInRange](https://github.com/E-AI-MODEL/toon/blob/7f8c2379fd4cd3399a0e41e79dcc807cdf2b8f3c/packages/toon/src/decode/validation.ts) | Code-inspectie | Ronde 09, B06: Syntaxvalidatie en roundtrip los van werkelijk tokenizerverbruik. Externe library/fork: licentie en versiecheck vóór hergebruik. |
-| S19 | [-rag-eat-starter-kit · load_corpus / HybridIndex / _minmax](https://github.com/E-AI-MODEL/-rag-eat-starter-kit/blob/1c98f0d04a179fc8df40383870c81d032385ee50/src/ragkit/retrieval.py) | Code-inspectie | Ronde 09, B07: Filter bronnen op toegestane groepen vóór rangschikking. Uniforme score is geen confidence. Opslagcompressie en retrievalkwaliteit zijn geen bewijs van modelkwaliteit. |
-| S20 | [-rag-eat-starter-kit · validate_boundary / compress_file / compress_tree](https://github.com/E-AI-MODEL/-rag-eat-starter-kit/blob/1c98f0d04a179fc8df40383870c81d032385ee50/src/ragkit/gzip_boundary.py) | Code-inspectie | Ronde 09, B08: Opslagbytes apart van tokens; compressie-/expansielimieten, checksums en exacte duplicate-identiteit testen. |
-| S21 | [eainesy · buildSymbolicPlan / validateNeuralRecheck](https://github.com/E-AI-MODEL/eainesy/blob/b1962011d2db745ce62dee332c12ec030e8e07f2/research/nesy-cooperative/coordinator.mjs) | Code-inspectie | Ronde 09, B11: Kandidaat blijft unverified_model_claim; controller en transport apart toetsen. Historische P02/P03-resultaten staan in de bestaande atlas. SAT bewijst geen semantische juistheid. |
-| S22 | [eainesy · pumpQueue / startWorker / validCertificate](https://github.com/E-AI-MODEL/eainesy/blob/b1962011d2db745ce62dee332c12ec030e8e07f2/src/lib/eainesy/z3-isolated.ts) | Code-inspectie | Ronde 09, B12: Per proces, geen productiecapaciteitsmeting. Timeout, kill en close onderscheiden. Solver toetst alleen formele invoer. |
-| S23 | [EAIwork- · apply / replay](https://github.com/E-AI-MODEL/EAIwork-/blob/69f5793f633ae6be6e22ef6c8eeeab5158fe147e/packages/core/src/replay.ts) | Code-inspectie | Ronde 09, B13: Checksum dekt alleen statusparen, niet volledige staat. Onbekende event/replayconfig en wijzigingen in dependencies toetsen. |
-| S24 | [EAIwork- · observeLocalEvidence](https://github.com/E-AI-MODEL/EAIwork-/blob/69f5793f633ae6be6e22ef6c8eeeab5158fe147e/packages/evidence/src/observe.ts) | Code-inspectie | Ronde 09, B14: Geen semantische juistheid of verhoging van bewijsstatus uit een exact anker. Read-only sidecar. |
-| S25 | [EAIwork- · canRead / canWrite / canRunCheck / canRunWorker / canAudit](https://github.com/E-AI-MODEL/EAIwork-/blob/69f5793f633ae6be6e22ef6c8eeeab5158fe147e/packages/server/src/authz.ts) | Code-inspectie | Ronde 09, B15: Volg werkelijk serverpad en egress; execute-only betekent niet automatisch geheimhouding of correcte aflevering. |
-| S26 | [shadowseed-pro · decay_traces / reactivate_by_text / expire_vector_only_open_seeds](https://github.com/E-AI-MODEL/shadowseed-pro/blob/7427181c50fabae8f9cbd112c3e549e752edf914/src/shadowseed/lifecycle.py) | Code-inspectie | Ronde 09, B16: Tijd en turns valideren; reactivering geeft geen nieuw bewijs of gewicht. Autoriteit bij daadwerkelijk gebruik controleren. |
-| S27 | [shadowseed-pro · RecurrenceClusterer.add / bump / _credit_observation](https://github.com/E-AI-MODEL/shadowseed-pro/blob/7427181c50fabae8f9cbd112c3e549e752edf914/src/shadowseed/recurrence_clustering.py) | Code-inspectie | Ronde 09, B17: Legacy zonder ref behoudt member-count. Unieke opslagrecord ≠ onafhankelijke observatie; toets clusterdrift, lege/onjuiste refs, herimport. |
-| S28 | [shadowseed-pro · recognize / parse_answer](https://github.com/E-AI-MODEL/shadowseed-pro/blob/7427181c50fabae8f9cbd112c3e549e752edf914/src/shadowseed/recurrence_recognition.py) | Code-inspectie | Ronde 09, B18: Slechts herkenningssignaal, geen bewijs/weight/authority. Vergelijk met eenvoudige exacte en semantische clustering; echte extra calls meetellen. |
-| S29 | [shadowseed · test_atomic_seed_passes / test_broad_seed_fails](https://github.com/E-AI-MODEL/shadowseed/blob/5c0211114993a9cc47f16a669b38960598a50f27/tests/test_atomic_seed_validation.py) | Testinspectie | Ronde 09, B19: Aanwezige test, niet uitgevoerd. Implementatie en grensgevallen moeten nog worden gelezen; geen bewezen algemene atomiciteit. |
-| S30 | [shadowseed-agent-lab · SeedProposer / RetrieverProtocol / AgentLabHarness.run_loop](https://github.com/E-AI-MODEL/shadowseed-agent-lab/blob/d50971ac8aed51e1f4442ff3baac9328e36ad75e/shadowseed_agent_lab/harness.py) | Code-inspectie | Ronde 09, B20: Geen autoriteit vanuit retrieval of voorstel. Bounded loop, stop/fixpoint en caller verder controleren; fake proposer geen modelkwaliteit. |
-| S31 | [shadow-seed-study · searchSeedsTool / getRunTool / recentSeedsTool](https://github.com/E-AI-MODEL/shadow-seed-study/blob/ff639cc8c079cabef06c4d8cd9bcfb90c72a3b40/src/lib/mcp/tools/lab.ts) | Code-inspectie | Ronde 09, B21: Toolaanroep of JSON-resultaat bewijst geen autorisatie of bronjuistheid; lees werkelijk scopefilter. |
-| S32 | [EAI-lab- · EventStore.append / all / for_case](https://github.com/E-AI-MODEL/EAI-lab-/blob/7c76ed3426e1a478c726ceecc2136e96fe671c95/src/eai_lab/event_store.py) | Code-inspectie | Ronde 09, B22: Proceslokaal. Fake vs real afdwingen bij producer en import; geen duurzaamheid, onafhankelijke evidence of providerusage afleiden. |
-| S33 | [Caveman-eduNL · docs/OUTPUT_CONTRACTS.md](https://github.com/E-AI-MODEL/Caveman-eduNL/blob/342e88d98a35640cfb9431280dfa6e34e2a7a4a8/docs/OUTPUT_CONTRACTS.md) | Ontwerp | Ronde 09, C04: Bruikbaar als ontwerpreferentie voor taakspecifieke vorm en omvang; documentatie, geen gemeten tokensparing. |
-| S34 | [door0101 · src/components/chat/AuthenticatedChatOverlay.tsx](https://github.com/E-AI-MODEL/door0101/blob/95b57b6caf0140317d69caabc7d239edcac65904/src/components/chat/AuthenticatedChatOverlay.tsx) | Code-inspectie | Ronde 09, C08: Bruikbare scheiding tussen bekende velden en vrije tekst; serverautorisatie, concurrentie en feitelijke faseovergangen nog controleren. |
-| S35 | [eai-gamma-portal · src/lib/advice-builder.ts](https://github.com/E-AI-MODEL/eai-gamma-portal/blob/444d1373f83dcd2d5ace6f0ad931c448874b7807/src/lib/advice-builder.ts) | Code-inspectie | Ronde 09, C10: Relevante traceerbare bevindingen-naar-advies-laag. matchedNeedle is alleen tekstindicatie, niet automatisch bewijs van werking. |
-| S36 | [EAI-standard · schemas/conformance-result.schema.json](https://github.com/E-AI-MODEL/EAI-standard/blob/dd674400c5ce394b90a80b944f672dc90b3c912a/schemas/conformance-result.schema.json) | Schema-inspectie | Ronde 09, C14: Essentieel onderscheid: geldige structuur en volledigheid van kennis zijn verschillende dingen. Historisch schema; niet automatisch huidige standaard of certificering. |
-| S37 | [EAIhome · src/eaihome/store.py](https://github.com/E-AI-MODEL/EAIhome/blob/52356fc75097da7f6361739f29d49182cc9d0b2a/src/eaihome/store.py) | Code-inspectie | Ronde 09, D02: Bronopslag, integriteitscontrole en herbouwbare zoekindex zijn in code aangetroffen. De CLI-groepsfilter is geen echte authenticatie. Tekstmatch bewijst niet dat een claim klopt. |
-| S38 | [EAIhome · src/eaihome/search.py](https://github.com/E-AI-MODEL/EAIhome/blob/52356fc75097da7f6361739f29d49182cc9d0b2a/src/eaihome/search.py) | Code-inspectie | Ronde 09, D02: Bronopslag, integriteitscontrole en herbouwbare zoekindex zijn in code aangetroffen. De CLI-groepsfilter is geen echte authenticatie. Tekstmatch bewijst niet dat een claim klopt. |
-| S39 | [Examenreglementcheck · app/parser.py](https://github.com/E-AI-MODEL/Examenreglementcheck/blob/d72dc4806566b9c05f0d8f90f41b972390d5beb5/app/parser.py) | Code-inspectie | Ronde 09, D07: Scheiding documentidentiteit, inhoud, parseversie en bronstatus. Extractiefouten moeten bewaard blijven; hash is geen autorisatie of juridische juistheidscontrole. |
-| S40 | [gpt-oss · tests/test_responses_api.py](https://github.com/E-AI-MODEL/gpt-oss/blob/89fe402d10a59879781a1eb0a64affdf4c278a4d/tests/test_responses_api.py) | Testinspectie | Ronde 09, D10: Protocoltests met stubs los houden van echte inferentie, snelheid en modelkwaliteit. Externe codebron; tests niet uitgevoerd. |
-| S41 | [legit-eai-ai-tool · src/data/sagaPresets.ts](https://github.com/E-AI-MODEL/legit-eai-ai-tool/blob/4d4c49a9a0f793c2ce8a17d6a273bc2c7e90413c/src/data/sagaPresets.ts) | Data-inspectie | Ronde 09, D12: Vaste taken en templates als data; geen bewezen juridische correctheid of runtime-policy in gelezen bestand. |
-| S42 | [malaga-magic-maker · supabase/functions/receipt-extract/validation.test.ts](https://github.com/E-AI-MODEL/malaga-magic-maker/blob/090f799164ea79de45f60f831287d6e83b81dd03/supabase/functions/receipt-extract/validation.test.ts) | Testinspectie | Ronde 09, D13: Sterke concrete negatieve fixtures voor input- en privacycontract. Testcode gelezen, niet uitgevoerd; corresponderende productiehandler nog volgen. |
-| S43 | [NGBSE20.1 · src/ngbse20/runtime/orchestrator.py](https://github.com/E-AI-MODEL/NGBSE20.1/blob/d6e0d49975bac15583886de49b828324c07fe519/src/ngbse20/runtime/orchestrator.py) | Code-inspectie | Ronde 09, E02: Expliciete fases en stopcondities. Controleer de foutcontracten per fase en begrens dynamische loaders. Geen uitvoeringstest. |
-| S44 | [NGBSE20.1 · src/ngbse20/runtime/collector_manager.py](https://github.com/E-AI-MODEL/NGBSE20.1/blob/d6e0d49975bac15583886de49b828324c07fe519/src/ngbse20/runtime/collector_manager.py) | Code-inspectie | Ronde 09, E02: Expliciete fases en stopcondities. Controleer de foutcontracten per fase en begrens dynamische loaders. Geen uitvoeringstest. |
-| S45 | [open-lovable · lib/file-parser.ts](https://github.com/E-AI-MODEL/open-lovable/blob/efdef874d7c24a9e48fdb0f96652021e96fd9f92/lib/file-parser.ts) | Code-inspectie | Ronde 09, E04: Gerichte bronselectie vanuit codestructuur in plaats van alle bestanden in prompt. Regexheuristiek, geen robuuste AST of uitvoeringstest; externe codebron. |
-| S46 | [presentatie-door010 · src/lib/mcp/tools/get-conversation-messages.ts](https://github.com/E-AI-MODEL/presentatie-door010/blob/01b83191e95129bf7b010b728b2e240683a7ee6b/src/lib/mcp/tools/get-conversation-messages.ts) | Code-inspectie | Ronde 09, E06: Selectieve, gebruikersgebonden toolroute. Werkelijke RLS en intrekking apart verifiëren; geen echte gespreksrecords opgevraagd. |
-| S47 | [project-pim · src/lib/pim/modelIntegrity.ts](https://github.com/E-AI-MODEL/project-pim/blob/840ad1f70b5d86eb9058b08f8d9d649b8773f243/src/lib/pim/modelIntegrity.ts) | Code-inspectie | Ronde 09, E07: Zeer relevant: lokale eerste hash is geen onafhankelijke verificatie; controleer feitelijk uitgaande payload en bestemming. modelVerified-default nader toetsen. |
-| S48 | [project-pim · src/lib/pim/engine/engine.ts](https://github.com/E-AI-MODEL/project-pim/blob/840ad1f70b5d86eb9058b08f8d9d649b8773f243/src/lib/pim/engine/engine.ts) | Code-inspectie | Ronde 09, E07: Zeer relevant: lokale eerste hash is geen onafhankelijke verificatie; controleer feitelijk uitgaande payload en bestemming. modelVerified-default nader toetsen. |
-| S49 | [website · scripts/build_site.py](https://github.com/E-AI-MODEL/website/blob/18140dee2ab0e74007bff3dba7218dd1e3d89401/scripts/build_site.py) | Code-inspectie | Ronde 09, E13: Data en bouwlogica gescheiden. De actuele release, runtime en browserwerking zijn niet in deze passage gecontroleerd. |
-| S50 | [LeerlingMemo2 · test/rules/firestore-rules.spec.ts](https://github.com/eaimodel5/LeerlingMemo2/blob/6e8fa371812ac1b2905e6f125b0f73c4206eaff9/test/rules/firestore-rules.spec.ts) | Testinspectie | Ronde 09, F08: Gerichte test voor actuele gebruiksrechten, ook na intrekking. Testcode gelezen, niet uitgevoerd; koppeling aan actieve regels nog te controleren. |
+- [Ronde 01 · eerste openbare bronronde](../../../research/register/RONDE-01.md)
+- [Ronde 09 · 34 openbare bronrecords](../../../research/register/RONDE-09.md)
+- [Ronde 09 · 38 afgeleide records](../../../research/register/RONDE-09-AFGELEID.md)
+- [Ronde 10 · 26 verdiepingsrecords](../../../research/register/RONDE-10-VERDIEPING.md)
+- [Ronde 11 · 14 vergelijkingsrecords](../../../research/register/RONDE-11-VERGELIJKING.md)
+- [Machineleesbaar register met alle diagrammen en bron-ID’s](atlas-registry.json)
+- [Historische atlas · 11 oorspronkelijke diagrammen](ARCHIEF-V1.md)
+- [Historische HTML-atlas · volledige eerdere weergave](archief-v1.html)
 
-| S51 | [Ronde 09 · openbare technische afgeleiden](../../../research/register/RONDE-09-AFGELEID.md) | Afgeleide onderzoekssynthese | Besloten herkomst alleen intern verifieerbaar. Geen afzonderlijke openbare broninspectie of nieuw testbewijs. |
+## Vormgeving
 
-| S52 | [Ronde 10 · Historische mechanismen en tegenproeven](../../../research/register/RONDE-10-VERDIEPING.md) | Onderzoekssynthese | 26 records; openbare bronnen waar geverifieerd, overige koppelingen intern. |
-| S53 | [Ronde 11 · Van bronvondst naar toetsbare techniek](../../../research/register/RONDE-11-VERGELIJKING.md) | Onderzoekssynthese | 14 records; openbare bronnen waar geverifieerd, overige koppelingen intern. |
-
-## Vormgeving en onderhoud
-
-Geïnspireerd door [Diagram Design van Cathryn Lavery](https://github.com/cathrynlavery/diagram-design/tree/795eec47fd376e5dda0b9e056a49520060cd2f13) (MIT). Eigen HTML/SVG met het bestaande projectpalet, sobere typografie, orthogonale verbindingen, één accentkleur en afzonderlijke bronmetadata. Geen upstream code of assets gekopieerd, geen nieuwe afhankelijkheid. De SVG's zijn bewerkbaar; het HTML-bestand bundelt exact dezelfde beelden zonder externe fonts of scripts. Houd bij wijzigingen SVG, HTML en register in overeenstemming. De atlas is een openbare selectie, geen volledige interne inventarisatie.
+Eigen HTML/SVG met het bestaande blauwe projectpalet, overzichtelijke routes, afzonderlijke bronmetadata en leesbare bijschriften. Geïnspireerd door [Diagram Design](https://github.com/cathrynlavery/diagram-design/tree/795eec47fd376e5dda0b9e056a49520060cd2f13). De oude atlas blijft intact. Herbouw de primaire atlas met `build-atlas.mjs`; de bronrecords blijven in `atlas-registry.json`.

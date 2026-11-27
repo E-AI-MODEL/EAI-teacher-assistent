@@ -4,6 +4,8 @@ Versie 0.1, 27 november 2026. Historisch technisch ontwerpvoorstel, in herbeoord
 
 Zie ook de [visuele onderzoeksatlas](../docs/illustraties/atlas/README.md) voor openbare bronbevindingen, mechanismen, vergelijking A–D en geplande verificatie.
 
+**Aanvullend onderzoek, nog niet vastgesteld:** de [combinatiehypothese P/S/R/M](COMBINATIE-HYPOTHESE.md) onderzoekt de bijdragen van vooraf compileren, strategiebehoud, experimentele regels en begrensde modeltaken afzonderlijk en in combinatie. Zij vervangt de historische v0.1-contracten niet. Eerst herbeoordeling van fase 3b/3c, daarna pas een nieuw besluit over 4a.
+
 ## Vraag en afbakening
 
 Hoeveel technisch werk is nodig om dezelfde abstracte aanvraag af te handelen via A, B, C en D? Alle vier delen dezelfde geldige bron, bevoegdheden, gewone softwarefuncties en toetsbare technische voorwaarden. In fase 4a gebruiken we neutrale gegevens en stub-adapters. Geen nieuwe vakinhoud, didactische scenario's, tutorprompts, model- of hostingkeuze. De inhoudelijke kwaliteit, leeruitkomsten en werkelijke kosten worden niet met deze stubs gemeten.

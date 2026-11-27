@@ -19,6 +19,10 @@ De aanleiding is de publiek beschreven Digitale Assistent-Leraar van Neon. Het o
 
 De technische uitwerking van de vier hypothesen staat in de [specificatie v0.1](../research/TECHNISCHE-SPECIFICATIE.md). Zij is geen keuze voor een productiearchitectuur. Het gemeenschappelijke contract omvat lesinhoud, docentinstellingen, interface, toegestane hulp en kwaliteitscriteria. Technieken worden waar mogelijk afzonderlijk aan- en uitgezet binnen de varianten. Een vergelijking tussen verschillende modelgewichten én hostingvormen is een gecombineerd effect; houd een vergelijking van hetzelfde model bij verschillende hostingvormen apart. Kleinere modellen, browserinferentie, distillatie en een betaalde open-weight API zijn aanvullende onderzoeksopties, geen nieuwe hoofdvarianten. Geen stille externe modelterugval bij D.
 
+## Aanvullende combinatiehypothese
+
+De [combinatiehypothese](../research/COMBINATIE-HYPOTHESE.md) vergelijkt vooraf compileren (P), strategiebehoud (S), experimentele lokale regels (R) en begrensde modelcontext (M). Eerst afzonderlijk, daarna samen en waar nodig met een factor weggelaten. De vier hoofdvarianten A–D blijven behouden; deze factoren maken mogelijke mechanismen toetsbaar. Geen vastgelegde proefscope en geen nieuwe architectuurkeuze. De [vernieuwde atlas](illustraties/atlas/README.md) toont de werking, onzekerheden en historische proeven; de eerdere bronrecords blijven behouden.
+
 ## Werkvolgorde
 
 | Fase | Werk | Op te leveren voor besluit |

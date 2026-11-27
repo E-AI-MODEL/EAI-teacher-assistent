@@ -428,6 +428,14 @@
       "revision": null,
       "kind": "Onderzoekssynthese",
       "note": "14 records; openbare bronnen waar geverifieerd, overige koppelingen intern."
+    },
+    {
+      "id": "S54",
+      "title": "Combinatiehypothese · vier afzonderlijke factoren",
+      "url": "../../../research/COMBINATIE-HYPOTHESE.md",
+      "revision": null,
+      "kind": "Onderzoeksvoorstel",
+      "note": "Nieuwe hypothese; geen gekozen architectuur of uitgevoerde proef."
     }
   ],
   "diagrams": [
@@ -436,77 +444,158 @@
       "file": "d01-kenniskaart.svg",
       "title": "Zes vondsten, drie ontwerpvragen",
       "subtitle": "Openbare bronronde 01: groepering op overeenkomstige onderzoeksvraag.",
-      "description": "Zes openbare bronnen in drie paren, gekoppeld aan drie ontwerpvragen. Geen bewezen softwareafhankelijkheden."
+      "description": "Zes openbare bronnen in drie paren, gekoppeld aan drie ontwerpvragen. Geen bewezen softwareafhankelijkheden.",
+      "presentation": "archive"
     },
     {
       "id": "d02",
       "file": "d02-ontwerpgeschiedenis.svg",
       "title": "Ontwerpgeschiedenis in vijf momenten",
       "subtitle": "Kalenderdagen bepalen de afstand. Bronnen zijn niet automatisch elkaars opvolgers.",
-      "description": "Vijf gedateerde momenten in 2026; de SSOT-migratiekaart beschrijft een versieontwikkeling. De andere gebeurtenissen zijn afzonderlijke bronnen."
+      "description": "Vijf gedateerde momenten in 2026; de SSOT-migratiekaart beschrijft een versieontwikkeling. De andere gebeurtenissen zijn afzonderlijke bronnen.",
+      "presentation": "archive"
     },
     {
       "id": "d03",
       "file": "d03-mechanismen.svg",
       "title": "Veertien mechanismen, vier onderzoeksgroepen",
       "subtitle": "Wat houden we gelijk? Wat veranderen we afzonderlijk in de vergelijking?",
-      "description": "Veertien mechanismen: gedeelde functies, optimalisatie in B, extra hybride routes in C/D, inferentieplaats in D. Groepering is geen afhankelijkheidsgrafiek."
+      "description": "Veertien mechanismen: gedeelde functies, optimalisatie in B, extra hybride routes in C/D, inferentieplaats in D. Groepering is geen afhankelijkheidsgrafiek.",
+      "presentation": "archive"
     },
     {
       "id": "d04",
       "file": "d04-varianten-abcd.svg",
       "title": "Wat verandert er tussen A, B, C en D?",
       "subtitle": "Eén gedeeld contract. Alleen benoemde verschillen veranderen per route.",
-      "description": "A/B gebruiken dezelfde modeltaak; C/D kunnen een experimentele aanvraag zonder model uitvoeren; D gebruikt alleen lokale inferentie. Gewone functies zijn gedeeld."
+      "description": "A/B gebruiken dezelfde modeltaak; C/D kunnen een experimentele aanvraag zonder model uitvoeren; D gebruikt alleen lokale inferentie. Gewone functies zijn gedeeld.",
+      "presentation": "archive"
     },
     {
       "id": "d05",
       "file": "d05-bewijsroute.svg",
       "title": "Van bronbevinding naar proef",
       "subtitle": "Vijf traceerbare koppelingen. De verificaties staan nog open in dit project.",
-      "description": "Vijf rijen verbinden historische openbare bronnen aan technische eisen, ontwerpcontracten en geplande proeven. Geen uitgevoerde verificaties in dit project."
+      "description": "Vijf rijen verbinden historische openbare bronnen aan technische eisen, ontwerpcontracten en geplande proeven. Geen uitgevoerde verificaties in dit project.",
+      "presentation": "archive"
     },
     {
       "id": "d06",
       "file": "d06-eerdere-proeven.svg",
       "title": "Wat eerdere proeven werkelijk aantonen",
       "subtitle": "Twee experimentfamilies. De cijfers zijn niet onderling vergelijkbaar.",
-      "description": "EAT Inline: 77,42% naamzoeken versus 98,85% EAT na unieke naamkoppeling; 100% is een controle met correct ID uit testantwoorden. NeSy P02: nul van tien doelroutes; P03: acht van acht herbeoordelingen en nul onafhankelijke menselijke beoordelingen."
+      "description": "EAT Inline: 77,42% naamzoeken versus 98,85% EAT na unieke naamkoppeling; 100% is een controle met correct ID uit testantwoorden. NeSy P02: nul van tien doelroutes; P03: acht van acht herbeoordelingen en nul onafhankelijke menselijke beoordelingen.",
+      "presentation": "archive"
     },
     {
       "id": "d07",
       "file": "d07-orchestrator.svg",
       "title": "Orchestrator: eerst een toegestane route",
       "subtitle": "C/D: beslis alleen met actuele gegevens. Onbekend is geen toestemming.",
-      "description": "Hybride route: gewone functie eerst; experimentele regel MATCH naar engine, UNKNOWN alleen naar toegestane modeltaak, DENY afwijzen. Iedere af te leveren uitkomst vereist actuele rechten en revisie."
+      "description": "Hybride route: gewone functie eerst; experimentele regel MATCH naar engine, UNKNOWN alleen naar toegestane modeltaak, DENY afwijzen. Iedere af te leveren uitkomst vereist actuele rechten en revisie.",
+      "presentation": "archive"
     },
     {
       "id": "d08",
       "file": "d08-detailronde.svg",
       "title": "Vijf onderzoeksgroepen uit de detailronde",
       "subtitle": "Concrete bronvondsten naast elkaar. Geen voorgeschreven uitvoeringsvolgorde.",
-      "description": "Vijf groepen met bronidentiteit, selectieve context, toestand, routering en controle. De broncodes verwijzen naar geïnspecteerde openbare bestanden; de vragen zijn nog niet beantwoord voor Teacher Assistant."
+      "description": "Vijf groepen met bronidentiteit, selectieve context, toestand, routering en controle. De broncodes verwijzen naar geïnspecteerde openbare bestanden; de vragen zijn nog niet beantwoord voor Teacher Assistant.",
+      "presentation": "archive"
     },
     {
       "id": "d09",
       "file": "d09-besloten-mechanismen.svg",
       "title": "Technische afgeleiden uit besloten bronnen",
       "subtitle": "Vijf onderzoeksgroepen, 38 records. Vergelijk mechanismen vóór een architectuurkeuze.",
-      "description": "Vijf groepen technische mechanismen uit besloten onderzoek: strategie, compiler, representatie, uitvoering en aflevergrenzen. De DPR-codes verwijzen naar publieke afgeleiden. Oorspronkelijke bronkoppelingen zijn alleen intern beschikbaar."
+      "description": "Vijf groepen technische mechanismen uit besloten onderzoek: strategie, compiler, representatie, uitvoering en aflevergrenzen. De DPR-codes verwijzen naar publieke afgeleiden. Oorspronkelijke bronkoppelingen zijn alleen intern beschikbaar.",
+      "presentation": "archive"
     },
     {
       "id": "d10",
       "file": "d10-historische-verdieping.svg",
       "title": "Historische mechanismen en tegenproeven",
       "subtitle": "26 verdiepingsrecords; geen gekozen architectuur.",
-      "description": "Vier groepen mechanismen en tegenproeven uit ronde 10. Geen nieuwe uitvoeringstest."
+      "description": "Vier groepen mechanismen en tegenproeven uit ronde 10. Geen nieuwe uitvoeringstest.",
+      "presentation": "archive"
     },
     {
       "id": "d11",
       "file": "d11-mechanismen-vergelijking.svg",
       "title": "Van bronvondst naar toetsbare techniek",
       "subtitle": "14 verdiepingsrecords; geen gekozen architectuur.",
-      "description": "Vier groepen mechanismen en tegenproeven uit ronde 11. Geen nieuwe uitvoeringstest."
+      "description": "Vier groepen mechanismen en tegenproeven uit ronde 11. Geen nieuwe uitvoeringstest.",
+      "presentation": "archive"
+    },
+    {
+      "id": "d12",
+      "title": "Kan een deel van het gesprek zonder model?",
+      "subtitle": "Vooraf samenstellen, toestand bewaren en alleen inferentie inzetten waar nodig.",
+      "desc": "Drie voorbereidingsstappen leveren een versiegebonden kaart. Een geautoriseerde aanvraag en actuele strategietoestand leiden tot een regel, een toegestane modeltaak of een stop. Uitkomsten worden opnieuw gecontroleerd.",
+      "file": "d12-combinatie.svg",
+      "description": "Drie voorbereidingsstappen leveren een versiegebonden kaart. Een geautoriseerde aanvraag en actuele strategietoestand leiden tot een regel, een toegestane modeltaak of een stop. Uitkomsten worden opnieuw gecontroleerd.",
+      "presentation": "primary",
+      "record_references": "DPR04, DPR08–DPR11, DPR27, R10-01–R10-04, R10-09, R11-01–R11-02, R11-13"
+    },
+    {
+      "id": "d13",
+      "title": "De startsnapshot is niet de actuele toestemming",
+      "subtitle": "Houd een versiegebonden artifact apart van de veranderlijke toestand.",
+      "desc": "Bronversie, voorbereid artifact en sessietoestand hebben afzonderlijke identiteit. Een aanvraag van revisie 1 arriveert na revisie 3; ook bij dezelfde waarde moet de verouderde uitkomst worden geweigerd.",
+      "file": "d13-versies-en-context.svg",
+      "description": "Bronversie, voorbereid artifact en sessietoestand hebben afzonderlijke identiteit. Een aanvraag van revisie 1 arriveert na revisie 3; ook bij dezelfde waarde moet de verouderde uitkomst worden geweigerd.",
+      "presentation": "primary",
+      "record_references": "DPR09–DPR12, R10-03–R10-04, R10-09–R10-11, R11-05, R11-10"
+    },
+    {
+      "id": "d14",
+      "title": "Strategie vasthouden zonder onzekerheid te verbergen",
+      "subtitle": "Constellation locking, hysteresis en adaptieve vensters als afzonderlijke proef.",
+      "desc": "Een toestandmachine onderscheidt waarnemen, strategie behouden en opnieuw beoordelen. Kleine afwijkingen hoeven geen wissel te veroorzaken. Kritieke wijzigingen doorbreken een lock. Een illustratief beurtverloop toont stabiele beurten, afwijking en herziening.",
+      "file": "d14-strategie.svg",
+      "description": "Een toestandmachine onderscheidt waarnemen, strategie behouden en opnieuw beoordelen. Kleine afwijkingen hoeven geen wissel te veroorzaken. Kritieke wijzigingen doorbreken een lock. Een illustratief beurtverloop toont stabiele beurten, afwijking en herziening.",
+      "presentation": "primary",
+      "record_references": "DPR01–DPR08, DPR37, R11-09, R11-13"
+    },
+    {
+      "id": "d15",
+      "title": "Tel alle modelaanroepen, niet alleen het antwoord",
+      "subtitle": "Historisch aanroeppad naast een te toetsen selectieve route.",
+      "desc": "Een historisch normaal tekstpad heeft drie vaste gatewaypaden en conditionele beeld- en herstelpaden. De nieuwe hypothese onderzoekt nul inferentie bij een regelmatch en één afgebakende modeltaak bij een toegestane onbekende aanvraag.",
+      "file": "d15-modelaanroepen.svg",
+      "description": "Een historisch normaal tekstpad heeft drie vaste gatewaypaden en conditionele beeld- en herstelpaden. De nieuwe hypothese onderzoekt nul inferentie bij een regelmatch en één afgebakende modeltaak bij een toegestane onbekende aanvraag.",
+      "presentation": "primary",
+      "record_references": "DPR27–DPR31, R10-09, R11-03–R11-04, R11-11–R11-12"
+    },
+    {
+      "id": "d16",
+      "title": "Vier uitvoeringsvormen, geen vier verschillende producten",
+      "subtitle": "A–D delen de gevraagde taak en dezelfde technische grenzen.",
+      "desc": "Vier rijbanen vergelijken relevante standaardcontext, doelgerichte context, hybride regels en lokale inferentie. Gewone lookup en autorisatie zijn gedeeld. A, B en C gebruiken dezelfde externe modelrevisie wanneer zij een modeltaak uitvoeren.",
+      "file": "d16-varianten.svg",
+      "description": "Vier rijbanen vergelijken relevante standaardcontext, doelgerichte context, hybride regels en lokale inferentie. Gewone lookup en autorisatie zijn gedeeld. A, B en C gebruiken dezelfde externe modelrevisie wanneer zij een modeltaak uitvoeren.",
+      "presentation": "primary",
+      "record_references": "S11, S12, DPR09–DPR10, DPR23, DPR26, R11-03–R11-06"
+    },
+    {
+      "id": "d17",
+      "title": "Bewaar ook proeven die niets bewezen",
+      "subtitle": "Drie verschillende onderzoeksvragen, drie afzonderlijke bewijsgrenzen.",
+      "desc": "Een historische EAT-bronselectieproef vergelijkt twee methoden zonder antwoord-ID en een controle met correct ID. NeSy laat zien dat een betaalde run de doelroute kan missen. Shadowseed laat zien dat een hoge score geen gerepliceerd signaal is.",
+      "file": "d17-historisch-bewijs.svg",
+      "description": "Een historische EAT-bronselectieproef vergelijkt twee methoden zonder antwoord-ID en een controle met correct ID. NeSy laat zien dat een betaalde run de doelroute kan missen. Shadowseed laat zien dat een hoge score geen gerepliceerd signaal is.",
+      "presentation": "primary",
+      "record_references": "S02, S08, S09, R10-13–R10-15"
+    },
+    {
+      "id": "d18",
+      "title": "Toets de combinatie zonder het antwoord vooraf te kiezen",
+      "subtitle": "Een voorgestelde ablatiematrix: meet één wijziging, de combinatie en daarna ontbrekende bijdragen.",
+      "desc": "Een matrix met zes eerste configuraties en vier mogelijke vervolgconfiguraties. Vier factoren worden afzonderlijk aan- of uitgezet: vooraf compileren, strategiebehoud, experimentele regels en begrensde modelcontext.",
+      "file": "d18-proefmatrix.svg",
+      "description": "Een matrix met zes eerste configuraties en vier mogelijke vervolgconfiguraties. Vier factoren worden afzonderlijk aan- of uitgezet: vooraf compileren, strategiebehoud, experimentele regels en begrensde modelcontext.",
+      "presentation": "primary",
+      "record_references": "S11, S12, DPR04, DPR08–DPR10, DPR27, R10-01, R10-09, R11-01–R11-13"
     }
   ],
   "blocks": [
@@ -1369,6 +1458,515 @@
       ],
       "status": "afgeleid_onderzoek",
       "note": "Onderzoeksgroepering, geen vastgestelde architectuur."
+    },
+    {
+      "id": "D12-SOURCE",
+      "diagram": "d12",
+      "label": "SOURCE",
+      "source_ids": [
+        "S11",
+        "S51"
+      ],
+      "record_ids": [
+        "DPR09"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D12-COMPILER",
+      "diagram": "d12",
+      "label": "COMPILER",
+      "source_ids": [
+        "S51",
+        "S52",
+        "S53"
+      ],
+      "record_ids": [
+        "DPR09",
+        "R10-01",
+        "R11-01",
+        "R11-02"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D12-ARTIFACT",
+      "diagram": "d12",
+      "label": "ARTIFACT",
+      "source_ids": [
+        "S11",
+        "S52"
+      ],
+      "record_ids": [
+        "R10-01",
+        "R10-03"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D12-REQUEST",
+      "diagram": "d12",
+      "label": "REQUEST",
+      "source_ids": [
+        "S11",
+        "S52"
+      ],
+      "record_ids": [
+        "R10-03",
+        "R10-11"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D12-DECISION",
+      "diagram": "d12",
+      "label": "DECISION",
+      "source_ids": [
+        "S11",
+        "S51"
+      ],
+      "record_ids": [
+        "DPR26",
+        "DPR36"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D12-STATE",
+      "diagram": "d12",
+      "label": "STATE",
+      "source_ids": [
+        "S51",
+        "S53"
+      ],
+      "record_ids": [
+        "DPR04",
+        "DPR08",
+        "R11-13"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D12-LOCAL",
+      "diagram": "d12",
+      "label": "LOCAL",
+      "source_ids": [
+        "S11",
+        "S51"
+      ],
+      "record_ids": [
+        "DPR14",
+        "DPR36"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D12-MODEL",
+      "diagram": "d12",
+      "label": "MODEL",
+      "source_ids": [
+        "S10",
+        "S52",
+        "S51"
+      ],
+      "record_ids": [
+        "DPR27",
+        "R10-09"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D12-STOP",
+      "diagram": "d12",
+      "label": "STOP",
+      "source_ids": [
+        "S11",
+        "S51"
+      ],
+      "record_ids": [
+        "DPR36"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D12-COMMIT",
+      "diagram": "d12",
+      "label": "COMMIT",
+      "source_ids": [
+        "S11",
+        "S52"
+      ],
+      "record_ids": [
+        "R10-11"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D13-BUNDLE",
+      "diagram": "d13",
+      "label": "BUNDLE",
+      "source_ids": [
+        "S11",
+        "S52"
+      ],
+      "record_ids": [
+        "R10-01",
+        "R10-03"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D13-CARD",
+      "diagram": "d13",
+      "label": "CARD",
+      "source_ids": [
+        "S11",
+        "S51"
+      ],
+      "record_ids": [
+        "DPR09",
+        "DPR11"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D13-OVERLAY",
+      "diagram": "d13",
+      "label": "OVERLAY",
+      "source_ids": [
+        "S11",
+        "S52"
+      ],
+      "record_ids": [
+        "R10-03",
+        "R10-04"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D13-REVISIONS",
+      "diagram": "d13",
+      "label": "REVISIONS",
+      "source_ids": [
+        "S11",
+        "S52"
+      ],
+      "record_ids": [
+        "R10-11"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D13-REJECT",
+      "diagram": "d13",
+      "label": "REJECT",
+      "source_ids": [
+        "S11",
+        "S52"
+      ],
+      "record_ids": [
+        "R10-11"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D14-OBSERVE",
+      "diagram": "d14",
+      "label": "OBSERVE",
+      "source_ids": [
+        "S51"
+      ],
+      "record_ids": [
+        "DPR01",
+        "DPR06"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D14-HOLD",
+      "diagram": "d14",
+      "label": "HOLD",
+      "source_ids": [
+        "S51",
+        "S53"
+      ],
+      "record_ids": [
+        "DPR04",
+        "DPR08",
+        "R11-13"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D14-REVIEW",
+      "diagram": "d14",
+      "label": "REVIEW",
+      "source_ids": [
+        "S51",
+        "S53"
+      ],
+      "record_ids": [
+        "DPR05",
+        "R11-13"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D14-INTERRUPT",
+      "diagram": "d14",
+      "label": "INTERRUPT",
+      "source_ids": [
+        "S51"
+      ],
+      "record_ids": [
+        "DPR05",
+        "DPR07"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D14-WINDOW",
+      "diagram": "d14",
+      "label": "WINDOW",
+      "source_ids": [
+        "S51",
+        "S53"
+      ],
+      "record_ids": [
+        "DPR04",
+        "DPR08",
+        "R11-13"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D15-HISTORY",
+      "diagram": "d15",
+      "label": "HISTORY",
+      "source_ids": [
+        "S51",
+        "S53"
+      ],
+      "record_ids": [
+        "DPR28",
+        "R11-11",
+        "R11-12"
+      ],
+      "status": "historische_bron",
+      "note": "Historische bronmeting; geen nieuwe proef."
+    },
+    {
+      "id": "D15-REQUEST",
+      "diagram": "d15",
+      "label": "REQUEST",
+      "source_ids": [
+        "S11",
+        "S51"
+      ],
+      "record_ids": [
+        "DPR26"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D15-RULE",
+      "diagram": "d15",
+      "label": "RULE",
+      "source_ids": [
+        "S11",
+        "S51"
+      ],
+      "record_ids": [
+        "DPR14",
+        "DPR36"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D15-MODEL",
+      "diagram": "d15",
+      "label": "MODEL",
+      "source_ids": [
+        "S11",
+        "S52"
+      ],
+      "record_ids": [
+        "R10-09",
+        "DPR27"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D15-COUNTS",
+      "diagram": "d15",
+      "label": "COUNTS",
+      "source_ids": [
+        "S11",
+        "S53"
+      ],
+      "record_ids": [
+        "R11-11",
+        "R11-12"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D16-SHARED",
+      "diagram": "d16",
+      "label": "SHARED",
+      "source_ids": [
+        "S11",
+        "S12"
+      ],
+      "record_ids": [],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D16-LANE-A",
+      "diagram": "d16",
+      "label": "LANE-A",
+      "source_ids": [
+        "S11",
+        "S12",
+        "S54"
+      ],
+      "record_ids": [],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D16-LANE-B",
+      "diagram": "d16",
+      "label": "LANE-B",
+      "source_ids": [
+        "S11",
+        "S12",
+        "S54"
+      ],
+      "record_ids": [],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D16-LANE-C",
+      "diagram": "d16",
+      "label": "LANE-C",
+      "source_ids": [
+        "S11",
+        "S12",
+        "S54"
+      ],
+      "record_ids": [],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D16-LANE-D",
+      "diagram": "d16",
+      "label": "LANE-D",
+      "source_ids": [
+        "S11",
+        "S12",
+        "S54"
+      ],
+      "record_ids": [],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D17-EAT",
+      "diagram": "d17",
+      "label": "EAT",
+      "source_ids": [
+        "S02"
+      ],
+      "record_ids": [],
+      "status": "historische_bron",
+      "note": "Historische bronmeting; geen nieuwe proef."
+    },
+    {
+      "id": "D17-NESY",
+      "diagram": "d17",
+      "label": "NESY",
+      "source_ids": [
+        "S08",
+        "S09"
+      ],
+      "record_ids": [],
+      "status": "historische_bron",
+      "note": "Historische bronmeting; geen nieuwe proef."
+    },
+    {
+      "id": "D17-SHADOW",
+      "diagram": "d17",
+      "label": "SHADOW",
+      "source_ids": [
+        "S52"
+      ],
+      "record_ids": [
+        "R10-14",
+        "R10-15"
+      ],
+      "status": "historische_bron",
+      "note": "Historische bronmeting; geen nieuwe proef."
+    },
+    {
+      "id": "D18-MATRIX",
+      "diagram": "d18",
+      "label": "MATRIX",
+      "source_ids": [
+        "S11",
+        "S12",
+        "S54"
+      ],
+      "record_ids": [
+        "DPR04",
+        "DPR09",
+        "DPR10",
+        "DPR27",
+        "R10-01",
+        "R10-09",
+        "R11-13"
+      ],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
+    },
+    {
+      "id": "D18-GATE",
+      "diagram": "d18",
+      "label": "GATE",
+      "source_ids": [
+        "S12",
+        "S54"
+      ],
+      "record_ids": [],
+      "status": "ontwerpvoorstel",
+      "note": "Onderzoekshypothese, geen implementatie of gemeten effect."
     }
   ],
   "detail_round": {
@@ -2584,5 +3182,35 @@
     "requested_result_slots": 20,
     "external_repositories": 5,
     "own_projects_revisited": 3
+  },
+  "presentation": {
+    "version": 2,
+    "primary_diagrams": [
+      "d12",
+      "d13",
+      "d14",
+      "d15",
+      "d16",
+      "d17",
+      "d18"
+    ],
+    "archived_diagrams": [
+      "d01",
+      "d02",
+      "d03",
+      "d04",
+      "d05",
+      "d06",
+      "d07",
+      "d08",
+      "d09",
+      "d10",
+      "d11"
+    ],
+    "archive_html": "archief-v1.html",
+    "archive_markdown": "ARCHIEF-V1.md",
+    "hypothesis": "../../../research/COMBINATIE-HYPOTHESE.md",
+    "phase_4a": "NO-GO",
+    "runtime_tests_executed": false
   }
 }

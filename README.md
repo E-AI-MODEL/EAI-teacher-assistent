@@ -17,19 +17,11 @@ De technische uitwerking van A–D staat in de [specificatie v0.1](research/TECH
 
 ## Visuele onderzoeksatlas
 
-[Open de onderzoeksatlas](docs/illustraties/atlas/README.md) met elf diagrammen: eerdere bronvondsten, ontwerpgeschiedenis, veertien mechanismen, de vergelijking A–D, geplande verificatie, historische proefresultaten, de hybride routering vijf onderzoeksgroepen uit de detailronde en de afgeleiden uit besloten bronnen.
+[Open de nieuwe onderzoeksatlas](docs/illustraties/atlas/README.md) of de [zelfstandige HTML-versie](docs/illustraties/atlas/index.html). Zeven verklarende diagrammen tonen de combinatiehypothese, versiegebonden context, strategiebehoud, de modelaanroeppaden, vergelijking A–D, historische proeven en de voorgestelde ablatiematrix.
 
-![Vier vergelijkingsroutes binnen hetzelfde technische contract](docs/illustraties/atlas/d04-varianten-abcd.svg)
+![Onderzoekshypothese: vooraf samenstellen en alleen inferentie waar nodig](docs/illustraties/atlas/d12-combinatie.svg)
 
-De atlas bevat openbare bronvondsten en inhoudelijke afgeleiden uit besloten onderzoek; de oorspronkelijke besloten bronlinks en code blijven intern. Bron-ID's en bewijsstatus staan in een afzonderlijk register. Ook beschikbaar als [zelfstandig HTML-bestand](docs/illustraties/atlas/index.html).
-
-[Tussenstand ronde 09](research/register/RONDE-09.md): De eerste gerichte passage omvat 92 bekende repositorynamen: 86 met een bronpassage (waaronder twee snapshots met alleen een README), vijf opnieuw leeg bevonden en één eigen onderzoeksproject. Vijftien namen hebben een expliciet beperkte bron- of verdiepingsstatus. Ook bij de overige bronnen zijn integratie en uitvoering niet volledig getoetst. Dit zijn geen 92 onafhankelijke projecten. Deze openbare update bevat 34 onderzoeksrecords uit 27 openbare repositories.
-
-[Technische afgeleiden uit besloten bronnen](research/register/RONDE-09-AFGELEID.md): 38 extra onderzoeksrecords over entropie, strategiebehoud, compilatie, representatie, modelroutes en uitvoercontrole. Dit zijn geen 38 nieuwe of bewezen onafhankelijke technieken.
-
-[Verdiepingsronde 10](research/register/RONDE-10-VERDIEPING.md): 26 records; de vijftien beperkte bronvragen zijn opnieuw bekeken.
-
-[Vergelijkingsronde 11](research/register/RONDE-11-VERGELIJKING.md): 14 records uit eigen bronpaden en vijf openbare implementaties. Fase 4a blijft NO-GO.
+Het [onderzoek naar de combinatie](research/COMBINATIE-HYPOTHESE.md) maakt vier mechanismen afzonderlijk toetsbaar: vooraf compileren, strategiebehoud, experimentele regels en begrensde modeltaken. De combinatie is geen gekozen architectuur. De eerdere elf diagrammen en de volledige bronregisters blijven in het [historisch archief](docs/illustraties/atlas/ARCHIEF-V1.md). De openbare atlas bevat toegestane afgeleiden uit besloten onderzoek zonder oorspronkelijke private bronlinks.
 
 ## Onderzoek: eerst breed, daarna kiezen
 
