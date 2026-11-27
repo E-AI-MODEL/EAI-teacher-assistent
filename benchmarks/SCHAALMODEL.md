@@ -1,6 +1,6 @@
 # Gebruikersomvang, piekbelasting en kosten
 
-Versie 0.1 — 27 november 2026. Ontwerpscenario's, geen gemeten gebruik of voorspelling.
+Versie 0.2 — 27 november 2026. Ontwerpscenario's, geen gemeten gebruik of voorspelling.
 
 ## Bron en afbakening
 
@@ -27,7 +27,7 @@ Versie 0.1 — 27 november 2026. Ontwerpscenario's, geen gemeten gebruik of voor
 | Piekbeurten/s (factor 4) | 10,4 | 186,7 | 1.037,0 |
 | Indicatieve gelijktijdig open sessies tijdens piek | 1.556 | 18.667 | 77.778 |
 
-De laatste rij veronderstelt een tijdelijk stabiele piekaanvoerstroom en gemiddelde duur van 10 minuten; de uitkomst is afgerond naar boven. Er kunnen hogere lokale of landelijke pieken optreden. Thuisgebruik, vakanties, toekomstige groei en docentverkeer zijn nog niet opgenomen.
+De laatste rij veronderstelt een tijdelijk stabiele piekaanvoerstroom en gemiddelde duur van 10 minuten; de uitkomst is afgerond naar boven. Er kunnen hogere lokale of landelijke pieken optreden. Thuisgebruik, vakanties, toekomstige groei en docentverkeer zijn nog niet opgenomen. Dit is geen absoluut maximum; modelleer kortere synchroon verlopende klasstarts, meerdere vakken per dag, wisselende tijdvensters en hoge vraagintensiteit afzonderlijk. Onderzoek ook hoeveel leerlingen dezelfde geldige lesversie gebruiken, aangezien personalisatie en lokale aanpassingen het hergebruik kunnen beperken.
 
 ## Herleidbare berekeningen
 
@@ -57,6 +57,16 @@ Gebruik werkelijke betaalde tokens en gedateerde prijzen, met onderscheid tussen
 - Kosten per gestarte sessie = totale jaarkosten / alle gestarte sessies; kosten per succesvolle sessie = totale jaarkosten / alle succesvol afgeronde sessies.
 
 Meet kosten en kwaliteit per gesprek. Een variant mag niet goedkoper worden door verzoeken te weigeren of extra interacties buiten de meting te houden.
+
+## Kosten vóór en tijdens het leren
+
+De methodegebonden aanpak verplaatst mogelijk werk van live inferentie naar het vooraf produceren, controleren en onderhouden van ondersteuning. Tel per lesversie de werkelijke auteurstijd, menselijke controle, eventuele offline inferentie, herziening en distributie mee. Neem ook de kosten van het bijwerken van afgeleide hints en caches na wijziging mee.
+
+Voor een gegeven geldige, beoordeelde hint: laat F de extra vaste kosten van voorbereiding en onderhoud in de gekozen periode zijn; laat c_online de gemiddelde vermeden online kosten per werkelijk toepasbare beurt zijn en c_reuse de resterende variabele kosten van selectie, controle en distributie. Indien c_online > c_reuse, is het rekenkundige omslagpunt N = F / (c_online - c_reuse). Vergelijk het aantal werkelijke correcte hergebruiksmomenten met N. Bij geen positieve variabele besparing is er geen dergelijk omslagpunt. Een foutieve cachehit telt niet als kwalitatief geslaagde besparing.
+
+Voor zelfhosting: vergelijk de totale kosten van een gemeten, voldoende beschikbare installatie tegen de externe API voor dezelfde vraagmix, kwaliteit en responstijd. Bij een vaste capaciteit zijn F_host de vaste jaarlasten en v_host de aanvullende variabele kosten per beurt; voor een API met variabele kosten v_api ligt het vereenvoudigde omslagpunt bij (F_host - F_api)/(v_api - v_host), alleen als de relevante verschillen positief zijn en de installatie de benodigde pieken aankan. Bij groei van capaciteit in stappen of verschillende modellen, maak een volledige scenariovergelijking in plaats van deze formule als uitkomst te gebruiken. Lage bezetting kan een API goedkoper maken.
+
+Neem kosten van lokale/browsermodellen apart op: distributie van modelbestanden, bandbreedte, updates, ondersteuning, compatibiliteit, energie en zo nodig alternatieve route voor ongeschikte apparaten. Geen centrale tokenfactuur is niet hetzelfde als kosteloos gebruik.
 
 ## Gevoeligheid en validatie
 

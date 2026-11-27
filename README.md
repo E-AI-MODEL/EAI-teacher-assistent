@@ -15,11 +15,13 @@ De vraag: welke ondersteuning kan software geven zonder taalmodel, welke onderst
 
 Alle vier worden volledig uitgewerkt. De leerlingomgeving, vakinhoud, opdrachten en toetscriteria blijven gelijk.
 
-## Eerste use case
+## Eerst de functies, daarna de les
 
-Frans, 2 havo: begeleiding bij het schrijven van korte zinnen over plannen voor het weekend (futur proche). De leerling formuleert en verbetert zelf de zinnen. De assistent bepaalt welke hulp passend is, binnen de door de docent gekozen grenzen.
+Het project onderzoekt een assistent die in bestaande digitale lessen kan worden aangesloten. De software krijgt de geldige lesversie, het leerdoel en de grenzen van de ondersteuning uit de leeromgeving. Welke beslissingen zonder model kunnen worden genomen en waar een model nodig blijft, is een onderzoeksvraag.
 
-Deze case is eigen demonstratiemateriaal, geïnspireerd op een publiek beschreven onderwijsopgave. Geen onderdeel van een bestaande Neon-methode en geen officiële samenwerking met Neon.
+Frans, 2 havo blijft een eerste beoogde demonstratie; rekenen in groep 7 is een tweede functioneel contrast om vakspecifieke controle te onderzoeken. De bestaande Franse casusschets is voorlopig. We schrijven nog geen volledige lesmethodes: eerst de functionele en technische vergelijking, dan een passende minimale inhoudelijke proef.
+
+Dit is onafhankelijk onderzoek, geïnspireerd op publieke onderwijsopgaven. Geen onderdeel van een bestaande Neon-methode en geen officiële samenwerking met Neon.
 
 ## Gebruikersomvang en belasting
 
@@ -27,7 +29,9 @@ Neon meldde op 28 september 2026 ruim 1.500 aangesloten scholen met samen ongeve
 
 ## Documentatie
 
-- [Plan van aanpak](docs/PLAN.md)
+- [Plan van aanpak v0.2](docs/PLAN.md)
+- [Verdiepend bronnenonderzoek](research/VERKENNING.md)
+- [Functionele vergelijking en ontwerpvoorwaarden](research/FUNCTIONELE-EISEN.md)
 - [Bronnen en aansluiting bij Neon](research/neon/BRONNEN.md)
 - [Use case Frans 2 havo](curriculum/french-havo2/USE-CASE.md)
 - [Vergelijkingsprotocol](benchmarks/PROTOCOL.md)
@@ -36,6 +40,6 @@ Neon meldde op 28 september 2026 ruim 1.500 aangesloten scholen met samen ongeve
 
 ## Status
 
-Onderzoeksopzet v0.1. Er zijn nog geen werkende varianten, modelmetingen of leerlingresultaten in deze repository. De vakinhoud is een ontwerp dat nog door een vakdocent moet worden beoordeeld. Er zijn geen echte leerlinggegevens nodig voor de eerste benchmark.
+Onderzoeksopzet v0.2: de verkenning is verdiept en de werkvolgorde is herzien. De definitieve keuze van de techniek en volledige hergebruiksaudit staan nog open. Er zijn nog geen werkende varianten, modelmetingen of leerlingresultaten in deze repository. De vakinhoud is een ontwerp dat nog door een vakdocent moet worden beoordeeld. Er zijn geen echte leerlinggegevens nodig voor de eerste benchmark.
 
 Geen aangetoonde besparing op een bestaand product. Een eigen model heeft geen externe tokenfactuur, maar wel reken-, hosting- en beheerkosten.
