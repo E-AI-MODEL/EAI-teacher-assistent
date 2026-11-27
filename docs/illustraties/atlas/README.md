@@ -1,6 +1,6 @@
 # EAI Teacher Assistant | Onderzoeksatlas
 
-27 november 2026. Acht diagrammen tonen een beperkte openbare selectie van eerdere bronvondsten en voorgestelde technische vergelijking. Ze vervangen het interne register niet. De selectie is onvoldoende als basis voor het afsluiten van 3b/3c; deze fasen zijn gericht heropend. Fase 4a staat stil tot herbeoordeling. Historische proeven zijn niet opnieuw uitgevoerd.
+27 november 2026. Negen diagrammen tonen een beperkte openbare selectie van eerdere bronvondsten en voorgestelde technische vergelijking. Ze vervangen het interne register niet. De selectie is onvoldoende als basis voor het afsluiten van 3b/3c; deze fasen zijn gericht heropend. Fase 4a staat stil tot herbeoordeling. Historische proeven zijn niet opnieuw uitgevoerd.
 
 [Zelfstandige HTML-atlas](index.html) (download en open lokaal) · [Machineleesbaar bronnen- en blokregister](atlas-registry.json) · [Technische specificatie](../../../research/TECHNISCHE-SPECIFICATIE.md) · [P01–P03](../../../benchmarks/TECHNISCHE-PROEVEN.md)
 
@@ -11,6 +11,14 @@ De eerste gerichte passage omvat 92 bekende repositorynamen: 86 met een bronpass
 Alle bronnen zijn versiegebonden. Code-inspectie, ontwerp, schema en gelezen tests zijn afzonderlijke bewijssoorten. Geen nieuwe runtime- of modeltests. Fase 3b en 3c zijn heropend; fase 4a blijft NO-GO. Geen gekozen architectuur, vakinhoud, modelkeuze of kostenclaim.
 
 [Alle 34 openbare onderzoeksrecords](../../../research/register/RONDE-09.md)
+
+## Aanvulling uit besloten bronnen
+
+De eerdere openbare selectie van 34 records blijft intact. De onderstaande aanvulling brengt ook de bruikbare mechanismen uit besloten projecten in beeld. Overlap tussen afgeleide records en openbare bronvondsten is mogelijk; de aantallen zijn geen aantal unieke algoritmen.
+
+Deze selectie bevat 38 inhoudelijke afgeleiden uit eerder onderzochte besloten bronbestanden, testbestanden en ontwerpstukken. Zij beschrijven de aangetroffen technische ideeën en noodzakelijke tegenproeven in eigen woorden. De oorspronkelijke private bestanden, namen, bronlinks, code en instellingen worden niet gepubliceerd. De afzonderlijke interne bronkoppelingen blijven bewaard in het besloten onderzoek. Publieke lezers kunnen die besloten bronclaims niet zelfstandig via deze afgeleide controleren. De afgeleide is geen extra onafhankelijke bewijsbron, geen uitvoeringsresultaat en geen toestemming voor codehergebruik.
+
+[De 38 technische afgeleiden](../../../research/register/RONDE-09-AFGELEID.md)
 
 ## 01. Zes vondsten, drie ontwerpvragen
 
@@ -76,6 +84,14 @@ Concrete bronvondsten naast elkaar. Geen voorgeschreven uitvoeringsvolgorde.
 
 [SVG openen](d08-detailronde.svg) · [Detailregister ronde 09](../../../research/register/RONDE-09.md)
 
+## 09. Technische afgeleiden uit besloten bronnen
+
+Vijf onderzoeksgroepen, 38 records. Vergelijk mechanismen vóór een architectuurkeuze.
+
+![Vijf groepen technische mechanismen uit besloten onderzoek: strategie, compiler, representatie, uitvoering en aflevergrenzen. De DPR-codes verwijzen naar publieke afgeleiden. Oorspronkelijke bronkoppelingen zijn alleen intern beschikbaar.](d09-besloten-mechanismen.svg)
+
+[SVG openen](d09-besloten-mechanismen.svg) · [38 technische afgeleiden](../../../research/register/RONDE-09-AFGELEID.md)
+
 ## Bronregister
 
 Broncodes verwijzen naar openbare, versiegebonden bronnen. Hetzelfde register is machineleesbaar. Elk benoemd blok heeft een vaste `data-block-id`, broncodes en een bewijsstatus in SVG en JSON. Een geplande proef is geen verificatieresultaat. Lijnen tonen de beschreven relatie, niet automatisch afstamming, causaliteit of softwareafhankelijkheid.
@@ -133,6 +149,8 @@ Broncodes verwijzen naar openbare, versiegebonden bronnen. Hetzelfde register is
 | S48 | [project-pim · src/lib/pim/engine/engine.ts](https://github.com/E-AI-MODEL/project-pim/blob/840ad1f70b5d86eb9058b08f8d9d649b8773f243/src/lib/pim/engine/engine.ts) | Code-inspectie | Ronde 09, E07: Zeer relevant: lokale eerste hash is geen onafhankelijke verificatie; controleer feitelijk uitgaande payload en bestemming. modelVerified-default nader toetsen. |
 | S49 | [website · scripts/build_site.py](https://github.com/E-AI-MODEL/website/blob/18140dee2ab0e74007bff3dba7218dd1e3d89401/scripts/build_site.py) | Code-inspectie | Ronde 09, E13: Data en bouwlogica gescheiden. De actuele release, runtime en browserwerking zijn niet in deze passage gecontroleerd. |
 | S50 | [LeerlingMemo2 · test/rules/firestore-rules.spec.ts](https://github.com/eaimodel5/LeerlingMemo2/blob/6e8fa371812ac1b2905e6f125b0f73c4206eaff9/test/rules/firestore-rules.spec.ts) | Testinspectie | Ronde 09, F08: Gerichte test voor actuele gebruiksrechten, ook na intrekking. Testcode gelezen, niet uitgevoerd; koppeling aan actieve regels nog te controleren. |
+
+| S51 | [Ronde 09 · openbare technische afgeleiden](../../../research/register/RONDE-09-AFGELEID.md) | Afgeleide onderzoekssynthese | Besloten herkomst alleen intern verifieerbaar. Geen afzonderlijke openbare broninspectie of nieuw testbewijs. |
 
 ## Vormgeving en onderhoud
 

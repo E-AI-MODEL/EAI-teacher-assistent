@@ -17,13 +17,15 @@ De technische uitwerking van A–D staat in de [specificatie v0.1](research/TECH
 
 ## Visuele onderzoeksatlas
 
-[Open de onderzoeksatlas](docs/illustraties/atlas/README.md) met acht diagrammen: eerdere bronvondsten, ontwerpgeschiedenis, veertien mechanismen, de vergelijking A–D, geplande verificatie, historische proefresultaten, de hybride routering en vijf onderzoeksgroepen uit de detailronde.
+[Open de onderzoeksatlas](docs/illustraties/atlas/README.md) met negen diagrammen: eerdere bronvondsten, ontwerpgeschiedenis, veertien mechanismen, de vergelijking A–D, geplande verificatie, historische proefresultaten, de hybride routering vijf onderzoeksgroepen uit de detailronde en de afgeleiden uit besloten bronnen.
 
 ![Vier vergelijkingsroutes binnen hetzelfde technische contract](docs/illustraties/atlas/d04-varianten-abcd.svg)
 
-De atlas bevat uitsluitend openbare bronnen en ontwerpafspraken. Bron-ID's en bewijsstatus staan in een afzonderlijk register. Ook beschikbaar als [zelfstandig HTML-bestand](docs/illustraties/atlas/index.html).
+De atlas bevat openbare bronvondsten en inhoudelijke afgeleiden uit besloten onderzoek; de oorspronkelijke besloten bronlinks en code blijven intern. Bron-ID's en bewijsstatus staan in een afzonderlijk register. Ook beschikbaar als [zelfstandig HTML-bestand](docs/illustraties/atlas/index.html).
 
 [Tussenstand ronde 09](research/register/RONDE-09.md): De eerste gerichte passage omvat 92 bekende repositorynamen: 86 met een bronpassage (waaronder twee snapshots met alleen een README), vijf opnieuw leeg bevonden en één eigen onderzoeksproject. Vijftien namen hebben een expliciet beperkte bron- of verdiepingsstatus. Ook bij de overige bronnen zijn integratie en uitvoering niet volledig getoetst. Dit zijn geen 92 onafhankelijke projecten. Deze openbare update bevat 34 onderzoeksrecords uit 27 openbare repositories.
+
+[Technische afgeleiden uit besloten bronnen](research/register/RONDE-09-AFGELEID.md): 38 extra onderzoeksrecords over entropie, strategiebehoud, compilatie, representatie, modelroutes en uitvoercontrole. Dit zijn geen 38 nieuwe of bewezen onafhankelijke technieken.
 
 ## Onderzoek: eerst breed, daarna kiezen
 

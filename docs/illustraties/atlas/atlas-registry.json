@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "as_of": "2026-11-27",
-  "scope": "Openbare selectie en tussenstand detailronde 09. Geen volledige interne broninhoud, integratietoets of nieuwe uitvoering.",
+  "scope": "Openbare bronvondsten en toegestane inhoudelijke afgeleiden uit besloten onderzoek. Geen private broninhoud, volledige integratietoets of nieuwe uitvoering.",
   "design_reference": "https://github.com/cathrynlavery/diagram-design/tree/795eec47fd376e5dda0b9e056a49520060cd2f13",
   "design_note": "Eigen HTML/SVG, ontwerpprincipes uit Diagram Design, kleuren van de bestaande projectillustratie. Geen upstream code of assets.",
   "sources": [
@@ -404,6 +404,14 @@
       "url": "https://github.com/eaimodel5/LeerlingMemo2/blob/6e8fa371812ac1b2905e6f125b0f73c4206eaff9/test/rules/firestore-rules.spec.ts",
       "kind": "Testinspectie",
       "note": "Ronde 09, F08: Gerichte test voor actuele gebruiksrechten, ook na intrekking. Testcode gelezen, niet uitgevoerd; koppeling aan actieve regels nog te controleren."
+    },
+    {
+      "id": "S51",
+      "title": "Ronde 09 · openbare technische afgeleiden",
+      "url": "../../../research/register/RONDE-09-AFGELEID.md",
+      "revision": null,
+      "kind": "Afgeleide onderzoekssynthese",
+      "note": "Besloten herkomst alleen intern verifieerbaar. Geen afzonderlijke openbare broninspectie of nieuw testbewijs."
     }
   ],
   "diagrams": [
@@ -462,6 +470,13 @@
       "title": "Vijf onderzoeksgroepen uit de detailronde",
       "subtitle": "Concrete bronvondsten naast elkaar. Geen voorgeschreven uitvoeringsvolgorde.",
       "description": "Vijf groepen met bronidentiteit, selectieve context, toestand, routering en controle. De broncodes verwijzen naar geïnspecteerde openbare bestanden; de vragen zijn nog niet beantwoord voor Teacher Assistant."
+    },
+    {
+      "id": "d09",
+      "file": "d09-besloten-mechanismen.svg",
+      "title": "Technische afgeleiden uit besloten bronnen",
+      "subtitle": "Vijf onderzoeksgroepen, 38 records. Vergelijk mechanismen vóór een architectuurkeuze.",
+      "description": "Vijf groepen technische mechanismen uit besloten onderzoek: strategie, compiler, representatie, uitvoering en aflevergrenzen. De DPR-codes verwijzen naar publieke afgeleiden. Oorspronkelijke bronkoppelingen zijn alleen intern beschikbaar."
     }
   ],
   "blocks": [
@@ -1090,6 +1105,104 @@
       ],
       "status": "historische_bron",
       "note": "Onderzoeksgroepering, geen uitvoeringsvolgorde. Records B14, B15, B22, E07, F08; integratietoets open."
+    },
+    {
+      "id": "D09-STATE",
+      "diagram": "d09",
+      "label": "Toestand en strategie",
+      "source_ids": [
+        "S51"
+      ],
+      "derived_record_ids": [
+        "DPR01",
+        "DPR02",
+        "DPR03",
+        "DPR04",
+        "DPR05",
+        "DPR06",
+        "DPR07",
+        "DPR08"
+      ],
+      "status": "afgeleid_onderzoek",
+      "note": "Publieke afgeleide; originele bronkoppeling alleen intern. Geen nieuwe uitvoeringstest."
+    },
+    {
+      "id": "D09-COMPILE",
+      "diagram": "d09",
+      "label": "Compiler en context",
+      "source_ids": [
+        "S51"
+      ],
+      "derived_record_ids": [
+        "DPR09",
+        "DPR10",
+        "DPR11",
+        "DPR12",
+        "DPR13",
+        "DPR14",
+        "DPR15",
+        "DPR16"
+      ],
+      "status": "afgeleid_onderzoek",
+      "note": "Publieke afgeleide; originele bronkoppeling alleen intern. Geen nieuwe uitvoeringstest."
+    },
+    {
+      "id": "D09-REP",
+      "diagram": "d09",
+      "label": "Representatie en selectie",
+      "source_ids": [
+        "S51"
+      ],
+      "derived_record_ids": [
+        "DPR17",
+        "DPR18",
+        "DPR19",
+        "DPR20",
+        "DPR21",
+        "DPR22",
+        "DPR23",
+        "DPR24"
+      ],
+      "status": "afgeleid_onderzoek",
+      "note": "Publieke afgeleide; originele bronkoppeling alleen intern. Geen nieuwe uitvoeringstest."
+    },
+    {
+      "id": "D09-ROUTE",
+      "diagram": "d09",
+      "label": "Uitvoering en modeltaken",
+      "source_ids": [
+        "S51"
+      ],
+      "derived_record_ids": [
+        "DPR25",
+        "DPR26",
+        "DPR27",
+        "DPR28",
+        "DPR29",
+        "DPR30",
+        "DPR31"
+      ],
+      "status": "afgeleid_onderzoek",
+      "note": "Publieke afgeleide; originele bronkoppeling alleen intern. Geen nieuwe uitvoeringstest."
+    },
+    {
+      "id": "D09-DELIVERY",
+      "diagram": "d09",
+      "label": "Staat, aflevering en controle",
+      "source_ids": [
+        "S51"
+      ],
+      "derived_record_ids": [
+        "DPR32",
+        "DPR33",
+        "DPR34",
+        "DPR35",
+        "DPR36",
+        "DPR37",
+        "DPR38"
+      ],
+      "status": "afgeleid_onderzoek",
+      "note": "Publieke afgeleide; originele bronkoppeling alleen intern. Geen nieuwe uitvoeringstest."
     }
   ],
   "detail_round": {
@@ -1452,6 +1565,360 @@
         "source_ids": [
           "S50"
         ]
+      }
+    ]
+  },
+  "derived_round": {
+    "id": "09-AFGELEID",
+    "as_of": "2026-11-27",
+    "source_id": "S51",
+    "record_file": "../../../research/register/RONDE-09-AFGELEID.md",
+    "scope": "Deze selectie bevat 38 inhoudelijke afgeleiden uit eerder onderzochte besloten bronbestanden, testbestanden en ontwerpstukken. Zij beschrijven de aangetroffen technische ideeën en noodzakelijke tegenproeven in eigen woorden. De oorspronkelijke private bestanden, namen, bronlinks, code en instellingen worden niet gepubliceerd. De afzonderlijke interne bronkoppelingen blijven bewaard in het besloten onderzoek. Publieke lezers kunnen die besloten bronclaims niet zelfstandig via deze afgeleide controleren. De afgeleide is geen extra onafhankelijke bewijsbron, geen uitvoeringsresultaat en geen toestemming voor codehergebruik.",
+    "phase_4a": "NO-GO",
+    "count": 38,
+    "runtime_tests_executed": false,
+    "records": [
+      {
+        "id": "DPR01",
+        "group": "STATE",
+        "title": "Gewogen temporele entropie",
+        "mechanism": "Bereken frequenties van discrete toestanden over een begrensd aantal beurten. Gewicht oudere of mechanistisch relevante waarnemingen expliciet; normaliseer Shannon-entropie per veld.",
+        "boundary": "Stabiliteit zegt niets over juistheid. Vergelijk met een eenvoudige toestandsteller en toets lege vensters en ontbrekende waarden.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR02",
+        "group": "STATE",
+        "title": "Gescheiden entropiesporen",
+        "mechanism": "Houd veranderingen in verschillende groepen toestandsvelden apart. Combineer zo nodig per groep met een maximum of gewogen aggregatie; meet ook de frequentie van de volledige toestandsvector.",
+        "boundary": "Een afgevlakte lijst kan variatie tussen velden verwarren met verandering in de tijd. Test per veld met vaste en wisselende vectoren.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR03",
+        "group": "STATE",
+        "title": "Ankerstabiliteit",
+        "mechanism": "Meet voor geselecteerde ankervelden welk aandeel gedurende een venster gelijk blijft. Registreer dit los van de beslissing om een strategie vast te zetten.",
+        "boundary": "Een ontbrekend veld is niet gelijk aan een ander veld. Een stabiel anker geeft geen bewijs voor inhoudelijke juistheid.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR04",
+        "group": "STATE",
+        "title": "Constellation locking en hysteresis",
+        "mechanism": "Bewaar een expliciete strategie en bijbehorende toestand. Gebruik aparte voorwaarden voor vasthouden en wisselen, zodat een korte afwijking niet direct herinterpretatie veroorzaakt.",
+        "boundary": "Vergelijk berekende en werkelijk uitgevoerde strategie. Een lock mag de opgeslagen vector niet stilzwijgend opnieuw vullen. Toets wisselende invoer.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR05",
+        "group": "STATE",
+        "title": "Kwaliteitsinterrupt en passieve invoer",
+        "mechanism": "Laat expliciet gedefinieerde kritieke gebeurtenissen een lock doorbreken. Behandel gebrek aan nieuw signaal niet automatisch als stabiele toestand.",
+        "boundary": "Woordlengte en lexicale signalen zijn heuristieken. Een veto moet echte routekeuze beïnvloeden, niet alleen de prompt.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR06",
+        "group": "STATE",
+        "title": "Selectieve interpretatie van context",
+        "mechanism": "Behoud bekende, geautoriseerde context. Herken expliciete signalen met transparante woord- en zinspatronen; laat ontbrekende velden onbekend of vraag gericht verduidelijking.",
+        "boundary": "Trefwoordmatch en middenwaarde zijn geen observaties. Test ambiguïteit, correcties en botsende bronprioriteiten.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR07",
+        "group": "STATE",
+        "title": "Tijdelijke toestand en commit",
+        "mechanism": "Bereken nieuwe metrieken en fasevoorstel op een kandidaatgeschiedenis voordat de definitieve toestand wordt opgeslagen. Begrens de geschiedenis.",
+        "boundary": "Een tijdelijke lokale kopie is geen atomaire transactie. Controleer gelijktijdige beurten, revisie en terugkeer van een oude waarde.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR08",
+        "group": "STATE",
+        "title": "Adaptieve lockduur",
+        "mechanism": "Laat een getypeerd profiel bepalen hoe lang een strategie geldig blijft. Een snelle veranderingsmodus kan het venster verkorten; een trage modus verlengt het.",
+        "boundary": "Vergelijk met een vaste lockduur en hysteresis zonder entropie. Nul, ontbrekende waarde, reset en overgang apart behandelen.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR09",
+        "group": "COMPILE",
+        "title": "Modelvrije instructiekaart",
+        "mechanism": "Normaliseer gegevens, controleer beleid en voorwaarden, resolveer relevante velden en acties, koppel bewijs, maak een begrensd instructie- en uitvoercontract. Valideer de afgeleide kaart vóór gebruik.",
+        "boundary": "Geen verplichte volledige keten per aanvraag. Controleer ontbrekende modules, onbekende voorwaarden en welke revisies de artifact-identiteit werkelijk bepalen.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR10",
+        "group": "COMPILE",
+        "title": "Compacte bronprojectie",
+        "mechanism": "Selecteer uit een canonieke bron alleen versie, actuele fase, relevante profielen, toegestane acties en noodzakelijke referenties. Houd bronbetekenis los van de presentatie aan het model.",
+        "boundary": "Test verloren velden, string/object-varianten en caller-supplied allowlists. Minder velden is geen bewezen besparing of betekenisbehoud.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR11",
+        "group": "COMPILE",
+        "title": "Startsnapshot versus actuele overlay",
+        "mechanism": "Compileer bij de start een zelfstandig gevalideerd artifact. Bewaar latere wijzigingen in een apart runtimeveld. Laat alle relevante consumers de actuele versie via één selector ophalen; behoud het oorspronkelijke snapshot voor vergelijking.",
+        "boundary": "Een fallback naar oud formaat mag geen ingetrokken recht herstellen. Gelezen tests tonen voorrang runtime, snapshot en legacy, niet dat corrumptie of alle races wordt afgevangen.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR12",
+        "group": "COMPILE",
+        "title": "Modelvrije reeksopbouw",
+        "mechanism": "Zet bestaande goedgekeurde records met een deterministische builder in een geordende reeks. Filter lege items en gebruik expliciete bronidentiteit; nieuwe invoer blijft een aparte categorie.",
+        "boundary": "Geen nieuwe inhoud genereren. Toets stabiele ID bij herordening, ongeldige indices en dubbele invoer.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR13",
+        "group": "COMPILE",
+        "title": "Expliciete signaal- en readinessregels",
+        "mechanism": "Een pure detector verzamelt getypeerde signalen, berekent een voorstel en geeft bewijs en vereiste toestemming terug. Laat de mutatie buiten de detector.",
+        "boundary": "Unieke waarnemingen tellen, niet alle herhaalde berichten. Geen kwaliteit of leerresultaat afleiden uit een drempel.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR14",
+        "group": "COMPILE",
+        "title": "Modelvrije fallback met zelfde contract",
+        "mechanism": "Een lokale engine groepeert bestaande signalen en maakt een begrensd voorstel met hetzelfde type uitkomst als een modelroute. Markeer welke uitvoerder is gebruikt.",
+        "boundary": "Contractgelijkheid is geen semantische gelijkwaardigheid. Test onbekende, lege en tegenstrijdige signalen en maak fallback zichtbaar.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR15",
+        "group": "COMPILE",
+        "title": "Handlerregistry met expliciete simulatie",
+        "mechanism": "Een declaratieve keten kiest geregistreerde uitvoerders. Een niet-geïmplementeerde stap kan als aparte simulatie worden onderzocht, maar mag niet als echt resultaat worden verwerkt.",
+        "boundary": "Ontbrekende handler moet zichtbaar falen of als simulatie worden geregistreerd. Geen verzonnen voorbeeldscore bij productie.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR16",
+        "group": "COMPILE",
+        "title": "Declaratieve taakassemblage",
+        "mechanism": "Laad een getypeerde configuratie, valideer de structuur en zet alleen toepasselijke instructieblokken om naar één afgebakende taak. Houd uitvoeringsresultaten per stap apart.",
+        "boundary": "Een placeholder, TODO of niet-uitgevoerde stap is geen geslaagde verwerking. Valideer volgorde en ontbrekende velden.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR17",
+        "group": "REP",
+        "title": "Schema-gestuurde LIM-vector",
+        "mechanism": "Codeer discrete kenmerken, flags en relaties in een vastgelegde vectorpositie vanuit een versiegebonden schema. Vergelijk die representatie met expliciete bronvelden en andere compacte formaten.",
+        "boundary": "Variabele kolommen en ontbrekende waarden als nul kunnen vectors onvergelijkbaar maken. Een handgemaakte vector is geen semantische embedding.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR18",
+        "group": "REP",
+        "title": "Exacte patroonmatch op ID-sets",
+        "mechanism": "Herken een vooraf geregistreerd patroon via een subset van bekende identifiers. Toon alle passende kandidaten voordat een expliciete beslisregel kiest.",
+        "boundary": "Eerste match mag niet stilzwijgend van bestandsvolgorde afhangen. Test overlap, onbekende ID en ontbrekende voorwaarde.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR19",
+        "group": "REP",
+        "title": "Kandidaten met beperkte levensduur",
+        "mechanism": "Houd intentie, type, identiteit, gewicht en TTL van een kandidaat apart. Expireer op een expliciete klok; beoordeling en gebruikstoestemming zijn afzonderlijke stappen.",
+        "boundary": "Een actief geheugenrecord is niet automatisch geautoriseerd of waar. Test tijdzones, onbegrensde TTL en heractivatie.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR20",
+        "group": "REP",
+        "title": "Transparante signaalchecks",
+        "mechanism": "Gebruik controleerbare lexicale patronen om mogelijke signalen of een reflectiekandidaat te markeren. Houd de waarneming apart van de afgeleide kandidaat.",
+        "boundary": "Woordaanwezigheid bewijst geen biaspreventie, kwaliteit of toezicht. Een uitlegtemplate is geen bewijs van verborgen modelredenering.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR21",
+        "group": "REP",
+        "title": "Strict versus tolerant parser",
+        "mechanism": "Scheid AST-constructie, schema-issues en strict/lenient afhandeling. Normaliseer representatie gecontroleerd; behoud formatter en roundtrip-tests.",
+        "boundary": "Stil samengevoegde duplicaten kunnen betekenis wijzigen. Meet semantisch behoud en werkelijke gerenderde tokens afzonderlijk.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR22",
+        "group": "REP",
+        "title": "Gerichte lokale kennisbundel",
+        "mechanism": "Kies eerst bekende bronidentiteit, haal daarna alleen relevante bronvelden op en bewaar bronversie en onbekende informatie. Een cache is een afgeleide van de bron.",
+        "boundary": "Alias-substring en oude cache kunnen verkeerd koppelen. Exacte identiteit en actuele toestemming vóór ranking en weergave.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR23",
+        "group": "REP",
+        "title": "Compressie op functiecontract",
+        "mechanism": "Verkort beschrijvingen en selecteer alleen velden die nodig zijn voor de taak, met een vaste betekenis- en structuurtest. Vergelijk ook stabiele prefixcaching.",
+        "boundary": "Tekst afkappen kan voorwaarden verliezen. Karakters, tokens, cachehits en totale kosten zijn verschillende metingen.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR24",
+        "group": "REP",
+        "title": "Geselecteerde bronnen vóór analyse",
+        "mechanism": "Splits discovery, gecontroleerde bronselectie en daaropvolgende analyse. Laat de analyse alleen bevestigde bronidentiteiten gebruiken.",
+        "boundary": "De caller en server moeten dezelfde selectie afdwingen; retrieval-recall en correcte antwoordkeuze apart meten.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR25",
+        "group": "ROUTE",
+        "title": "Symbolisch-neurale fusie",
+        "mechanism": "Vergelijk bekende kandidaattekst met een modelvoorstel via een expliciete overlapmaat. Kies afhankelijk van een grens de kandidaat, het modelvoorstel of een begrensde combinatie; registreer de route.",
+        "boundary": "Lexicale overlap bewijst geen betekenisbehoud. Vergelijk met modelselectie van een bestaande referentie en een directe modeltaak.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR26",
+        "group": "ROUTE",
+        "title": "Beleidsroute vóór uitvoerder",
+        "mechanism": "Een orchestrator kiest een bekende template, seed, snelle route, model of expliciete overdracht. Controleer zowel het voorstel als de geldige voorwaarden op het werkelijke uitvoerpad.",
+        "boundary": "De naam van een route bewijst geen afwezigheid van inferentie. Trace alle model- en toolaanroepen, inclusief fallback.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR27",
+        "group": "ROUTE",
+        "title": "Eén gezamenlijke modeltaak",
+        "mechanism": "Laat waar passend één modelaanroep zowel een antwoord als een getypeerd analysevoorstel leveren, in plaats van standaard losse classifier, generator en reviewer.",
+        "boundary": "Een schema bewijst geen semantische juistheid. Vergelijk dezelfde taak en modelrevisie met conditionele extra controle.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR28",
+        "group": "ROUTE",
+        "title": "Volledige aanroepgrafiek",
+        "mechanism": "Volg een aangeboden beurt van eventuele voorclassificatie via generatie en lokale verwerking naar naclassificatie, herstel en eventuele aparte mediaverwerking. Registreer werkelijk bereikte paden per poging.",
+        "boundary": "Endpointrequests zijn niet automatisch gefactureerde inferentie. Geen kosten uit tekstlengte of zichtbare chatcall alleen afleiden.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR29",
+        "group": "ROUTE",
+        "title": "Lezen gescheiden van analyseren",
+        "mechanism": "Maak ophalen van bestaande gegevens een echte read-only route. Genereer nieuwe analyses expliciet of op een relevante wijziging; sla een afgeleide met bronrevisie op.",
+        "boundary": "Een refresh mag niet ongemerkt extra modelwerk veroorzaken. Eerder gesignaleerde analysepaden bij lezen nog end-to-end controleren.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR30",
+        "group": "ROUTE",
+        "title": "Lokale provider-readiness",
+        "mechanism": "Maak onderscheid tussen ingestelde adapter, bereikbaar endpoint, aanwezige gewichten en werkelijk klaarstaande runtime. Laat lokale onbeschikbaarheid expliciet terugkomen.",
+        "boundary": "Geen stille externe fallback. Een healthcheck is geen bewijs van inferentie, semantische kwaliteit of capaciteit.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR31",
+        "group": "ROUTE",
+        "title": "Begrensde retries en breaker",
+        "mechanism": "Houd foutbudget en wachttijd per afhankelijkheid apart. Laat een breaker tijdelijk stoppen, onderscheid permanente fout, definitief geweigerde verzending en onzekere dispatch.",
+        "boundary": "Een timeout bewijst niet dat werk is beëindigd. Tel alle pogingen mee; onzekere verzending niet blind herhalen.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR32",
+        "group": "DELIVERY",
+        "title": "Offline queue met bevestiging",
+        "mechanism": "Bewaar lokale aanvragen met eigen IDs, verwijder uitsluitend bevestigde records en voorkom overlappende verwerking binnen één instance.",
+        "boundary": "Clientlock is geen multi-tab of serverdeduplicatie. Toets verloren ACK, herhaling, intrekking en gebruikersscope.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR33",
+        "group": "DELIVERY",
+        "title": "Deterministische adviesprioriteit",
+        "mechanism": "Laat getypeerde predicaten kandidaten aanbieden; gebruik een expliciete volgorde en eerder geziene IDs. Begrens frequentie en houd gebruikersbesluit apart.",
+        "boundary": "Een lokale seen-set en timer garanderen geen globale dedup. Toets meerdere matches, late events, refresh en herbeoordeling.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR34",
+        "group": "DELIVERY",
+        "title": "Controle na de laatste transformatie",
+        "mechanism": "Scheid scrub, structuurvalidatie, vormadaptatie en taalbewerking. Controleer de daadwerkelijk af te leveren bytes of tekst, niet alleen tussenresultaat.",
+        "boundary": "Regexfilter is geen toegangsgrens. Blind inkorten kan tabellen of code beschadigen. Een streamingguard na aflevering is te laat voor eerder verzonden tekst.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR35",
+        "group": "DELIVERY",
+        "title": "Eén authored core voor verschillende runtimes",
+        "mechanism": "Houd gezaghebbende regels en schema's op één plek en genereer runtime-artefacten daaruit. Laat iedere runtime dezelfde contractfixtures verwerken.",
+        "boundary": "Geen handmatige fork van afgeleide bestanden; parity omvat foutgedrag en revisions, niet alleen gelijke exports.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR36",
+        "group": "DELIVERY",
+        "title": "Onbekend of ambigu is een geldige uitkomst",
+        "mechanism": "Een deterministische matcher kan score, kandidaat en marge rapporteren. Een aparte beslisfunctie kiest tussen bekende route, verduidelijking, menselijke beoordeling of observe-only.",
+        "boundary": "Heuristische scores zijn niet gekalibreerde zekerheid. Behoud UNKNOWN en DENY, en laat de caller autoriteit afdwingen.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR37",
+        "group": "DELIVERY",
+        "title": "Expliciete slot- en overgangslogica",
+        "mechanism": "Stuur de volgende vraag of actie via getypeerde ontbrekende velden, actieve toestand en een expliciete overgang. Bekende gegevens niet opnieuw laten afleiden.",
+        "boundary": "Een promptinstructie is geen state-machinecontrole. Toets dubbele aanvragen, terugkeer naar vorige toestand en ongeldige overgang.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
+      },
+      {
+        "id": "DPR38",
+        "group": "DELIVERY",
+        "title": "Gescheiden voorstel, uitvoering en aflevering",
+        "mechanism": "Gebruik een expliciete uitvoeringsstatus bij herstel en overdracht. Houd een succesvol gevormde fallbacktekst los van een werkelijk geslaagde handeling.",
+        "boundary": "Een foutmelding of escalatie is geen succesvol uitgevoerde actie. Trace fout, voorstel, besluit, dispatch en uitkomst afzonderlijk.",
+        "evidence_status": "afgeleide uit eerdere broninspectie",
+        "verification": "not_run"
       }
     ]
   }
