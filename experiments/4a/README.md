@@ -13,3 +13,7 @@ python -m unittest -v test_regressions
 ```
 
 De eerste lokale uitvoering is geslaagd binnen de vastgelegde neutrale fixture. Geen werkelijke modelinferentie, betaalde CI, vakinhoud of productiearchitectuur. De adaptieve strategieproef volgt afzonderlijk. Zie [startcontract](../../benchmarks/4A-STARTCONTRACT.md).
+
+## Afzonderlijke strategieproef 4a.3
+
+[Resultaten en tegenbewijs](strategy/RESULTS.md). Vier varianten, 12 bevroren reeksen per variant, 48 harde scenario's en zeven regressietests geslaagd. Zachte strategieafwijkingen worden apart gerapporteerd. Niet geïntegreerd in runtime.py; geen variantkeuze.
