@@ -1,5 +1,8 @@
 # Vergelijkingsprotocol (ontwerp v0.2)
 
+> Status v0.3: Dit blijft een concept voor een latere fase. Geen proeven uitvoeren voordat de brede verkenning en specificatie van A–D (fase 3a–3c) zijn afgerond. Zie de [onderzoeksindeling](../research/ONDERZOEKSINDELING.md).
+
+
 ## Onderzoekseenheid
 
 Een volledig leerlinggesprek rond een opdracht; daarnaast rapportage per aanroep, beurt en scenariofamilie. Gebruik synthetische dialogen in de eerste technische benchmark. Maak onderscheid tussen vaste replay (gelijke invoer) en interactieve, gesimuleerde gesprekken (reactie afhankelijk van antwoord). Geen echte leerlingprestatie afleiden uit simulaties.
@@ -13,7 +16,7 @@ Een volledig leerlinggesprek rond een opdracht; daarnaast rapportage per aanroep
 
 ## Eerst mechanismen onderzoeken
 
-Het uitvoeringsvoorstel voor fase 4 staat in [TECHNISCHE-PROEVEN.md](TECHNISCHE-PROEVEN.md). Start met een per-poging meetcontract, versiegebonden context en routing vóór generatie. Gebruik dezelfde contractfixtures voor alle technieken. De eindvergelijking blijft A–D.
+Het uitvoeringsvoorstel voor fase 4 staat in [TECHNISCHE-PROEVEN.md](TECHNISCHE-PROEVEN.md). De eerste kandidaatproeven betreffen een per-poging meetcontract, versiegebonden context en routing vóór generatie; de keuze wordt na fase 3c bevestigd of herzien. Gebruik dezelfde contractfixtures voor alle technieken. De eindvergelijking blijft A–D.
 
 Voor het bouwen van uitgebreide use cases: kleine vergelijkende proeven uit de [functiematrix](../research/FUNCTIONELE-EISEN.md) met dezelfde context en hulpgrens, bekende én onbekende foutgevallen, geldige alternatieve antwoorden en gewijzigde lesversies. Meet de nauwkeurigheid van routekeuze, dekking van veilige niet-LLM-routes, foutieve automatische antwoorden en gemiste noodzaak voor modelhulp. Een gesloten antwoord dat een bestaande regel betrouwbaar kan controleren is een aparte nulmodelreferentie. Verander de vier hoofdvarianten niet.
 

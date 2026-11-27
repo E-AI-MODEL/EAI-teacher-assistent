@@ -4,7 +4,7 @@ Onafhankelijk onderzoeks- en ontwikkelproject voor een methodegebonden digitale 
 
 De vraag: welke ondersteuning kan software geven zonder taalmodel, welke ondersteuning vraagt wel een taalmodel, en wat betekent die keuze voor de kosten en kwaliteit van een volledig leerlinggesprek?
 
-## Vier uitvoeringen, één les
+## Vier vergelijkingshypothesen
 
 | Variant | Uitvoering |
 | --- | --- |
@@ -13,7 +13,13 @@ De vraag: welke ondersteuning kan software geven zonder taalmodel, welke onderst
 | C | Hybride assistent: gecontroleerde hints, foutdetectie en beslisregels, met het model van B als terugval |
 | D | Dezelfde hybride route als C, met zelfgehoste open-weight modellen in plaats van betaalde modelaanroepen |
 
-Alle vier worden volledig uitgewerkt. De leerlingomgeving, vakinhoud, opdrachten en toetscriteria blijven gelijk.
+Alle vier worden na het brede onderzoek volledig gespecificeerd. Voor een eerlijke vergelijking blijven de onderwijsfuncties, leerlingomgeving, vakinhoud en toetscriteria gelijk. A–D zijn voorlopig hypothesen, geen architectuurkeuze.
+
+## Onderzoek: eerst breed, daarna kiezen
+
+![Onderzoeksindeling met tien sporen en vier terugkerende onderwerpen](docs/illustraties/onderzoeksindeling.svg)
+
+We onderzoeken oorspronkelijke ontwerpgedachten, technische mechanismen, bewijs en eerdere fouten uit de repositories, oudere versies, boeken, bibliotheek en externe bronnen. Een vondst kan bij meerdere sporen horen. Zie de [onderzoeksindeling en werkwijze](research/ONDERZOEKSINDELING.md).
 
 ## Eerst de functies, daarna de les
 
@@ -29,7 +35,8 @@ Neon meldde op 28 september 2026 ruim 1.500 aangesloten scholen met samen ongeve
 
 ## Documentatie
 
-- [Plan van aanpak v0.2](docs/PLAN.md)
+- [Plan van aanpak v0.3](docs/PLAN.md)
+- [Onderzoeksindeling en werkwijze](research/ONDERZOEKSINDELING.md)
 - [Verdiepend bronnenonderzoek](research/VERKENNING.md)
 - [Functionele vergelijking en ontwerpvoorwaarden](research/FUNCTIONELE-EISEN.md)
 - [Technische hergebruiksaudit](research/TECHNIEKAUDIT.md)
@@ -42,6 +49,6 @@ Neon meldde op 28 september 2026 ruim 1.500 aangesloten scholen met samen ongeve
 
 ## Status
 
-Onderzoeksopzet v0.2: de verkenning is verdiept en de werkvolgorde is herzien. De eerste technische selectie is vastgelegd. De definitieve architectuur, licentie-/hergebruikbesluiten en uitvoeringsproeven staan nog open. Er zijn nog geen werkende varianten, modelmetingen of leerlingresultaten in deze repository. De vakinhoud is een ontwerp dat nog door een vakdocent moet worden beoordeeld. Er zijn geen echte leerlinggegevens nodig voor de eerste benchmark.
+Onderzoeksopzet v0.3: de brede verkenning is opnieuw geopend. De eerste technische selectie blijft beschikbaar als vertrekpunt, niet als definitieve keuze. Eerst verzamelen en kritisch vergelijken, dan A–D specificeren. De definitieve architectuur, licentie-/hergebruikbesluiten en uitvoeringsproeven staan nog open. Er zijn nog geen werkende varianten, modelmetingen of leerlingresultaten in deze repository. De vakinhoud is een ontwerp dat nog door een vakdocent moet worden beoordeeld. Er zijn geen echte leerlinggegevens nodig voor de eerste benchmark.
 
 Geen aangetoonde besparing op een bestaand product. Een eigen model heeft geen externe tokenfactuur, maar wel reken-, hosting- en beheerkosten.
