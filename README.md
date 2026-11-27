@@ -43,7 +43,7 @@ Neon meldde op 28 september 2026 ruim 1.500 aangesloten scholen met samen ongeve
 
 ## Documentatie
 
-- [Plan van aanpak v0.4](docs/PLAN.md)
+- [Plan van aanpak v0.5](docs/PLAN.md)
 - [Technische specificatie A–D v0.1](research/TECHNISCHE-SPECIFICATIE.md)
 - [Onderzoeksindeling en werkwijze](research/ONDERZOEKSINDELING.md)
 - [Bronnenregister: ronde 01](research/register/RONDE-01.md)
@@ -60,8 +60,8 @@ Neon meldde op 28 september 2026 ruim 1.500 aangesloten scholen met samen ongeve
 
 ## Status
 
-**27 november 2026: fase 3b en 3c gericht heropend. NO-GO voor fase 4a.** De brede inventarisatie en technische specificatie blijven bewaard. De openbare atlas toont een beperkte selectie; de vergelijking van eerder onderzochte mechanismen, alternatieven en tegenbewijs moet verder worden uitgewerkt. De eerste gerichte bronpassage is vastgelegd in ronde 09. De openbare selectie vervangt de interne detailinventarisatie niet. Verdere bron- en integratietoetsen blijven nodig.
+**27 november 2026: technisch GO voor afgebakende fase 4a na merge.** Het [herbeoordelingsbesluit 3b/3c](research/FASE-3B-3C-BESLUIT.md) houdt de alternatieven, tegenbewijs en open bronvragen vast. Geen architectuurkeuze of uitgevoerde modelproef.
 
-De volgende stap is herbeoordeling van de technische mechanismen en mogelijke combinaties, zonder deze vooraf aan A–D toe te wijzen. Daarna volgt een herzien besluit over A–D en P01–P03. De technische specificatie v0.1 en proefgevallen blijven voorstellen. Geen proefcode uitgevoerd, geen modelmetingen of leerlingresultaten. De definitieve architectuur, hergebruikrechten, vakinhoud, modellen, hosting en budget voor echte inferentie blijven open.
+De volgende stap is het [4a-startcontract](benchmarks/4A-STARTCONTRACT.md): één neutrale stubproef met P01–P03, de minimale compiler-, strategie- en contextcontroles en daarna P/S/R/M. De proefcode is nog niet gestart. Geen modelmetingen of leerlingresultaten. De definitieve architectuur, hergebruikrechten, vakinhoud, modellen, hosting en budget voor echte inferentie blijven open.
 
 Geen aangetoonde besparing op een bestaand product. Een eigen model heeft geen externe tokenfactuur, maar wel reken-, hosting- en beheerkosten.

@@ -3210,7 +3210,23 @@
     "archive_html": "archief-v1.html",
     "archive_markdown": "ARCHIEF-V1.md",
     "hypothesis": "../../../research/COMBINATIE-HYPOTHESE.md",
-    "phase_4a": "NO-GO",
-    "runtime_tests_executed": false
+    "phase_4a": "READY_FOR_LIMITED_STUB_PROOF_AFTER_MERGE",
+    "runtime_tests_executed": false,
+    "decision": "../../../research/FASE-3B-3C-BESLUIT.md",
+    "start_contract": "../../../benchmarks/4A-STARTCONTRACT.md",
+    "visual_validation": {
+      "commit": "73cef05ce9c2ee8ce5da8a282102383f54da5369",
+      "html_blob": "f8dc49442a851211d6d17b2d4515969ba8671be4",
+      "browser": "Chromium",
+      "css_widths": [
+        320,
+        390,
+        960,
+        1280
+      ],
+      "primary_diagrams": 7,
+      "navigation_links": 8,
+      "scope": "Exact HTML rendered locally; no deployment or physical mobile test"
+    }
   }
 }

@@ -1,10 +1,10 @@
 # Fase 3c: technische specificatie A–D
 
-Versie 0.1, 27 november 2026. Historisch technisch ontwerpvoorstel, in herbeoordeling. Fase 3b en 3c zijn gericht heropend; NO-GO voor fase 4a. Onderzoek de eerder aangetroffen mechanismen en alternatieve combinaties opnieuw voordat deze specificatie wordt vastgesteld. Dit document bewaart de eerdere publieke ontwerpafspraken, niet de private broninhoud. Het is geen productiearchitectuur, implementatie of testresultaat.
+Versie 0.1, 27 november 2026. Historisch technisch ontwerpvoorstel. Het [herbeoordelingsbesluit 3b/3c](FASE-3B-3C-BESLUIT.md) maakt de afgebakende stubproef technisch gereed voor start na merge; deze specificatie blijft een ontwerpcontract, geen productiearchitectuur of testresultaat.
 
 Zie ook de [visuele onderzoeksatlas](../docs/illustraties/atlas/README.md) voor openbare bronbevindingen, mechanismen, vergelijking A–D en geplande verificatie.
 
-**Aanvullend onderzoek, nog niet vastgesteld:** de [combinatiehypothese P/S/R/M](COMBINATIE-HYPOTHESE.md) onderzoekt de bijdragen van vooraf compileren, strategiebehoud, experimentele regels en begrensde modeltaken afzonderlijk en in combinatie. Zij vervangt de historische v0.1-contracten niet. Eerst herbeoordeling van fase 3b/3c, daarna pas een nieuw besluit over 4a.
+**Aanvullend onderzoek, begrensd voor 4a:** de [combinatiehypothese P/S/R/M](COMBINATIE-HYPOTHESE.md) onderzoekt de bijdragen van vooraf compileren, strategiebehoud, experimentele regels en begrensde modeltaken afzonderlijk en in combinatie. Zij vervangt de historische v0.1-contracten niet. Zie het [startcontract](../benchmarks/4A-STARTCONTRACT.md) voor de aanvullende compiler-, strategie- en contextproeven.
 
 ## Vraag en afbakening
 
@@ -110,7 +110,7 @@ Gebruik afzonderlijke velden voor input_total, input_cache_read, input_cache_wri
 
 Rapporteer kosten per aangeboden aanvraag en per technisch geslaagde aanvraag, met aantallen, fout- en uitvalstatus. In een latere echte proef worden inhoudelijke bruikbaarheid, voorbereiding, hardware, idle, beheer, cache, herstel en authoringkosten apart meegewogen. Geen extrapolatie vanuit stubtokens of kunstmatige timings.
 
-## Eerder voorgesteld proefpakket (nog niet starten)
+## Afgebakend proefpakket (nog niet uitgevoerd)
 
 [Proeven P01–P03](../benchmarks/TECHNISCHE-PROEVEN.md) toetsen deze afspraken op één gedeeld technisch proefprogramma. Bevries fixture, verwachtingen en configuratie vooraf. Alle voorgeschreven technische invarianten moeten slagen voordat de eerste proef als geslaagd wordt geboekt. Een ontbrekende route, lek, stale aflevering, onverwachte externe dispatch of ontbrekend attempt-record is een fout, geen ongetest succes.
 

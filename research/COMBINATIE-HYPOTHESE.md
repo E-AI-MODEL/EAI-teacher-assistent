@@ -1,6 +1,6 @@
 # Combinatiehypothese | vooraf samenstellen, toestand behouden en selectief uitvoeren
 
-27 november 2026 · Herbeoordeling fase 3b/3c. Fase 4a: NO-GO. Geen nieuwe modelproef, vakinhoud, architectuurkeuze of bewezen besparing.
+27 november 2026 · Fase 4a technisch gereed voor een afgebakende stubproef na merge van het onderzoeksbesluit. Geen uitvoering, echte inferentie, vakinhoud of architectuurkeuze.
 
 ## Vraag
 
@@ -53,7 +53,7 @@ NeSy: in P02 bereikten nul van tien echte P0-beurten de bedoelde onderzoeksroute
 
 Shadowseed: de historische 88,24% balanced accuracy bij Qwen2.5-0.5B haalde de vooraf vastgelegde statistische grens niet. Op een nieuwe dataset voldeden nul van vier vooraf vastgelegde toetsen. Gebruik die meetmethode als inspiratie, niet de activatieprobe als routecriterium.
 
-Het voorstel is nog geen herzien architectuurbesluit. Eerst in 3b de serieuze combinaties en negatieve resultaten vergelijken, in 3c het gemeenschappelijke contract en de minimale proeven bijstellen. Pas daarna een nieuw GO/NO-GO. Geen vakinhoud, echte inferentie of betaalde proef vóór toestemming. De technische proeven kunnen geen leerwinst of overdracht aantonen.
+Het voorstel is geen architectuurbesluit. Het [herbeoordelingsbesluit 3b/3c](FASE-3B-3C-BESLUIT.md) geeft een technisch GO voor de afgebakende stubproef na merge. De [startvoorwaarden](../benchmarks/4A-STARTCONTRACT.md) houden P/S/R/M toetsbaar naast A–D. Geen vakinhoud, echte inferentie of betaalde proef vóór toestemming. De technische proeven kunnen geen leerwinst of overdracht aantonen.
 
 ## Herleidbaarheid
 

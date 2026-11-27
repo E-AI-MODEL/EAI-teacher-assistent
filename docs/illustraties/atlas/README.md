@@ -2,7 +2,7 @@
 
 We onderzoeken welke technische handelingen gewone software betrouwbaar kan uitvoeren, wanneer een taalmodel nog nodig is en wat dat betekent voor de kosten van hetzelfde aangeboden gesprek. Vooraf compileren, adaptief strategiebehoud, toetsbare beslislogica en selectieve inferentie vormen samen een nieuwe onderzoekshypothese. De onderdelen zijn bekend uit eerdere eigen projecten en openbare implementaties; hun combinatie is nog niet getoetst.
 
-> 27 november 2026 · Herbeoordeling fase 3b/3c. Fase 4a: NO-GO. Geen nieuwe modelproef, vakinhoud, architectuurkeuze of bewezen besparing.
+> 27 november 2026 · Fase 4a technisch gereed voor een afgebakende stubproef na merge van het onderzoeksbesluit. Geen uitvoering, echte inferentie, vakinhoud of architectuurkeuze.
 
 [Zelfstandige HTML-atlas](index.html) · [Combinatiehypothese](../../../research/COMBINATIE-HYPOTHESE.md) · [Machineleesbaar register](atlas-registry.json)
 
