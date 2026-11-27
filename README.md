@@ -21,12 +21,17 @@ Frans, 2 havo: begeleiding bij het schrijven van korte zinnen over plannen voor 
 
 Deze case is eigen demonstratiemateriaal, geïnspireerd op een publiek beschreven onderwijsopgave. Geen onderdeel van een bestaande Neon-methode en geen officiële samenwerking met Neon.
 
+## Gebruikersomvang en belasting
+
+Neon meldde op 28 september 2026 ruim 1.500 aangesloten scholen met samen ongeveer 700.000 leerlingen. Dat is potentieel bereik, geen vastgesteld gebruik van de assistent. Het onderzoek bevat drie schaalniveaus: 70.000, 280.000 en 700.000 actieve leerlingen, met verschillende gebruiksintensiteiten. De vier varianten worden op dezelfde belasting vergeleken; gelijktijdigheid en schoolpieken tellen mee.
+
 ## Documentatie
 
 - [Plan van aanpak](docs/PLAN.md)
 - [Bronnen en aansluiting bij Neon](research/neon/BRONNEN.md)
 - [Use case Frans 2 havo](curriculum/french-havo2/USE-CASE.md)
 - [Vergelijkingsprotocol](benchmarks/PROTOCOL.md)
+- [Gebruikersomvang, capaciteits- en kostenmodel](benchmarks/SCHAALMODEL.md)
 - [Hergebruik en rechten](research/HERGEBRUIK.md)
 
 ## Status

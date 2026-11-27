@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "status": "illustrative_unmeasured",
+  "source": {
+    "date": "2026-09-28",
+    "url": "https://www.neon.nl/nieuws/je-kunt-weer-lid-worden-van-neon-schrijf-jouw-bestuur-nu-in",
+    "scope": "approximate enrolled pupils in member schools, not assistant users"
+  },
+  "assumptions": {
+    "reachableLearners": 700000,
+    "schoolWeeks": 40,
+    "schoolDaysPerWeek": 5,
+    "schoolHoursPerDay": 6,
+    "peakMultiplier": 4,
+    "meanSessionMinutes": 10
+  },
+  "scenarios": [
+    {
+      "id": "limited",
+      "name": "Beperkte uitrol",
+      "adoption": 0.1,
+      "sessionsPerWeek": 1,
+      "turnsPerSession": 4
+    },
+    {
+      "id": "broad",
+      "name": "Brede uitrol",
+      "adoption": 0.4,
+      "sessionsPerWeek": 3,
+      "turnsPerSession": 6
+    },
+    {
+      "id": "stress",
+      "name": "Maximale belasting binnen dit scenario",
+      "adoption": 1,
+      "sessionsPerWeek": 5,
+      "turnsPerSession": 8
+    }
+  ]
+}

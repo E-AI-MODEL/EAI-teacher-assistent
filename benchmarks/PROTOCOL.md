@@ -31,6 +31,10 @@ Zelfstandig uitvoeren van een nieuwe opdracht zonder materiële hulp wordt apart
 
 ## Schaalmodel
 
-Jaarlijkse kosten = kosten per geslaagde/afgeronde sessie × representatief aantal sessies, plus niet daarin opgenomen vaste kosten. Rapporteer ook de kosten van alle gestarte sessies inclusief mislukte sessies. Zelfhosting vraagt een capaciteitsmodel met schooluren, pieken, beschikbaarheid, redundantie, onderhoud, idle-kosten en afschrijving. Gebruik alleen scenario's als werkelijke gebruiksgegevens ontbreken.
+Zie [SCHAALMODEL.md](SCHAALMODEL.md) voor de gemeenschappelijke belastingsscenario's. Gebruik kosten per gestarte sessie inclusief fouten en retries × aantal gestarte sessies plus nog niet meegerekende vaste kosten. Rapporteer daarnaast totale kosten per succesvol afgeronde sessie (totale kosten / aantal succesvolle sessies). Tel leerlingbeurten, modelaanroepen, actieve sessies en lopende inferentieverzoeken afzonderlijk.
+
+Alle vier varianten krijgen hetzelfde aangeboden verkeer in open-loop belastingtests; een trage variant mag niet kunstmatig goedkoop lijken doordat minder verzoeken zijn afgehandeld. Meet geslaagde doorvoer, wachtrij, P50/P95/P99, time-to-first-token waar van toepassing, timeout- en foutpercentage, retries, uitval en herstel. Gebruik dezelfde vooraf vastgelegde kwaliteits- en responstijdeisen. Test warme en koude caches en gelijktijdige lesstart. C en D tellen ook de niet-LLM-routes, en alle eventuele secundaire modelaanroepen. Meet daadwerkelijke capaciteit per model en configuratie, niet alleen HTTP-throughput van een mock.
+
+Gebruik voor zelfhosting een capaciteitsmodel met schooluren, pieken, beschikbaarheid, redundantie, onderhoud, idle-kosten en afschrijving. Gebruik alleen scenario's zolang werkelijke gebruiksgegevens ontbreken.
 
 Status: nog niet uitgevoerd. Er zijn geen benchmarkresultaten in deze repository.

@@ -10,6 +10,15 @@ Gecontroleerd op 27 november 2026. Dit is een eerste bronnenregister, geen audit
 | [Vacature Onderwijskundige (Technologie en Onderzoek)](https://vacatures.neon.nl/solliciteren/onderwijskundige-technologie-en-onderzoek-cmumnggg0000f01gwuavhbsuj) | De sollicitatieopdracht vraagt onder meer hoe hulp bij Frans in 2 havo en rekenen in groep 7 vorm kan krijgen, met keuzes tussen hints, wedervragen en uitleg. | Gebruik dezelfde soort onderwijsopgave als aanleiding voor een eigen, volledig uitgewerkte lessituatie. |
 | [Kwaliteitskader, 30 september 2026](https://www.neon.nl/nieuws/kwaliteit-als-kompas-het-kwaliteitskader-van-neon) | De kwaliteitscriteria voor leermiddelen worden verder ontwikkeld. | Leg vakinhoudelijke review en aanpasbaarheid vast. |
 
+## Publiek bereik
+
+- [Neon, 28 september 2026: opnieuw lid worden](https://www.neon.nl/nieuws/je-kunt-weer-lid-worden-van-neon-schrijf-jouw-bestuur-nu-in): ruim 1.500 scholen met samen circa 700.000 leerlingen. Gebruik deze gedateerde telling als uitgangspunt voor het schaalmodel.
+- [Neon, homepage](https://www.neon.nl/): meer dan 120 besturen en meer dan 650.000 leerlingen. De cijfers zijn niet noodzakelijk op dezelfde peildatum bijgewerkt.
+- [Neon, schoolbesturen](https://www.neon.nl/schoolbesturen): rekenvoorbeeld met 650.000 leerlingen en circa 10 miljoen euro jaarlijkse coöperatiekosten, voornamelijk salarissen van auteurs en programmeurs. Dit is geen gepubliceerde tokenfactuur.
+- [OCW in cijfers, VO](https://www.ocwincijfers.nl/sectoren/voortgezet-onderwijs/leerlingen/leerlingenaantallen-voortgezet-onderwijs): 926.387 ingeschreven VO-leerlingen per 1 oktober 2025; landelijke context, niet Neons VO-aandeel.
+
+Gecontroleerd op 27 november 2026. Het ledenbereik omvat PO en VO; het aandeel digitale assistentgebruikers en de verdeling naar vak, schoolsoort en leerjaar zijn onbekend. Bereik is geen adoptie. Het volledige bereik wordt uitsluitend als stressscenario gebruikt.
+
 ## Wat niet bekend is
 
 - Huidige interne modelkeuze, prompts, contextstructuur, routering, caching en technische architectuur.
