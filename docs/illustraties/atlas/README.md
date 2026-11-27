@@ -1,6 +1,6 @@
 # EAI Teacher Assistant | Onderzoeksatlas
 
-27 november 2026. Zeven diagrammen leggen een openbare selectie van de verzamelde kennis, technische vergelijking en volgende proeven naast elkaar. Ze vervangen het interne register niet. Historische proeven zijn niet opnieuw uitgevoerd; fase 4a is nog niet uitgevoerd.
+27 november 2026. Zeven diagrammen tonen een beperkte openbare selectie van eerdere bronvondsten en voorgestelde technische vergelijking. Ze vervangen het interne register niet. De selectie is onvoldoende als basis voor het afsluiten van 3b/3c; deze fasen zijn gericht heropend. Fase 4a staat stil tot herbeoordeling. Historische proeven zijn niet opnieuw uitgevoerd.
 
 [Zelfstandige HTML-atlas](index.html) (download en open lokaal) · [Machineleesbaar bronnen- en blokregister](atlas-registry.json) · [Technische specificatie](../../../research/TECHNISCHE-SPECIFICATIE.md) · [P01–P03](../../../benchmarks/TECHNISCHE-PROEVEN.md)
 

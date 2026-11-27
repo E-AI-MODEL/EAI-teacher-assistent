@@ -74,10 +74,10 @@ De brede inventarisatie eindigt niet op een willekeurig aantal bestanden. Voor d
 
 ## Status van A–D
 
-De brede inventarisatie en kritische vergelijking zijn voor deze ronde afgerond. De interne bronregistratie blijft behouden, inclusief hiaten, tegenbewijs en alternatieven. Het onderzoek kan worden heropend bij materieel nieuw bewijs; er is geen volledige audit van alle repositories geclaimd.
+De brede inventarisatie is bewaard. Fase 3b en 3c worden gericht heropend: de eerdere openbare selectie laat belangrijke mechanismen, alternatieven en tegenbewijs onvoldoende zien. De interne bronregistratie blijft leidend. Er is geen volledige audit van alle repositories geclaimd.
 
 A (reguliere LLM), B (geoptimaliseerde LLM met dezelfde modelrevisie), C (hybride) en D (zelfgehoste hybride zonder externe runtime-inferentie) zijn technisch uitgewerkt in de [specificatie v0.1](TECHNISCHE-SPECIFICATIE.md). De vier delen één contract en gewone softwarefuncties. Mechanismen kunnen binnen de varianten afzonderlijk worden onderzocht. De specificatie legt geen productiearchitectuur, definitief model, hostingkeuze of inhoud vast.
 
-De [minimale proeven P01–P03](../benchmarks/TECHNISCHE-PROEVEN.md) zijn gekozen voor fase 4a. Zij gebruiken abstracte fixtures en stub-adapters. Ze toetsen technische grenzen en daadwerkelijk bereikte routes, niet modelkwaliteit, vakinhoudelijke geschiktheid, leren of echte kosten. Latere inhoudelijke beoordeling, model- en hostingproeven blijven open.
+De [minimale proeven P01–P03](../benchmarks/TECHNISCHE-PROEVEN.md) blijven een voorstel. NO-GO voor fase 4a totdat de technische alternatieven en de specificatie opnieuw zijn beoordeeld. De beoogde modelvrije fixtures en stub-adapters toetsen technische grenzen, niet modelkwaliteit, vakinhoudelijke geschiktheid, leren of echte kosten.
 
 Zie het [plan v0.4](../docs/PLAN.md), de [eerste technische selectie](TECHNIEKAUDIT.md) en [functionele analyse](FUNCTIONELE-EISEN.md). De indeling blijft een onderzoekswerkwijze, geen voorgeschreven architectuur.

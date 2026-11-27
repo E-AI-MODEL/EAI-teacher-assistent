@@ -1,6 +1,6 @@
 # Fase 4 — minimale vergelijkingsproeven
 
-> Status v0.4 (27 november 2026): fase 4a gereed voor uitvoering op basis van de [technische specificatie v0.1](../research/TECHNISCHE-SPECIFICATIE.md). Nog geen uitgevoerde tests of meetresultaten. P01–P03 zijn de eerste afgebakende contractproeven; geen echte inferentie.
+> Status v0.4 (27 november 2026): **voorstel, NO-GO voor fase 4a.** Fase 3b/3c zijn gericht heropend. De [technische specificatie v0.1](../research/TECHNISCHE-SPECIFICATIE.md) en P01–P03 blijven bewaard voor herbeoordeling. Nog geen uitgevoerde tests of meetresultaten; geen echte inferentie.
 
 
 Ontwerp, 27 november 2026. Nog niet uitgevoerd. Eerst technieken toetsen op kleine fictieve gegevens; geen volledige les, geen echte leerlinggegevens. A–D blijven de uiteindelijke vier uitvoeringen. Deze proeven onderzoeken afzonderlijke mechanismen, geen extra chatbots.

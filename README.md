@@ -60,8 +60,8 @@ Neon meldde op 28 september 2026 ruim 1.500 aangesloten scholen met samen ongeve
 
 ## Status
 
-**27 november 2026: fase 4a gereed voor uitvoering.** De brede bronneninventarisatie (3a) en vergelijking van mechanismen (3b) zijn voor deze onderzoeksronde afgerond. De technische specificatie (3c) legt de verantwoordelijkheden, gegevenscontracten, uitvoeringsroutes, foutpaden en meting vast. Het interne onderzoeksregister blijft leidend voor de onderliggende bronnen en open vragen. De openbare index bevat de openbare afgeleide van de eerste inventarisatie (29 van 87 repositories), geen volledige actuele onderzoeksdekking.
+**27 november 2026: fase 3b en 3c gericht heropend. NO-GO voor fase 4a.** De brede inventarisatie en technische specificatie blijven bewaard. De openbare atlas toont een beperkte selectie; de vergelijking van eerder onderzochte mechanismen, alternatieven en tegenbewijs moet verder worden uitgewerkt. De openbare index bevat de openbare afgeleide van de eerste inventarisatie (29 van 87 repositories), geen volledige actuele onderzoeksdekking.
 
-De volgende stap is één klein proefprogramma voor P01–P03: telemetrie en budget, toegangs- en versiegrenzen, routekeuze en uitvoercontrole. Gebruik neutrale gegevens, geïnjecteerde testadapters en nul echte inferentie. Er is nog geen proefcode uitgevoerd en er zijn geen modelmetingen of leerlingresultaten. De definitieve architectuur, hergebruikrechten, vakinhoud, modellen, hosting en budget voor echte inferentie blijven open.
+De volgende stap is herbeoordeling van de technische mechanismen en mogelijke combinaties, zonder deze vooraf aan A–D toe te wijzen. Daarna volgt een herzien besluit over A–D en P01–P03. De technische specificatie v0.1 en proefgevallen blijven voorstellen. Geen proefcode uitgevoerd, geen modelmetingen of leerlingresultaten. De definitieve architectuur, hergebruikrechten, vakinhoud, modellen, hosting en budget voor echte inferentie blijven open.
 
 Geen aangetoonde besparing op een bestaand product. Een eigen model heeft geen externe tokenfactuur, maar wel reken-, hosting- en beheerkosten.

@@ -1,6 +1,6 @@
 # Vergelijkingsprotocol (ontwerp v0.2)
 
-> Status v0.4: dit protocol beschrijft de latere vergelijking van volledige gesprekken. Fase 4a gebruikt eerst [neutrale technische contractproeven P01–P03](TECHNISCHE-PROEVEN.md), zonder echte inferentie of vakinhoud. De [technische specificatie](../research/TECHNISCHE-SPECIFICATIE.md) legt A–D en de technische grenzen vast. Inhoudelijke kwaliteitscriteria en echte modellen zijn nog niet gekozen.
+> Status v0.4: dit protocol beschrijft de latere vergelijking van volledige gesprekken. De [neutrale technische contractproeven P01–P03](TECHNISCHE-PROEVEN.md) en de [technische specificatie v0.1](../research/TECHNISCHE-SPECIFICATIE.md) blijven voorstellen. Fase 3b/3c zijn heropend; fase 4a staat stil tot een nieuw besluit. Geen vakinhoud, echte inferentie of definitieve modelkeuze.
 
 
 ## Onderzoekseenheid
@@ -16,7 +16,7 @@ Een volledig leerlinggesprek rond een opdracht; daarnaast rapportage per aanroep
 
 ## Eerst mechanismen onderzoeken
 
-Het eerste uitvoeringspakket voor fase 4a staat in [TECHNISCHE-PROEVEN.md](TECHNISCHE-PROEVEN.md): P01 (meting en budget), P02 (autoriteit en revisies) en P03 (route en uitvoergrenzen). Gebruik dezelfde abstracte contractfixtures voor alle varianten. Gewone gedeelde softwarefuncties blijven in A–D beschikbaar en tellen niet als besparing van C. De stubproeven toetsen technische invarianten; daadwerkelijke modelkwaliteit en kosten komen later.
+Het voorgestelde eerste pakket voor fase 4a staat in [TECHNISCHE-PROEVEN.md](TECHNISCHE-PROEVEN.md): P01 (meting en budget), P02 (autoriteit en revisies) en P03 (route en uitvoergrenzen). Het wacht op herbeoordeling. Behoud dezelfde abstracte fixtures en gewone gedeelde softwarefuncties voor alle varianten; die functies tellen niet als besparing van C. De stubproeven zouden technische invarianten toetsen; werkelijke modelkwaliteit en kosten komen later.
 
 Na de abstracte contractproeven en vóór het bouwen van uitgebreide use cases: kleine vergelijkende proeven uit de [functiematrix](../research/FUNCTIONELE-EISEN.md) met dezelfde context en hulpgrens, bekende én onbekende foutgevallen, geldige alternatieve antwoorden en gewijzigde lesversies. Meet de nauwkeurigheid van routekeuze, dekking van veilige niet-LLM-routes, foutieve automatische antwoorden en gemiste noodzaak voor modelhulp. Een gesloten antwoord dat een bestaande regel betrouwbaar kan controleren is een aparte nulmodelreferentie. Verander de vier hoofdvarianten niet.
 

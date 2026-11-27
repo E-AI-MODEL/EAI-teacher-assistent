@@ -1,6 +1,6 @@
 # Fase 3c: technische specificatie A–D
 
-Versie 0.1, 27 november 2026. Afgeronde technische uitwerking voor de eerstvolgende proefronde. De brede inventarisatie en vergelijking van mechanismen zijn voor deze ronde afgerond; het interne register bewaart de bronnen, eerdere ontwerpvarianten, tegenbewijs en resterende hiaten. Dit document legt de publieke ontwerpafspraken vast, niet de private broninhoud. Het is geen productiearchitectuur, implementatie of testresultaat.
+Versie 0.1, 27 november 2026. Historisch technisch ontwerpvoorstel, in herbeoordeling. Fase 3b en 3c zijn gericht heropend; NO-GO voor fase 4a. Onderzoek de eerder aangetroffen mechanismen en alternatieve combinaties opnieuw voordat deze specificatie wordt vastgesteld. Dit document bewaart de eerdere publieke ontwerpafspraken, niet de private broninhoud. Het is geen productiearchitectuur, implementatie of testresultaat.
 
 Zie ook de [visuele onderzoeksatlas](../docs/illustraties/atlas/README.md) voor openbare bronbevindingen, mechanismen, vergelijking A–D en geplande verificatie.
 
@@ -108,7 +108,7 @@ Gebruik afzonderlijke velden voor input_total, input_cache_read, input_cache_wri
 
 Rapporteer kosten per aangeboden aanvraag en per technisch geslaagde aanvraag, met aantallen, fout- en uitvalstatus. In een latere echte proef worden inhoudelijke bruikbaarheid, voorbereiding, hardware, idle, beheer, cache, herstel en authoringkosten apart meegewogen. Geen extrapolatie vanuit stubtokens of kunstmatige timings.
 
-## Volgende stap
+## Eerder voorgesteld proefpakket (nog niet starten)
 
 [Proeven P01–P03](../benchmarks/TECHNISCHE-PROEVEN.md) toetsen deze afspraken op één gedeeld technisch proefprogramma. Bevries fixture, verwachtingen en configuratie vooraf. Alle voorgeschreven technische invarianten moeten slagen voordat de eerste proef als geslaagd wordt geboekt. Een ontbrekende route, lek, stale aflevering, onverwachte externe dispatch of ontbrekend attempt-record is een fout, geen ongetest succes.
 
