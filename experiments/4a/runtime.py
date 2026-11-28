@@ -249,6 +249,12 @@ class Runtime:
                     proposal = engine(matches[0])
                 except Exception:
                     return {"status": "ENGINE_ERROR"}
+                if (type(proposal) is not dict or set(proposal) != {"kind", "ref", "used_refs"}
+                        or type(proposal["kind"]) is not str or proposal["kind"] != "SELECT"
+                        or type(proposal["ref"]) is not str or proposal["ref"] != matches[0]
+                        or type(proposal["used_refs"]) is not list or len(proposal["used_refs"]) != 1
+                        or type(proposal["used_refs"][0]) is not str or proposal["used_refs"][0] != matches[0]):
+                    return {"status": "INVALID_PROPOSAL"}
             else:
                 if self.arm == "D" and adapter.kind != "local":
                     return {"status": "DENY"}
