@@ -1,0 +1,62 @@
+{
+  "bundle": {
+    "revision": 1,
+    "records": {
+      "R1": "ALPHA",
+      "R2": "BETA",
+      "R3": "GAMMA"
+    },
+    "rules": {
+      "EXACT1": [
+        "R1"
+      ],
+      "EXACT2": [
+        "R2"
+      ],
+      "EXACT3": [
+        "R3"
+      ],
+      "AMBIG": [
+        "R1",
+        "R2"
+      ]
+    },
+    "operations": [
+      "LOOKUP",
+      "RESOLVE"
+    ]
+  },
+  "policy": {
+    "revision": 1,
+    "scopes": {
+      "SA": [
+        "R1",
+        "R2"
+      ],
+      "SB": [
+        "R3"
+      ]
+    }
+  },
+  "arms": {
+    "A": "0000",
+    "B": "0001",
+    "C": "0011",
+    "D": "0011"
+  },
+  "strategy_window": 3,
+  "usage_fields": [
+    "input_total",
+    "input_cache_read",
+    "input_cache_write",
+    "output_total",
+    "reasoning_reported"
+  ],
+  "stub_usage": {
+    "input_total": 12,
+    "input_cache_read": 3,
+    "input_cache_write": 0,
+    "output_total": 4,
+    "reasoning_reported": 2
+  }
+}
