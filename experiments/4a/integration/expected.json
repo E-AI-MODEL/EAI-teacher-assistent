@@ -1,0 +1,2261 @@
+{
+  "schema": "neutral-4a6-v1",
+  "cases": [
+    {
+      "id": "stable_expiry",
+      "rows": [
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "signal_change",
+      "rows": [
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "CLARIFY"
+          },
+          "route": null,
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "CLARIFY"
+          },
+          "route": null,
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "irrelevant_cue",
+      "rows": [
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "unknown_invalid",
+      "rows": [
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "CLARIFY"
+          },
+          "route": null,
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "CLARIFY"
+          },
+          "route": null,
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "CLARIFY"
+          },
+          "route": null,
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "unknown_between_requests",
+      "rows": [
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "anchor_source_policy",
+      "rows": [
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA2",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA2",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA2",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "revocation_and_restore",
+      "rows": [
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "DENY"
+          },
+          "route": null,
+          "per_turn": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "BETA",
+            "used_refs": [
+              "R2"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "rule_stale_aba",
+      "rows": [
+        {
+          "outcome": {
+            "status": "STALE"
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "model_source_change",
+      "rows": [
+        {
+          "outcome": {
+            "status": "STALE"
+          },
+          "route": "MODEL",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 0,
+          "stub_calls": 1,
+          "context": {
+            "operation": "RESOLVE",
+            "signal": "OTHER",
+            "required": "READY",
+            "source_revision": 1,
+            "policy_revision": 1,
+            "records": {
+              "R1": "ALPHA"
+            }
+          }
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA2",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "MODEL",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 0,
+          "stub_calls": 1,
+          "context": {
+            "operation": "RESOLVE",
+            "signal": "OTHER",
+            "required": "READY",
+            "source_revision": 2,
+            "policy_revision": 1,
+            "records": {
+              "R1": "ALPHA2"
+            }
+          }
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA2",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "MODEL",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 0,
+          "stub_calls": 1,
+          "context": {
+            "operation": "RESOLVE",
+            "signal": "OTHER",
+            "required": "READY",
+            "source_revision": 2,
+            "policy_revision": 1,
+            "records": {
+              "R1": "ALPHA2"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "scope_session_isolation",
+      "rows": [
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "GAMMA",
+            "used_refs": [
+              "R3"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "GAMMA",
+            "used_refs": [
+              "R3"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "DENY"
+          },
+          "route": null,
+          "per_turn": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "replay_conflict_expiry",
+      "rows": [
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ],
+            "replay": true
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "CONFLICT"
+          },
+          "route": null,
+          "per_turn": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "lookup_independent",
+      "rows": [
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "LOOKUP",
+          "per_turn": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "CLARIFY"
+          },
+          "route": null,
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "payload": "BETA",
+            "used_refs": [
+              "R2"
+            ]
+          },
+          "route": "LOOKUP",
+          "per_turn": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "CLARIFY"
+          },
+          "route": null,
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "model_rule_mix",
+      "rows": [
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "MODEL",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 0,
+          "stub_calls": 1,
+          "context": {
+            "operation": "RESOLVE",
+            "signal": "OTHER",
+            "required": "READY",
+            "source_revision": 1,
+            "policy_revision": 1,
+            "records": {
+              "R1": "ALPHA"
+            }
+          }
+        },
+        {
+          "outcome": {
+            "status": "CLARIFY"
+          },
+          "route": null,
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "MODEL",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 0,
+          "stub_calls": 1,
+          "context": {
+            "operation": "RESOLVE",
+            "signal": "OTHER",
+            "required": "READY",
+            "source_revision": 1,
+            "policy_revision": 1,
+            "records": {
+              "R1": "ALPHA"
+            }
+          }
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "BETA",
+            "used_refs": [
+              "R2"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "forged_observation",
+      "rows": [
+        {
+          "outcome": {
+            "status": "INVALID"
+          },
+          "route": null,
+          "per_turn": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "CLARIFY"
+          },
+          "route": null,
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "cue_change_during_dispatch",
+      "rows": [
+        {
+          "outcome": {
+            "status": "STALE"
+          },
+          "route": "MODEL",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 0,
+          "stub_calls": 1,
+          "context": {
+            "operation": "RESOLVE",
+            "signal": "OTHER",
+            "required": "READY",
+            "source_revision": 1,
+            "policy_revision": 1,
+            "records": {
+              "R1": "ALPHA"
+            }
+          }
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "MODEL",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 0,
+          "stub_calls": 1,
+          "context": {
+            "operation": "RESOLVE",
+            "signal": "OTHER",
+            "required": "READY",
+            "source_revision": 1,
+            "policy_revision": 1,
+            "records": {
+              "R1": "ALPHA"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "ambiguous_observation_noise",
+      "rows": [
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "CLARIFY"
+          },
+          "route": null,
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "ambiguous_observation_real",
+      "rows": [
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "CLARIFY"
+          },
+          "route": null,
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "wrong_rule_P0M0",
+      "rows": [
+        {
+          "outcome": {
+            "status": "INVALID_PROPOSAL"
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 1,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "INVALID_PROPOSAL",
+            "replay": true
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "INVALID_PROPOSAL"
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 1,
+          "authorizations": 1,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "wrong_rule_P0M1",
+      "rows": [
+        {
+          "outcome": {
+            "status": "INVALID_PROPOSAL"
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 1,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "INVALID_PROPOSAL",
+            "replay": true
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "INVALID_PROPOSAL"
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 1,
+          "authorizations": 1,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "wrong_rule_P1M0",
+      "rows": [
+        {
+          "outcome": {
+            "status": "INVALID_PROPOSAL"
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 1,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "INVALID_PROPOSAL",
+            "replay": true
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "INVALID_PROPOSAL"
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "wrong_rule_P1M1",
+      "rows": [
+        {
+          "outcome": {
+            "status": "INVALID_PROPOSAL"
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 1,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "INVALID_PROPOSAL",
+            "replay": true
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "INVALID_PROPOSAL"
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    },
+    {
+      "id": "local_adapter",
+      "rows": [
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "MODEL",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 1,
+          "authorizations": 2,
+          "engine_calls": 0,
+          "stub_calls": 1,
+          "context": {
+            "operation": "RESOLVE",
+            "signal": "OTHER",
+            "required": "READY",
+            "source_revision": 1,
+            "policy_revision": 1,
+            "records": {
+              "R1": "ALPHA"
+            }
+          }
+        },
+        {
+          "outcome": {
+            "status": "OK",
+            "kind": "SELECT",
+            "payload": "ALPHA",
+            "used_refs": [
+              "R1"
+            ]
+          },
+          "route": "RULE",
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 0,
+            "reuse": 1
+          },
+          "compiles": 0,
+          "authorizations": 2,
+          "engine_calls": 1,
+          "stub_calls": 0,
+          "context": null
+        },
+        {
+          "outcome": {
+            "status": "CLARIFY"
+          },
+          "route": null,
+          "per_turn": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "relevant_change": {
+            "reviews": 1,
+            "reuse": 0
+          },
+          "compiles": 0,
+          "authorizations": 1,
+          "engine_calls": 0,
+          "stub_calls": 0,
+          "context": null
+        }
+      ]
+    }
+  ],
+  "soft_oracles": [
+    {
+      "id": "ambiguous_observation_noise",
+      "statuses": [
+        "OK",
+        "OK",
+        "OK"
+      ]
+    },
+    {
+      "id": "ambiguous_observation_real",
+      "statuses": [
+        "OK",
+        "CLARIFY",
+        "OK"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,851 @@
+{
+  "schema": "neutral-4a6-v1",
+  "baseline": "f38bd0edd9327344a7adc122b2b31767034061eb",
+  "default": {
+    "arm": "A",
+    "P": 1,
+    "R": 1,
+    "M": 1,
+    "window": 5,
+    "initial": {
+      "signal": "A",
+      "cue": "X"
+    },
+    "request": {
+      "actor": "SA",
+      "session": "S",
+      "op": "RESOLVE",
+      "arg": "EXACT1"
+    },
+    "comparators": [
+      {
+        "name": "per_turn",
+        "S": 0
+      },
+      {
+        "name": "relevant_change",
+        "S": 1
+      }
+    ]
+  },
+  "cases": [
+    {
+      "id": "stable_expiry",
+      "actions": [
+        {
+          "request": {
+            "id": "1"
+          }
+        },
+        {
+          "request": {
+            "id": "2"
+          }
+        },
+        {
+          "request": {
+            "id": "3"
+          }
+        },
+        {
+          "request": {
+            "id": "4"
+          }
+        },
+        {
+          "request": {
+            "id": "5"
+          }
+        },
+        {
+          "request": {
+            "id": "6"
+          }
+        },
+        {
+          "request": {
+            "id": "7"
+          }
+        }
+      ]
+    },
+    {
+      "id": "signal_change",
+      "actions": [
+        {
+          "request": {
+            "id": "1"
+          }
+        },
+        {
+          "observe": {
+            "signal": "B",
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "2"
+          }
+        },
+        {
+          "request": {
+            "id": "3"
+          }
+        },
+        {
+          "observe": {
+            "signal": "A",
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "irrelevant_cue",
+      "actions": [
+        {
+          "request": {
+            "id": "1"
+          }
+        },
+        {
+          "observe": {
+            "signal": "A",
+            "cue": "Y",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "2"
+          }
+        },
+        {
+          "observe": {
+            "signal": "A",
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unknown_invalid",
+      "actions": [
+        {
+          "request": {
+            "id": "1"
+          }
+        },
+        {
+          "observe": {
+            "signal": null,
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "2"
+          }
+        },
+        {
+          "observe": {
+            "signal": "A",
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "3"
+          }
+        },
+        {
+          "observe": {
+            "signal": "A",
+            "cue": "Z",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "4"
+          }
+        },
+        {
+          "observe": {
+            "signal": "A",
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "5"
+          }
+        },
+        {
+          "observe": {
+            "signal": "C",
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "6"
+          }
+        },
+        {
+          "observe": {
+            "signal": "A",
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "7"
+          }
+        }
+      ]
+    },
+    {
+      "id": "unknown_between_requests",
+      "actions": [
+        {
+          "request": {
+            "id": "1"
+          }
+        },
+        {
+          "observe": {
+            "signal": null,
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "observe": {
+            "signal": "A",
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "anchor_source_policy",
+      "actions": [
+        {
+          "request": {
+            "id": "1"
+          }
+        },
+        {
+          "observe": {
+            "signal": "A",
+            "cue": "X",
+            "critical": true
+          }
+        },
+        {
+          "request": {
+            "id": "2"
+          }
+        },
+        {
+          "event": "source"
+        },
+        {
+          "request": {
+            "id": "3"
+          }
+        },
+        {
+          "event": "p3"
+        },
+        {
+          "request": {
+            "id": "4"
+          }
+        },
+        {
+          "request": {
+            "id": "5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "revocation_and_restore",
+      "actions": [
+        {
+          "request": {
+            "id": "1"
+          }
+        },
+        {
+          "event": "p2"
+        },
+        {
+          "request": {
+            "id": "2"
+          }
+        },
+        {
+          "request": {
+            "id": "3",
+            "arg": "EXACT2"
+          }
+        },
+        {
+          "event": "p3"
+        },
+        {
+          "request": {
+            "id": "4"
+          }
+        }
+      ]
+    },
+    {
+      "id": "rule_stale_aba",
+      "actions": [
+        {
+          "request": {
+            "id": "1",
+            "during": [
+              "p2",
+              "p3"
+            ]
+          }
+        },
+        {
+          "request": {
+            "id": "2"
+          }
+        },
+        {
+          "request": {
+            "id": "3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "model_source_change",
+      "actions": [
+        {
+          "request": {
+            "id": "1",
+            "arg": "OTHER",
+            "during": [
+              "source"
+            ]
+          }
+        },
+        {
+          "request": {
+            "id": "2",
+            "arg": "OTHER"
+          }
+        },
+        {
+          "request": {
+            "id": "3",
+            "arg": "OTHER"
+          }
+        }
+      ]
+    },
+    {
+      "id": "scope_session_isolation",
+      "actions": [
+        {
+          "request": {
+            "id": "1"
+          }
+        },
+        {
+          "request": {
+            "id": "1",
+            "actor": "SB",
+            "scope": "SB",
+            "arg": "EXACT3"
+          }
+        },
+        {
+          "request": {
+            "id": "1",
+            "session": "T"
+          }
+        },
+        {
+          "request": {
+            "id": "2"
+          }
+        },
+        {
+          "request": {
+            "id": "2",
+            "actor": "SB",
+            "scope": "SB",
+            "arg": "EXACT3"
+          }
+        },
+        {
+          "request": {
+            "id": "2",
+            "session": "T"
+          }
+        },
+        {
+          "request": {
+            "id": "3",
+            "scope": "SB",
+            "arg": "EXACT3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "replay_conflict_expiry",
+      "actions": [
+        {
+          "request": {
+            "id": "1"
+          }
+        },
+        {
+          "request": {
+            "id": "1"
+          }
+        },
+        {
+          "request": {
+            "id": "1",
+            "arg": "EXACT2"
+          }
+        },
+        {
+          "request": {
+            "id": "2"
+          }
+        },
+        {
+          "request": {
+            "id": "3"
+          }
+        },
+        {
+          "request": {
+            "id": "4"
+          }
+        },
+        {
+          "request": {
+            "id": "5"
+          }
+        },
+        {
+          "request": {
+            "id": "6"
+          }
+        }
+      ]
+    },
+    {
+      "id": "lookup_independent",
+      "actions": [
+        {
+          "request": {
+            "id": "1"
+          }
+        },
+        {
+          "observe": {
+            "signal": "B",
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "2",
+            "op": "LOOKUP",
+            "arg": "R1"
+          }
+        },
+        {
+          "request": {
+            "id": "3"
+          }
+        },
+        {
+          "request": {
+            "id": "4",
+            "op": "LOOKUP",
+            "arg": "R2"
+          }
+        },
+        {
+          "request": {
+            "id": "5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "model_rule_mix",
+      "actions": [
+        {
+          "request": {
+            "id": "1"
+          }
+        },
+        {
+          "request": {
+            "id": "2",
+            "arg": "OTHER"
+          }
+        },
+        {
+          "observe": {
+            "signal": "B",
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "3",
+            "arg": "OTHER"
+          }
+        },
+        {
+          "observe": {
+            "signal": "A",
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "4",
+            "arg": "OTHER"
+          }
+        },
+        {
+          "request": {
+            "id": "5",
+            "arg": "EXACT2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "forged_observation",
+      "actions": [
+        {
+          "observe": {
+            "signal": "B",
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "1",
+            "extra": {
+              "signal": "A",
+              "cue": "X"
+            }
+          }
+        },
+        {
+          "request": {
+            "id": "2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "cue_change_during_dispatch",
+      "actions": [
+        {
+          "request": {
+            "id": "1",
+            "arg": "OTHER",
+            "during": [
+              {
+                "signal": "A",
+                "cue": "Y",
+                "critical": false
+              }
+            ]
+          }
+        },
+        {
+          "request": {
+            "id": "2",
+            "arg": "OTHER"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ambiguous_observation_noise",
+      "actions": [
+        {
+          "request": {
+            "id": "1"
+          }
+        },
+        {
+          "observe": {
+            "signal": "B",
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "2"
+          }
+        },
+        {
+          "observe": {
+            "signal": "A",
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ambiguous_observation_real",
+      "actions": [
+        {
+          "request": {
+            "id": "1"
+          }
+        },
+        {
+          "observe": {
+            "signal": "B",
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "2"
+          }
+        },
+        {
+          "observe": {
+            "signal": "A",
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wrong_rule_P0M0",
+      "factors": {
+        "P": 0,
+        "R": 1,
+        "M": 0
+      },
+      "actions": [
+        {
+          "request": {
+            "id": "1",
+            "engine_ref": "R2"
+          }
+        },
+        {
+          "request": {
+            "id": "1",
+            "engine_ref": "R2"
+          }
+        },
+        {
+          "request": {
+            "id": "2"
+          }
+        },
+        {
+          "request": {
+            "id": "3",
+            "arg": "EXACT2",
+            "engine_ref": "R1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wrong_rule_P0M1",
+      "factors": {
+        "P": 0,
+        "R": 1,
+        "M": 1
+      },
+      "actions": [
+        {
+          "request": {
+            "id": "1",
+            "engine_ref": "R2"
+          }
+        },
+        {
+          "request": {
+            "id": "1",
+            "engine_ref": "R2"
+          }
+        },
+        {
+          "request": {
+            "id": "2"
+          }
+        },
+        {
+          "request": {
+            "id": "3",
+            "arg": "EXACT2",
+            "engine_ref": "R1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wrong_rule_P1M0",
+      "factors": {
+        "P": 1,
+        "R": 1,
+        "M": 0
+      },
+      "actions": [
+        {
+          "request": {
+            "id": "1",
+            "engine_ref": "R2"
+          }
+        },
+        {
+          "request": {
+            "id": "1",
+            "engine_ref": "R2"
+          }
+        },
+        {
+          "request": {
+            "id": "2"
+          }
+        },
+        {
+          "request": {
+            "id": "3",
+            "arg": "EXACT2",
+            "engine_ref": "R1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wrong_rule_P1M1",
+      "factors": {
+        "P": 1,
+        "R": 1,
+        "M": 1
+      },
+      "actions": [
+        {
+          "request": {
+            "id": "1",
+            "engine_ref": "R2"
+          }
+        },
+        {
+          "request": {
+            "id": "1",
+            "engine_ref": "R2"
+          }
+        },
+        {
+          "request": {
+            "id": "2"
+          }
+        },
+        {
+          "request": {
+            "id": "3",
+            "arg": "EXACT2",
+            "engine_ref": "R1"
+          }
+        }
+      ]
+    },
+    {
+      "id": "local_adapter",
+      "arm": "D",
+      "actions": [
+        {
+          "request": {
+            "id": "1",
+            "arg": "OTHER"
+          }
+        },
+        {
+          "request": {
+            "id": "2"
+          }
+        },
+        {
+          "observe": {
+            "signal": "B",
+            "cue": "X",
+            "critical": false
+          }
+        },
+        {
+          "request": {
+            "id": "3",
+            "arg": "OTHER"
+          }
+        }
+      ]
+    }
+  ]
+}
